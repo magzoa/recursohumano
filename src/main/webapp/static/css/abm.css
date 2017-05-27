@@ -1,0 +1,71 @@
+@CHARSET "ISO-8859-1";
+
+
+/* label.invalid { */
+/*     color: red; */
+/*     font-size: 0.8rem; */
+/*     left: 0; */
+/*     position: relative; */
+/*     top: -15px; */
+/*     transform: none !important; */
+/* } */
+
+/** FIXES for error messages https://github.com/Dogfalo/materialize/issues/1562*/
+  label {
+     width: 100%; 
+ } 
+ .input-field label {
+      font-size: 0.8rem; 
+     -webkit-transform: translateY(-140%); 
+     -moz-transform: translateY(-140%);
+          -ms-transform: translateY(-140%); 
+     -o-transform: translateY(-140%); 
+     }
+ 
+
+.tabs .indicator {
+/*     color: gray; */
+    background-color: #1976d2;
+}
+
+#md1 {
+/*  width: 40%;  */
+/*  height: 35%; */
+
+width: 41%; 
+max-height: 35%; 
+overflow-y: hidden;
+
+ }
+ 
+/*  Carrito de Proveedor dentro de compras */
+ #mdcarrito1 {
+width: 90%; 
+/* max-height: 35%;  */
+overflow-y: hidden;
+
+ }
+ 
+ #mdproductos{
+ width: 70%; 
+max-height: 90%; 
+ height: 85%;
+ }
+ 
+ 
+/*  .ng-invalid { */
+/*     border-color: red; */
+/*     outline-color: red; */
+/* } */
+
+/* .ng-valid { */
+/*     border-color: green; */
+/*     outline-color: green; */
+/* } */
+
+/* .messages { */
+/*   font-size: smaller; */
+/*   padding-top: 5px; */
+/*   padding-bottom: 10px; */
+/*   color: red; */
+/* } */

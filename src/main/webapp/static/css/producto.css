@@ -1,0 +1,108 @@
+@CHARSET "UTF-8";
+
+
+.seleccionado{
+background-color: gray;
+}
+
+.negrita{
+
+font-weight: bold;
+color: white;
+}
+.bloquear{
+background-color: green;
+}
+
+.negrito{
+
+font-weight: bold;
+}
+
+.negritoverde{
+font-weight: bold;
+/* color:	#1b5e20; */
+
+color: #bdbdbd;
+}
+tbody {
+	display: block;
+	overflow: scroll;
+	max-height: 800px;
+	text-align: left;
+	
+}
+
+tr {
+	display: block;
+}
+
+td{
+ 	width: 110px;
+
+	
+}
+th{
+ 	width: 110px; 
+
+}
+
+/* Estilos para mensajes de error */
+.error{
+	background-color: #F2DEDE;
+	padding: 20px;
+	border-radius: 5px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.ok{
+	background-color: #a5d6a7;
+	padding: 20px;
+	border-radius: 5px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+
+
+.etitulo{
+	color: #AF4341;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.emsj{
+	color: #AF4341;
+}
+
+.emsj HR{
+   height: 3px;
+   border: 0;
+/*    color: white; */
+    background-color: white; 
+}
+/* Fin estilos para mensajes de error */
+
+
+/* Inicio estilos para mensaje de ok */
+
+
+
+
+.titulo{
+	color: #1b5e20;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.msj{
+	color: #1b5e20;
+}
+
+.msj HR{
+   height: 3px;
+   border: 0;
+/*    color: white; */
+    background-color: white; 
+}
+
