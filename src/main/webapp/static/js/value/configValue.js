@@ -3,6 +3,6 @@
  */
 
 angular.module("menu").value("config",{
-	baseUrl:"http://localhost:8080/enterprisesoft"
+	baseUrl:"http://localhost:8080/recursohumano"
 		
 });

@@ -1,0 +1,4158 @@
+{
+  "code": "Datos Invalidos ",
+  "message": "Complete correctamente",
+  "fieldErrors": [
+    {
+      "resource": "producto",
+      "field": "descripcion",
+      "code": "NotBlank",
+      "message": "may not be empty"
+    }
+  ]
+}
+
+
+
+{
+  "cause": {
+    "cause": {
+      "cause": null,
+      "stackTrace": [
+        {
+          "methodName": "receiveErrorResponse",
+          "fileName": "QueryExecutorImpl.java",
+          "lineNumber": 2102,
+          "className": "org.postgresql.core.v3.QueryExecutorImpl",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "processResults",
+          "fileName": "QueryExecutorImpl.java",
+          "lineNumber": 1835,
+          "className": "org.postgresql.core.v3.QueryExecutorImpl",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "execute",
+          "fileName": "QueryExecutorImpl.java",
+          "lineNumber": 257,
+          "className": "org.postgresql.core.v3.QueryExecutorImpl",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "execute",
+          "fileName": "AbstractJdbc2Statement.java",
+          "lineNumber": 500,
+          "className": "org.postgresql.jdbc2.AbstractJdbc2Statement",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "executeWithFlags",
+          "fileName": "AbstractJdbc2Statement.java",
+          "lineNumber": 388,
+          "className": "org.postgresql.jdbc2.AbstractJdbc2Statement",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "executeUpdate",
+          "fileName": "AbstractJdbc2Statement.java",
+          "lineNumber": 334,
+          "className": "org.postgresql.jdbc2.AbstractJdbc2Statement",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "executeUpdate",
+          "fileName": "ResultSetReturnImpl.java",
+          "lineNumber": 187,
+          "className": "org.hibernate.engine.jdbc.internal.ResultSetReturnImpl",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "executeAndExtract",
+          "fileName": "IdentityGenerator.java",
+          "lineNumber": 96,
+          "className": "org.hibernate.id.IdentityGenerator$GetGeneratedKeysDelegate",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "performInsert",
+          "fileName": "AbstractReturningDelegate.java",
+          "lineNumber": 58,
+          "className": "org.hibernate.id.insert.AbstractReturningDelegate",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "insert",
+          "fileName": "AbstractEntityPersister.java",
+          "lineNumber": 3032,
+          "className": "org.hibernate.persister.entity.AbstractEntityPersister",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "insert",
+          "fileName": "AbstractEntityPersister.java",
+          "lineNumber": 3556,
+          "className": "org.hibernate.persister.entity.AbstractEntityPersister",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "execute",
+          "fileName": "EntityIdentityInsertAction.java",
+          "lineNumber": 97,
+          "className": "org.hibernate.action.internal.EntityIdentityInsertAction",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "execute",
+          "fileName": "ActionQueue.java",
+          "lineNumber": 480,
+          "className": "org.hibernate.engine.spi.ActionQueue",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "addResolvedEntityInsertAction",
+          "fileName": "ActionQueue.java",
+          "lineNumber": 191,
+          "className": "org.hibernate.engine.spi.ActionQueue",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "addInsertAction",
+          "fileName": "ActionQueue.java",
+          "lineNumber": 175,
+          "className": "org.hibernate.engine.spi.ActionQueue",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "addAction",
+          "fileName": "ActionQueue.java",
+          "lineNumber": 210,
+          "className": "org.hibernate.engine.spi.ActionQueue",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "addInsertAction",
+          "fileName": "AbstractSaveEventListener.java",
+          "lineNumber": 324,
+          "className": "org.hibernate.event.internal.AbstractSaveEventListener",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "performSaveOrReplicate",
+          "fileName": "AbstractSaveEventListener.java",
+          "lineNumber": 288,
+          "className": "org.hibernate.event.internal.AbstractSaveEventListener",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "performSave",
+          "fileName": "AbstractSaveEventListener.java",
+          "lineNumber": 194,
+          "className": "org.hibernate.event.internal.AbstractSaveEventListener",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "saveWithGeneratedId",
+          "fileName": "AbstractSaveEventListener.java",
+          "lineNumber": 125,
+          "className": "org.hibernate.event.internal.AbstractSaveEventListener",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "saveWithGeneratedId",
+          "fileName": "JpaPersistEventListener.java",
+          "lineNumber": 84,
+          "className": "org.hibernate.jpa.event.internal.core.JpaPersistEventListener",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "entityIsTransient",
+          "fileName": "DefaultPersistEventListener.java",
+          "lineNumber": 206,
+          "className": "org.hibernate.event.internal.DefaultPersistEventListener",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "onPersist",
+          "fileName": "DefaultPersistEventListener.java",
+          "lineNumber": 149,
+          "className": "org.hibernate.event.internal.DefaultPersistEventListener",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "onPersist",
+          "fileName": "DefaultPersistEventListener.java",
+          "lineNumber": 75,
+          "className": "org.hibernate.event.internal.DefaultPersistEventListener",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "firePersist",
+          "fileName": "SessionImpl.java",
+          "lineNumber": 807,
+          "className": "org.hibernate.internal.SessionImpl",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "persist",
+          "fileName": "SessionImpl.java",
+          "lineNumber": 780,
+          "className": "org.hibernate.internal.SessionImpl",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "persist",
+          "fileName": "SessionImpl.java",
+          "lineNumber": 785,
+          "className": "org.hibernate.internal.SessionImpl",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "persist",
+          "fileName": "AbstractEntityManagerImpl.java",
+          "lineNumber": 1181,
+          "className": "org.hibernate.jpa.spi.AbstractEntityManagerImpl",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "invoke0",
+          "fileName": "NativeMethodAccessorImpl.java",
+          "lineNumber": -2,
+          "className": "sun.reflect.NativeMethodAccessorImpl",
+          "nativeMethod": true
+        },
+        {
+          "methodName": "invoke",
+          "fileName": "NativeMethodAccessorImpl.java",
+          "lineNumber": 62,
+          "className": "sun.reflect.NativeMethodAccessorImpl",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "invoke",
+          "fileName": "DelegatingMethodAccessorImpl.java",
+          "lineNumber": 43,
+          "className": "sun.reflect.DelegatingMethodAccessorImpl",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "invoke",
+          "fileName": "Method.java",
+          "lineNumber": 483,
+          "className": "java.lang.reflect.Method",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "invoke",
+          "fileName": "ExtendedEntityManagerCreator.java",
+          "lineNumber": 344,
+          "className": "org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "persist",
+          "fileName": null,
+          "lineNumber": -1,
+          "className": "com.sun.proxy.$Proxy47",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "invoke0",
+          "fileName": "NativeMethodAccessorImpl.java",
+          "lineNumber": -2,
+          "className": "sun.reflect.NativeMethodAccessorImpl",
+          "nativeMethod": true
+        },
+        {
+          "methodName": "invoke",
+          "fileName": "NativeMethodAccessorImpl.java",
+          "lineNumber": 62,
+          "className": "sun.reflect.NativeMethodAccessorImpl",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "invoke",
+          "fileName": "DelegatingMethodAccessorImpl.java",
+          "lineNumber": 43,
+          "className": "sun.reflect.DelegatingMethodAccessorImpl",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "invoke",
+          "fileName": "Method.java",
+          "lineNumber": 483,
+          "className": "java.lang.reflect.Method",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "invoke",
+          "fileName": "SharedEntityManagerCreator.java",
+          "lineNumber": 294,
+          "className": "org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "persist",
+          "fileName": null,
+          "lineNumber": -1,
+          "className": "com.sun.proxy.$Proxy47",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "insertar",
+          "fileName": "DAOGenerico.java",
+          "lineNumber": 18,
+          "className": "py.enterprisesoft.api.dao.DAOGenerico",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "guardar",
+          "fileName": "DAOGenerico.java",
+          "lineNumber": 41,
+          "className": "py.enterprisesoft.api.dao.DAOGenerico",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "invoke",
+          "fileName": "<generated>",
+          "lineNumber": -1,
+          "className": "py.enterprisesoft.api.dao.DAOGenerico$$FastClassBySpringCGLIB$$5ff1217c",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "invoke",
+          "fileName": "MethodProxy.java",
+          "lineNumber": 204,
+          "className": "org.springframework.cglib.proxy.MethodProxy",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "invokeJoinpoint",
+          "fileName": "CglibAopProxy.java",
+          "lineNumber": 720,
+          "className": "org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "proceed",
+          "fileName": "ReflectiveMethodInvocation.java",
+          "lineNumber": 157,
+          "className": "org.springframework.aop.framework.ReflectiveMethodInvocation",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "invoke",
+          "fileName": "PersistenceExceptionTranslationInterceptor.java",
+          "lineNumber": 136,
+          "className": "org.springframework.dao.support.PersistenceExceptionTranslationInterceptor",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "proceed",
+          "fileName": "ReflectiveMethodInvocation.java",
+          "lineNumber": 179,
+          "className": "org.springframework.aop.framework.ReflectiveMethodInvocation",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "intercept",
+          "fileName": "CglibAopProxy.java",
+          "lineNumber": 655,
+          "className": "org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "guardar",
+          "fileName": "<generated>",
+          "lineNumber": -1,
+          "className": "py.enterprisesoft.api.dao.ProductoDAO$$EnhancerBySpringCGLIB$$25a3fd04",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "registrar",
+          "fileName": "ProductoController.java",
+          "lineNumber": 84,
+          "className": "py.enterprisesoft.api.controller.ProductoController",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "invoke",
+          "fileName": "<generated>",
+          "lineNumber": -1,
+          "className": "py.enterprisesoft.api.controller.ProductoController$$FastClassBySpringCGLIB$$20bc2b1c",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "invoke",
+          "fileName": "MethodProxy.java",
+          "lineNumber": 204,
+          "className": "org.springframework.cglib.proxy.MethodProxy",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "invokeJoinpoint",
+          "fileName": "CglibAopProxy.java",
+          "lineNumber": 720,
+          "className": "org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "proceed",
+          "fileName": "ReflectiveMethodInvocation.java",
+          "lineNumber": 157,
+          "className": "org.springframework.aop.framework.ReflectiveMethodInvocation",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "proceedWithInvocation",
+          "fileName": "TransactionInterceptor.java",
+          "lineNumber": 99,
+          "className": "org.springframework.transaction.interceptor.TransactionInterceptor$1",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "invokeWithinTransaction",
+          "fileName": "TransactionAspectSupport.java",
+          "lineNumber": 281,
+          "className": "org.springframework.transaction.interceptor.TransactionAspectSupport",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "invoke",
+          "fileName": "TransactionInterceptor.java",
+          "lineNumber": 96,
+          "className": "org.springframework.transaction.interceptor.TransactionInterceptor",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "proceed",
+          "fileName": "ReflectiveMethodInvocation.java",
+          "lineNumber": 179,
+          "className": "org.springframework.aop.framework.ReflectiveMethodInvocation",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "intercept",
+          "fileName": "CglibAopProxy.java",
+          "lineNumber": 655,
+          "className": "org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "registrar",
+          "fileName": "<generated>",
+          "lineNumber": -1,
+          "className": "py.enterprisesoft.api.controller.ProductoController$$EnhancerBySpringCGLIB$$dac54aed",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "invoke0",
+          "fileName": "NativeMethodAccessorImpl.java",
+          "lineNumber": -2,
+          "className": "sun.reflect.NativeMethodAccessorImpl",
+          "nativeMethod": true
+        },
+        {
+          "methodName": "invoke",
+          "fileName": "NativeMethodAccessorImpl.java",
+          "lineNumber": 62,
+          "className": "sun.reflect.NativeMethodAccessorImpl",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "invoke",
+          "fileName": "DelegatingMethodAccessorImpl.java",
+          "lineNumber": 43,
+          "className": "sun.reflect.DelegatingMethodAccessorImpl",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "invoke",
+          "fileName": "Method.java",
+          "lineNumber": 483,
+          "className": "java.lang.reflect.Method",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "doInvoke",
+          "fileName": "InvocableHandlerMethod.java",
+          "lineNumber": 221,
+          "className": "org.springframework.web.method.support.InvocableHandlerMethod",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "invokeForRequest",
+          "fileName": "InvocableHandlerMethod.java",
+          "lineNumber": 136,
+          "className": "org.springframework.web.method.support.InvocableHandlerMethod",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "invokeAndHandle",
+          "fileName": "ServletInvocableHandlerMethod.java",
+          "lineNumber": 110,
+          "className": "org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "invokeHandlerMethod",
+          "fileName": "RequestMappingHandlerAdapter.java",
+          "lineNumber": 832,
+          "className": "org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "handleInternal",
+          "fileName": "RequestMappingHandlerAdapter.java",
+          "lineNumber": 743,
+          "className": "org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "handle",
+          "fileName": "AbstractHandlerMethodAdapter.java",
+          "lineNumber": 85,
+          "className": "org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "doDispatch",
+          "fileName": "DispatcherServlet.java",
+          "lineNumber": 961,
+          "className": "org.springframework.web.servlet.DispatcherServlet",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "doService",
+          "fileName": "DispatcherServlet.java",
+          "lineNumber": 895,
+          "className": "org.springframework.web.servlet.DispatcherServlet",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "processRequest",
+          "fileName": "FrameworkServlet.java",
+          "lineNumber": 967,
+          "className": "org.springframework.web.servlet.FrameworkServlet",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "doPost",
+          "fileName": "FrameworkServlet.java",
+          "lineNumber": 869,
+          "className": "org.springframework.web.servlet.FrameworkServlet",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "service",
+          "fileName": "HttpServlet.java",
+          "lineNumber": 648,
+          "className": "javax.servlet.http.HttpServlet",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "service",
+          "fileName": "FrameworkServlet.java",
+          "lineNumber": 843,
+          "className": "org.springframework.web.servlet.FrameworkServlet",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "service",
+          "fileName": "HttpServlet.java",
+          "lineNumber": 729,
+          "className": "javax.servlet.http.HttpServlet",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "internalDoFilter",
+          "fileName": "ApplicationFilterChain.java",
+          "lineNumber": 291,
+          "className": "org.apache.catalina.core.ApplicationFilterChain",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "doFilter",
+          "fileName": "ApplicationFilterChain.java",
+          "lineNumber": 206,
+          "className": "org.apache.catalina.core.ApplicationFilterChain",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "doFilterInternal",
+          "fileName": "OpenEntityManagerInViewFilter.java",
+          "lineNumber": 178,
+          "className": "org.springframework.orm.jpa.support.OpenEntityManagerInViewFilter",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "doFilter",
+          "fileName": "OncePerRequestFilter.java",
+          "lineNumber": 107,
+          "className": "org.springframework.web.filter.OncePerRequestFilter",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "internalDoFilter",
+          "fileName": "ApplicationFilterChain.java",
+          "lineNumber": 239,
+          "className": "org.apache.catalina.core.ApplicationFilterChain",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "doFilter",
+          "fileName": "ApplicationFilterChain.java",
+          "lineNumber": 206,
+          "className": "org.apache.catalina.core.ApplicationFilterChain",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "doFilter",
+          "fileName": "WsFilter.java",
+          "lineNumber": 52,
+          "className": "org.apache.tomcat.websocket.server.WsFilter",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "internalDoFilter",
+          "fileName": "ApplicationFilterChain.java",
+          "lineNumber": 239,
+          "className": "org.apache.catalina.core.ApplicationFilterChain",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "doFilter",
+          "fileName": "ApplicationFilterChain.java",
+          "lineNumber": 206,
+          "className": "org.apache.catalina.core.ApplicationFilterChain",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "invoke",
+          "fileName": "StandardWrapperValve.java",
+          "lineNumber": 219,
+          "className": "org.apache.catalina.core.StandardWrapperValve",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "invoke",
+          "fileName": "StandardContextValve.java",
+          "lineNumber": 106,
+          "className": "org.apache.catalina.core.StandardContextValve",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "invoke",
+          "fileName": "AuthenticatorBase.java",
+          "lineNumber": 502,
+          "className": "org.apache.catalina.authenticator.AuthenticatorBase",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "invoke",
+          "fileName": "StandardHostValve.java",
+          "lineNumber": 142,
+          "className": "org.apache.catalina.core.StandardHostValve",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "invoke",
+          "fileName": "ErrorReportValve.java",
+          "lineNumber": 79,
+          "className": "org.apache.catalina.valves.ErrorReportValve",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "invoke",
+          "fileName": "AbstractAccessLogValve.java",
+          "lineNumber": 617,
+          "className": "org.apache.catalina.valves.AbstractAccessLogValve",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "invoke",
+          "fileName": "StandardEngineValve.java",
+          "lineNumber": 88,
+          "className": "org.apache.catalina.core.StandardEngineValve",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "service",
+          "fileName": "CoyoteAdapter.java",
+          "lineNumber": 518,
+          "className": "org.apache.catalina.connector.CoyoteAdapter",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "process",
+          "fileName": "AbstractHttp11Processor.java",
+          "lineNumber": 1091,
+          "className": "org.apache.coyote.http11.AbstractHttp11Processor",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "process",
+          "fileName": "AbstractProtocol.java",
+          "lineNumber": 668,
+          "className": "org.apache.coyote.AbstractProtocol$AbstractConnectionHandler",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "doRun",
+          "fileName": "NioEndpoint.java",
+          "lineNumber": 1527,
+          "className": "org.apache.tomcat.util.net.NioEndpoint$SocketProcessor",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "run",
+          "fileName": "NioEndpoint.java",
+          "lineNumber": 1484,
+          "className": "org.apache.tomcat.util.net.NioEndpoint$SocketProcessor",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "runWorker",
+          "fileName": "ThreadPoolExecutor.java",
+          "lineNumber": 1142,
+          "className": "java.util.concurrent.ThreadPoolExecutor",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "run",
+          "fileName": "ThreadPoolExecutor.java",
+          "lineNumber": 617,
+          "className": "java.util.concurrent.ThreadPoolExecutor$Worker",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "run",
+          "fileName": "TaskThread.java",
+          "lineNumber": 61,
+          "className": "org.apache.tomcat.util.threads.TaskThread$WrappingRunnable",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "run",
+          "fileName": "Thread.java",
+          "lineNumber": 745,
+          "className": "java.lang.Thread",
+          "nativeMethod": false
+        }
+      ],
+      "serverErrorMessage": {
+        "message": "llave duplicada viola restricción de unicidad «uk_gqa8h98hr4wqv6pnbaymq6tu7»",
+        "file": ".\\src\\backend\\access\\nbtree\\nbtinsert.c",
+        "sqlstate": "23505",
+        "position": 0,
+        "line": 397,
+        "severity": "ERROR",
+        "detail": "Ya existe la llave (codigobarra)=(376).",
+        "hint": null,
+        "routine": "_bt_check_unique",
+        "internalQuery": null,
+        "where": null,
+        "internalPosition": 0
+      },
+      "nextException": null,
+      "sqlstate": "23505",
+      "errorCode": 0,
+      "localizedMessage": "ERROR: llave duplicada viola restricción de unicidad «uk_gqa8h98hr4wqv6pnbaymq6tu7»\n  Detail: Ya existe la llave (codigobarra)=(376).",
+      "message": "ERROR: llave duplicada viola restricción de unicidad «uk_gqa8h98hr4wqv6pnbaymq6tu7»\n  Detail: Ya existe la llave (codigobarra)=(376).",
+      "suppressed": []
+    },
+    "stackTrace": [
+      {
+        "methodName": "convert",
+        "fileName": "SQLStateConversionDelegate.java",
+        "lineNumber": 129,
+        "className": "org.hibernate.exception.internal.SQLStateConversionDelegate",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "convert",
+        "fileName": "StandardSQLExceptionConverter.java",
+        "lineNumber": 49,
+        "className": "org.hibernate.exception.internal.StandardSQLExceptionConverter",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "convert",
+        "fileName": "SqlExceptionHelper.java",
+        "lineNumber": 126,
+        "className": "org.hibernate.engine.jdbc.spi.SqlExceptionHelper",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "convert",
+        "fileName": "SqlExceptionHelper.java",
+        "lineNumber": 112,
+        "className": "org.hibernate.engine.jdbc.spi.SqlExceptionHelper",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "executeUpdate",
+        "fileName": "ResultSetReturnImpl.java",
+        "lineNumber": 190,
+        "className": "org.hibernate.engine.jdbc.internal.ResultSetReturnImpl",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "executeAndExtract",
+        "fileName": "IdentityGenerator.java",
+        "lineNumber": 96,
+        "className": "org.hibernate.id.IdentityGenerator$GetGeneratedKeysDelegate",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "performInsert",
+        "fileName": "AbstractReturningDelegate.java",
+        "lineNumber": 58,
+        "className": "org.hibernate.id.insert.AbstractReturningDelegate",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "insert",
+        "fileName": "AbstractEntityPersister.java",
+        "lineNumber": 3032,
+        "className": "org.hibernate.persister.entity.AbstractEntityPersister",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "insert",
+        "fileName": "AbstractEntityPersister.java",
+        "lineNumber": 3556,
+        "className": "org.hibernate.persister.entity.AbstractEntityPersister",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "execute",
+        "fileName": "EntityIdentityInsertAction.java",
+        "lineNumber": 97,
+        "className": "org.hibernate.action.internal.EntityIdentityInsertAction",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "execute",
+        "fileName": "ActionQueue.java",
+        "lineNumber": 480,
+        "className": "org.hibernate.engine.spi.ActionQueue",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "addResolvedEntityInsertAction",
+        "fileName": "ActionQueue.java",
+        "lineNumber": 191,
+        "className": "org.hibernate.engine.spi.ActionQueue",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "addInsertAction",
+        "fileName": "ActionQueue.java",
+        "lineNumber": 175,
+        "className": "org.hibernate.engine.spi.ActionQueue",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "addAction",
+        "fileName": "ActionQueue.java",
+        "lineNumber": 210,
+        "className": "org.hibernate.engine.spi.ActionQueue",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "addInsertAction",
+        "fileName": "AbstractSaveEventListener.java",
+        "lineNumber": 324,
+        "className": "org.hibernate.event.internal.AbstractSaveEventListener",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "performSaveOrReplicate",
+        "fileName": "AbstractSaveEventListener.java",
+        "lineNumber": 288,
+        "className": "org.hibernate.event.internal.AbstractSaveEventListener",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "performSave",
+        "fileName": "AbstractSaveEventListener.java",
+        "lineNumber": 194,
+        "className": "org.hibernate.event.internal.AbstractSaveEventListener",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "saveWithGeneratedId",
+        "fileName": "AbstractSaveEventListener.java",
+        "lineNumber": 125,
+        "className": "org.hibernate.event.internal.AbstractSaveEventListener",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "saveWithGeneratedId",
+        "fileName": "JpaPersistEventListener.java",
+        "lineNumber": 84,
+        "className": "org.hibernate.jpa.event.internal.core.JpaPersistEventListener",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "entityIsTransient",
+        "fileName": "DefaultPersistEventListener.java",
+        "lineNumber": 206,
+        "className": "org.hibernate.event.internal.DefaultPersistEventListener",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "onPersist",
+        "fileName": "DefaultPersistEventListener.java",
+        "lineNumber": 149,
+        "className": "org.hibernate.event.internal.DefaultPersistEventListener",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "onPersist",
+        "fileName": "DefaultPersistEventListener.java",
+        "lineNumber": 75,
+        "className": "org.hibernate.event.internal.DefaultPersistEventListener",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "firePersist",
+        "fileName": "SessionImpl.java",
+        "lineNumber": 807,
+        "className": "org.hibernate.internal.SessionImpl",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "persist",
+        "fileName": "SessionImpl.java",
+        "lineNumber": 780,
+        "className": "org.hibernate.internal.SessionImpl",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "persist",
+        "fileName": "SessionImpl.java",
+        "lineNumber": 785,
+        "className": "org.hibernate.internal.SessionImpl",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "persist",
+        "fileName": "AbstractEntityManagerImpl.java",
+        "lineNumber": 1181,
+        "className": "org.hibernate.jpa.spi.AbstractEntityManagerImpl",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke0",
+        "fileName": "NativeMethodAccessorImpl.java",
+        "lineNumber": -2,
+        "className": "sun.reflect.NativeMethodAccessorImpl",
+        "nativeMethod": true
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "NativeMethodAccessorImpl.java",
+        "lineNumber": 62,
+        "className": "sun.reflect.NativeMethodAccessorImpl",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "DelegatingMethodAccessorImpl.java",
+        "lineNumber": 43,
+        "className": "sun.reflect.DelegatingMethodAccessorImpl",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "Method.java",
+        "lineNumber": 483,
+        "className": "java.lang.reflect.Method",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "ExtendedEntityManagerCreator.java",
+        "lineNumber": 344,
+        "className": "org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "persist",
+        "fileName": null,
+        "lineNumber": -1,
+        "className": "com.sun.proxy.$Proxy47",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke0",
+        "fileName": "NativeMethodAccessorImpl.java",
+        "lineNumber": -2,
+        "className": "sun.reflect.NativeMethodAccessorImpl",
+        "nativeMethod": true
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "NativeMethodAccessorImpl.java",
+        "lineNumber": 62,
+        "className": "sun.reflect.NativeMethodAccessorImpl",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "DelegatingMethodAccessorImpl.java",
+        "lineNumber": 43,
+        "className": "sun.reflect.DelegatingMethodAccessorImpl",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "Method.java",
+        "lineNumber": 483,
+        "className": "java.lang.reflect.Method",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "SharedEntityManagerCreator.java",
+        "lineNumber": 294,
+        "className": "org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "persist",
+        "fileName": null,
+        "lineNumber": -1,
+        "className": "com.sun.proxy.$Proxy47",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "insertar",
+        "fileName": "DAOGenerico.java",
+        "lineNumber": 18,
+        "className": "py.enterprisesoft.api.dao.DAOGenerico",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "guardar",
+        "fileName": "DAOGenerico.java",
+        "lineNumber": 41,
+        "className": "py.enterprisesoft.api.dao.DAOGenerico",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "<generated>",
+        "lineNumber": -1,
+        "className": "py.enterprisesoft.api.dao.DAOGenerico$$FastClassBySpringCGLIB$$5ff1217c",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "MethodProxy.java",
+        "lineNumber": 204,
+        "className": "org.springframework.cglib.proxy.MethodProxy",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invokeJoinpoint",
+        "fileName": "CglibAopProxy.java",
+        "lineNumber": 720,
+        "className": "org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "proceed",
+        "fileName": "ReflectiveMethodInvocation.java",
+        "lineNumber": 157,
+        "className": "org.springframework.aop.framework.ReflectiveMethodInvocation",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "PersistenceExceptionTranslationInterceptor.java",
+        "lineNumber": 136,
+        "className": "org.springframework.dao.support.PersistenceExceptionTranslationInterceptor",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "proceed",
+        "fileName": "ReflectiveMethodInvocation.java",
+        "lineNumber": 179,
+        "className": "org.springframework.aop.framework.ReflectiveMethodInvocation",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "intercept",
+        "fileName": "CglibAopProxy.java",
+        "lineNumber": 655,
+        "className": "org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "guardar",
+        "fileName": "<generated>",
+        "lineNumber": -1,
+        "className": "py.enterprisesoft.api.dao.ProductoDAO$$EnhancerBySpringCGLIB$$25a3fd04",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "registrar",
+        "fileName": "ProductoController.java",
+        "lineNumber": 84,
+        "className": "py.enterprisesoft.api.controller.ProductoController",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "<generated>",
+        "lineNumber": -1,
+        "className": "py.enterprisesoft.api.controller.ProductoController$$FastClassBySpringCGLIB$$20bc2b1c",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "MethodProxy.java",
+        "lineNumber": 204,
+        "className": "org.springframework.cglib.proxy.MethodProxy",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invokeJoinpoint",
+        "fileName": "CglibAopProxy.java",
+        "lineNumber": 720,
+        "className": "org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "proceed",
+        "fileName": "ReflectiveMethodInvocation.java",
+        "lineNumber": 157,
+        "className": "org.springframework.aop.framework.ReflectiveMethodInvocation",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "proceedWithInvocation",
+        "fileName": "TransactionInterceptor.java",
+        "lineNumber": 99,
+        "className": "org.springframework.transaction.interceptor.TransactionInterceptor$1",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invokeWithinTransaction",
+        "fileName": "TransactionAspectSupport.java",
+        "lineNumber": 281,
+        "className": "org.springframework.transaction.interceptor.TransactionAspectSupport",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "TransactionInterceptor.java",
+        "lineNumber": 96,
+        "className": "org.springframework.transaction.interceptor.TransactionInterceptor",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "proceed",
+        "fileName": "ReflectiveMethodInvocation.java",
+        "lineNumber": 179,
+        "className": "org.springframework.aop.framework.ReflectiveMethodInvocation",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "intercept",
+        "fileName": "CglibAopProxy.java",
+        "lineNumber": 655,
+        "className": "org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "registrar",
+        "fileName": "<generated>",
+        "lineNumber": -1,
+        "className": "py.enterprisesoft.api.controller.ProductoController$$EnhancerBySpringCGLIB$$dac54aed",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke0",
+        "fileName": "NativeMethodAccessorImpl.java",
+        "lineNumber": -2,
+        "className": "sun.reflect.NativeMethodAccessorImpl",
+        "nativeMethod": true
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "NativeMethodAccessorImpl.java",
+        "lineNumber": 62,
+        "className": "sun.reflect.NativeMethodAccessorImpl",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "DelegatingMethodAccessorImpl.java",
+        "lineNumber": 43,
+        "className": "sun.reflect.DelegatingMethodAccessorImpl",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "Method.java",
+        "lineNumber": 483,
+        "className": "java.lang.reflect.Method",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "doInvoke",
+        "fileName": "InvocableHandlerMethod.java",
+        "lineNumber": 221,
+        "className": "org.springframework.web.method.support.InvocableHandlerMethod",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invokeForRequest",
+        "fileName": "InvocableHandlerMethod.java",
+        "lineNumber": 136,
+        "className": "org.springframework.web.method.support.InvocableHandlerMethod",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invokeAndHandle",
+        "fileName": "ServletInvocableHandlerMethod.java",
+        "lineNumber": 110,
+        "className": "org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invokeHandlerMethod",
+        "fileName": "RequestMappingHandlerAdapter.java",
+        "lineNumber": 832,
+        "className": "org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "handleInternal",
+        "fileName": "RequestMappingHandlerAdapter.java",
+        "lineNumber": 743,
+        "className": "org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "handle",
+        "fileName": "AbstractHandlerMethodAdapter.java",
+        "lineNumber": 85,
+        "className": "org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "doDispatch",
+        "fileName": "DispatcherServlet.java",
+        "lineNumber": 961,
+        "className": "org.springframework.web.servlet.DispatcherServlet",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "doService",
+        "fileName": "DispatcherServlet.java",
+        "lineNumber": 895,
+        "className": "org.springframework.web.servlet.DispatcherServlet",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "processRequest",
+        "fileName": "FrameworkServlet.java",
+        "lineNumber": 967,
+        "className": "org.springframework.web.servlet.FrameworkServlet",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "doPost",
+        "fileName": "FrameworkServlet.java",
+        "lineNumber": 869,
+        "className": "org.springframework.web.servlet.FrameworkServlet",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "service",
+        "fileName": "HttpServlet.java",
+        "lineNumber": 648,
+        "className": "javax.servlet.http.HttpServlet",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "service",
+        "fileName": "FrameworkServlet.java",
+        "lineNumber": 843,
+        "className": "org.springframework.web.servlet.FrameworkServlet",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "service",
+        "fileName": "HttpServlet.java",
+        "lineNumber": 729,
+        "className": "javax.servlet.http.HttpServlet",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "internalDoFilter",
+        "fileName": "ApplicationFilterChain.java",
+        "lineNumber": 291,
+        "className": "org.apache.catalina.core.ApplicationFilterChain",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "doFilter",
+        "fileName": "ApplicationFilterChain.java",
+        "lineNumber": 206,
+        "className": "org.apache.catalina.core.ApplicationFilterChain",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "doFilterInternal",
+        "fileName": "OpenEntityManagerInViewFilter.java",
+        "lineNumber": 178,
+        "className": "org.springframework.orm.jpa.support.OpenEntityManagerInViewFilter",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "doFilter",
+        "fileName": "OncePerRequestFilter.java",
+        "lineNumber": 107,
+        "className": "org.springframework.web.filter.OncePerRequestFilter",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "internalDoFilter",
+        "fileName": "ApplicationFilterChain.java",
+        "lineNumber": 239,
+        "className": "org.apache.catalina.core.ApplicationFilterChain",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "doFilter",
+        "fileName": "ApplicationFilterChain.java",
+        "lineNumber": 206,
+        "className": "org.apache.catalina.core.ApplicationFilterChain",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "doFilter",
+        "fileName": "WsFilter.java",
+        "lineNumber": 52,
+        "className": "org.apache.tomcat.websocket.server.WsFilter",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "internalDoFilter",
+        "fileName": "ApplicationFilterChain.java",
+        "lineNumber": 239,
+        "className": "org.apache.catalina.core.ApplicationFilterChain",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "doFilter",
+        "fileName": "ApplicationFilterChain.java",
+        "lineNumber": 206,
+        "className": "org.apache.catalina.core.ApplicationFilterChain",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "StandardWrapperValve.java",
+        "lineNumber": 219,
+        "className": "org.apache.catalina.core.StandardWrapperValve",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "StandardContextValve.java",
+        "lineNumber": 106,
+        "className": "org.apache.catalina.core.StandardContextValve",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "AuthenticatorBase.java",
+        "lineNumber": 502,
+        "className": "org.apache.catalina.authenticator.AuthenticatorBase",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "StandardHostValve.java",
+        "lineNumber": 142,
+        "className": "org.apache.catalina.core.StandardHostValve",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "ErrorReportValve.java",
+        "lineNumber": 79,
+        "className": "org.apache.catalina.valves.ErrorReportValve",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "AbstractAccessLogValve.java",
+        "lineNumber": 617,
+        "className": "org.apache.catalina.valves.AbstractAccessLogValve",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "StandardEngineValve.java",
+        "lineNumber": 88,
+        "className": "org.apache.catalina.core.StandardEngineValve",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "service",
+        "fileName": "CoyoteAdapter.java",
+        "lineNumber": 518,
+        "className": "org.apache.catalina.connector.CoyoteAdapter",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "process",
+        "fileName": "AbstractHttp11Processor.java",
+        "lineNumber": 1091,
+        "className": "org.apache.coyote.http11.AbstractHttp11Processor",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "process",
+        "fileName": "AbstractProtocol.java",
+        "lineNumber": 668,
+        "className": "org.apache.coyote.AbstractProtocol$AbstractConnectionHandler",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "doRun",
+        "fileName": "NioEndpoint.java",
+        "lineNumber": 1527,
+        "className": "org.apache.tomcat.util.net.NioEndpoint$SocketProcessor",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "run",
+        "fileName": "NioEndpoint.java",
+        "lineNumber": 1484,
+        "className": "org.apache.tomcat.util.net.NioEndpoint$SocketProcessor",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "runWorker",
+        "fileName": "ThreadPoolExecutor.java",
+        "lineNumber": 1142,
+        "className": "java.util.concurrent.ThreadPoolExecutor",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "run",
+        "fileName": "ThreadPoolExecutor.java",
+        "lineNumber": 617,
+        "className": "java.util.concurrent.ThreadPoolExecutor$Worker",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "run",
+        "fileName": "TaskThread.java",
+        "lineNumber": 61,
+        "className": "org.apache.tomcat.util.threads.TaskThread$WrappingRunnable",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "run",
+        "fileName": "Thread.java",
+        "lineNumber": 745,
+        "className": "java.lang.Thread",
+        "nativeMethod": false
+      }
+    ],
+    "sql": "n/a",
+    "constraintName": null,
+    "sqlexception": {
+      "cause": null,
+      "stackTrace": [
+        {
+          "methodName": "receiveErrorResponse",
+          "fileName": "QueryExecutorImpl.java",
+          "lineNumber": 2102,
+          "className": "org.postgresql.core.v3.QueryExecutorImpl",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "processResults",
+          "fileName": "QueryExecutorImpl.java",
+          "lineNumber": 1835,
+          "className": "org.postgresql.core.v3.QueryExecutorImpl",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "execute",
+          "fileName": "QueryExecutorImpl.java",
+          "lineNumber": 257,
+          "className": "org.postgresql.core.v3.QueryExecutorImpl",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "execute",
+          "fileName": "AbstractJdbc2Statement.java",
+          "lineNumber": 500,
+          "className": "org.postgresql.jdbc2.AbstractJdbc2Statement",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "executeWithFlags",
+          "fileName": "AbstractJdbc2Statement.java",
+          "lineNumber": 388,
+          "className": "org.postgresql.jdbc2.AbstractJdbc2Statement",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "executeUpdate",
+          "fileName": "AbstractJdbc2Statement.java",
+          "lineNumber": 334,
+          "className": "org.postgresql.jdbc2.AbstractJdbc2Statement",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "executeUpdate",
+          "fileName": "ResultSetReturnImpl.java",
+          "lineNumber": 187,
+          "className": "org.hibernate.engine.jdbc.internal.ResultSetReturnImpl",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "executeAndExtract",
+          "fileName": "IdentityGenerator.java",
+          "lineNumber": 96,
+          "className": "org.hibernate.id.IdentityGenerator$GetGeneratedKeysDelegate",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "performInsert",
+          "fileName": "AbstractReturningDelegate.java",
+          "lineNumber": 58,
+          "className": "org.hibernate.id.insert.AbstractReturningDelegate",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "insert",
+          "fileName": "AbstractEntityPersister.java",
+          "lineNumber": 3032,
+          "className": "org.hibernate.persister.entity.AbstractEntityPersister",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "insert",
+          "fileName": "AbstractEntityPersister.java",
+          "lineNumber": 3556,
+          "className": "org.hibernate.persister.entity.AbstractEntityPersister",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "execute",
+          "fileName": "EntityIdentityInsertAction.java",
+          "lineNumber": 97,
+          "className": "org.hibernate.action.internal.EntityIdentityInsertAction",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "execute",
+          "fileName": "ActionQueue.java",
+          "lineNumber": 480,
+          "className": "org.hibernate.engine.spi.ActionQueue",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "addResolvedEntityInsertAction",
+          "fileName": "ActionQueue.java",
+          "lineNumber": 191,
+          "className": "org.hibernate.engine.spi.ActionQueue",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "addInsertAction",
+          "fileName": "ActionQueue.java",
+          "lineNumber": 175,
+          "className": "org.hibernate.engine.spi.ActionQueue",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "addAction",
+          "fileName": "ActionQueue.java",
+          "lineNumber": 210,
+          "className": "org.hibernate.engine.spi.ActionQueue",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "addInsertAction",
+          "fileName": "AbstractSaveEventListener.java",
+          "lineNumber": 324,
+          "className": "org.hibernate.event.internal.AbstractSaveEventListener",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "performSaveOrReplicate",
+          "fileName": "AbstractSaveEventListener.java",
+          "lineNumber": 288,
+          "className": "org.hibernate.event.internal.AbstractSaveEventListener",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "performSave",
+          "fileName": "AbstractSaveEventListener.java",
+          "lineNumber": 194,
+          "className": "org.hibernate.event.internal.AbstractSaveEventListener",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "saveWithGeneratedId",
+          "fileName": "AbstractSaveEventListener.java",
+          "lineNumber": 125,
+          "className": "org.hibernate.event.internal.AbstractSaveEventListener",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "saveWithGeneratedId",
+          "fileName": "JpaPersistEventListener.java",
+          "lineNumber": 84,
+          "className": "org.hibernate.jpa.event.internal.core.JpaPersistEventListener",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "entityIsTransient",
+          "fileName": "DefaultPersistEventListener.java",
+          "lineNumber": 206,
+          "className": "org.hibernate.event.internal.DefaultPersistEventListener",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "onPersist",
+          "fileName": "DefaultPersistEventListener.java",
+          "lineNumber": 149,
+          "className": "org.hibernate.event.internal.DefaultPersistEventListener",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "onPersist",
+          "fileName": "DefaultPersistEventListener.java",
+          "lineNumber": 75,
+          "className": "org.hibernate.event.internal.DefaultPersistEventListener",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "firePersist",
+          "fileName": "SessionImpl.java",
+          "lineNumber": 807,
+          "className": "org.hibernate.internal.SessionImpl",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "persist",
+          "fileName": "SessionImpl.java",
+          "lineNumber": 780,
+          "className": "org.hibernate.internal.SessionImpl",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "persist",
+          "fileName": "SessionImpl.java",
+          "lineNumber": 785,
+          "className": "org.hibernate.internal.SessionImpl",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "persist",
+          "fileName": "AbstractEntityManagerImpl.java",
+          "lineNumber": 1181,
+          "className": "org.hibernate.jpa.spi.AbstractEntityManagerImpl",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "invoke0",
+          "fileName": "NativeMethodAccessorImpl.java",
+          "lineNumber": -2,
+          "className": "sun.reflect.NativeMethodAccessorImpl",
+          "nativeMethod": true
+        },
+        {
+          "methodName": "invoke",
+          "fileName": "NativeMethodAccessorImpl.java",
+          "lineNumber": 62,
+          "className": "sun.reflect.NativeMethodAccessorImpl",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "invoke",
+          "fileName": "DelegatingMethodAccessorImpl.java",
+          "lineNumber": 43,
+          "className": "sun.reflect.DelegatingMethodAccessorImpl",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "invoke",
+          "fileName": "Method.java",
+          "lineNumber": 483,
+          "className": "java.lang.reflect.Method",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "invoke",
+          "fileName": "ExtendedEntityManagerCreator.java",
+          "lineNumber": 344,
+          "className": "org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "persist",
+          "fileName": null,
+          "lineNumber": -1,
+          "className": "com.sun.proxy.$Proxy47",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "invoke0",
+          "fileName": "NativeMethodAccessorImpl.java",
+          "lineNumber": -2,
+          "className": "sun.reflect.NativeMethodAccessorImpl",
+          "nativeMethod": true
+        },
+        {
+          "methodName": "invoke",
+          "fileName": "NativeMethodAccessorImpl.java",
+          "lineNumber": 62,
+          "className": "sun.reflect.NativeMethodAccessorImpl",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "invoke",
+          "fileName": "DelegatingMethodAccessorImpl.java",
+          "lineNumber": 43,
+          "className": "sun.reflect.DelegatingMethodAccessorImpl",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "invoke",
+          "fileName": "Method.java",
+          "lineNumber": 483,
+          "className": "java.lang.reflect.Method",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "invoke",
+          "fileName": "SharedEntityManagerCreator.java",
+          "lineNumber": 294,
+          "className": "org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "persist",
+          "fileName": null,
+          "lineNumber": -1,
+          "className": "com.sun.proxy.$Proxy47",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "insertar",
+          "fileName": "DAOGenerico.java",
+          "lineNumber": 18,
+          "className": "py.enterprisesoft.api.dao.DAOGenerico",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "guardar",
+          "fileName": "DAOGenerico.java",
+          "lineNumber": 41,
+          "className": "py.enterprisesoft.api.dao.DAOGenerico",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "invoke",
+          "fileName": "<generated>",
+          "lineNumber": -1,
+          "className": "py.enterprisesoft.api.dao.DAOGenerico$$FastClassBySpringCGLIB$$5ff1217c",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "invoke",
+          "fileName": "MethodProxy.java",
+          "lineNumber": 204,
+          "className": "org.springframework.cglib.proxy.MethodProxy",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "invokeJoinpoint",
+          "fileName": "CglibAopProxy.java",
+          "lineNumber": 720,
+          "className": "org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "proceed",
+          "fileName": "ReflectiveMethodInvocation.java",
+          "lineNumber": 157,
+          "className": "org.springframework.aop.framework.ReflectiveMethodInvocation",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "invoke",
+          "fileName": "PersistenceExceptionTranslationInterceptor.java",
+          "lineNumber": 136,
+          "className": "org.springframework.dao.support.PersistenceExceptionTranslationInterceptor",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "proceed",
+          "fileName": "ReflectiveMethodInvocation.java",
+          "lineNumber": 179,
+          "className": "org.springframework.aop.framework.ReflectiveMethodInvocation",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "intercept",
+          "fileName": "CglibAopProxy.java",
+          "lineNumber": 655,
+          "className": "org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "guardar",
+          "fileName": "<generated>",
+          "lineNumber": -1,
+          "className": "py.enterprisesoft.api.dao.ProductoDAO$$EnhancerBySpringCGLIB$$25a3fd04",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "registrar",
+          "fileName": "ProductoController.java",
+          "lineNumber": 84,
+          "className": "py.enterprisesoft.api.controller.ProductoController",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "invoke",
+          "fileName": "<generated>",
+          "lineNumber": -1,
+          "className": "py.enterprisesoft.api.controller.ProductoController$$FastClassBySpringCGLIB$$20bc2b1c",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "invoke",
+          "fileName": "MethodProxy.java",
+          "lineNumber": 204,
+          "className": "org.springframework.cglib.proxy.MethodProxy",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "invokeJoinpoint",
+          "fileName": "CglibAopProxy.java",
+          "lineNumber": 720,
+          "className": "org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "proceed",
+          "fileName": "ReflectiveMethodInvocation.java",
+          "lineNumber": 157,
+          "className": "org.springframework.aop.framework.ReflectiveMethodInvocation",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "proceedWithInvocation",
+          "fileName": "TransactionInterceptor.java",
+          "lineNumber": 99,
+          "className": "org.springframework.transaction.interceptor.TransactionInterceptor$1",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "invokeWithinTransaction",
+          "fileName": "TransactionAspectSupport.java",
+          "lineNumber": 281,
+          "className": "org.springframework.transaction.interceptor.TransactionAspectSupport",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "invoke",
+          "fileName": "TransactionInterceptor.java",
+          "lineNumber": 96,
+          "className": "org.springframework.transaction.interceptor.TransactionInterceptor",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "proceed",
+          "fileName": "ReflectiveMethodInvocation.java",
+          "lineNumber": 179,
+          "className": "org.springframework.aop.framework.ReflectiveMethodInvocation",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "intercept",
+          "fileName": "CglibAopProxy.java",
+          "lineNumber": 655,
+          "className": "org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "registrar",
+          "fileName": "<generated>",
+          "lineNumber": -1,
+          "className": "py.enterprisesoft.api.controller.ProductoController$$EnhancerBySpringCGLIB$$dac54aed",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "invoke0",
+          "fileName": "NativeMethodAccessorImpl.java",
+          "lineNumber": -2,
+          "className": "sun.reflect.NativeMethodAccessorImpl",
+          "nativeMethod": true
+        },
+        {
+          "methodName": "invoke",
+          "fileName": "NativeMethodAccessorImpl.java",
+          "lineNumber": 62,
+          "className": "sun.reflect.NativeMethodAccessorImpl",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "invoke",
+          "fileName": "DelegatingMethodAccessorImpl.java",
+          "lineNumber": 43,
+          "className": "sun.reflect.DelegatingMethodAccessorImpl",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "invoke",
+          "fileName": "Method.java",
+          "lineNumber": 483,
+          "className": "java.lang.reflect.Method",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "doInvoke",
+          "fileName": "InvocableHandlerMethod.java",
+          "lineNumber": 221,
+          "className": "org.springframework.web.method.support.InvocableHandlerMethod",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "invokeForRequest",
+          "fileName": "InvocableHandlerMethod.java",
+          "lineNumber": 136,
+          "className": "org.springframework.web.method.support.InvocableHandlerMethod",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "invokeAndHandle",
+          "fileName": "ServletInvocableHandlerMethod.java",
+          "lineNumber": 110,
+          "className": "org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "invokeHandlerMethod",
+          "fileName": "RequestMappingHandlerAdapter.java",
+          "lineNumber": 832,
+          "className": "org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "handleInternal",
+          "fileName": "RequestMappingHandlerAdapter.java",
+          "lineNumber": 743,
+          "className": "org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "handle",
+          "fileName": "AbstractHandlerMethodAdapter.java",
+          "lineNumber": 85,
+          "className": "org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "doDispatch",
+          "fileName": "DispatcherServlet.java",
+          "lineNumber": 961,
+          "className": "org.springframework.web.servlet.DispatcherServlet",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "doService",
+          "fileName": "DispatcherServlet.java",
+          "lineNumber": 895,
+          "className": "org.springframework.web.servlet.DispatcherServlet",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "processRequest",
+          "fileName": "FrameworkServlet.java",
+          "lineNumber": 967,
+          "className": "org.springframework.web.servlet.FrameworkServlet",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "doPost",
+          "fileName": "FrameworkServlet.java",
+          "lineNumber": 869,
+          "className": "org.springframework.web.servlet.FrameworkServlet",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "service",
+          "fileName": "HttpServlet.java",
+          "lineNumber": 648,
+          "className": "javax.servlet.http.HttpServlet",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "service",
+          "fileName": "FrameworkServlet.java",
+          "lineNumber": 843,
+          "className": "org.springframework.web.servlet.FrameworkServlet",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "service",
+          "fileName": "HttpServlet.java",
+          "lineNumber": 729,
+          "className": "javax.servlet.http.HttpServlet",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "internalDoFilter",
+          "fileName": "ApplicationFilterChain.java",
+          "lineNumber": 291,
+          "className": "org.apache.catalina.core.ApplicationFilterChain",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "doFilter",
+          "fileName": "ApplicationFilterChain.java",
+          "lineNumber": 206,
+          "className": "org.apache.catalina.core.ApplicationFilterChain",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "doFilterInternal",
+          "fileName": "OpenEntityManagerInViewFilter.java",
+          "lineNumber": 178,
+          "className": "org.springframework.orm.jpa.support.OpenEntityManagerInViewFilter",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "doFilter",
+          "fileName": "OncePerRequestFilter.java",
+          "lineNumber": 107,
+          "className": "org.springframework.web.filter.OncePerRequestFilter",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "internalDoFilter",
+          "fileName": "ApplicationFilterChain.java",
+          "lineNumber": 239,
+          "className": "org.apache.catalina.core.ApplicationFilterChain",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "doFilter",
+          "fileName": "ApplicationFilterChain.java",
+          "lineNumber": 206,
+          "className": "org.apache.catalina.core.ApplicationFilterChain",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "doFilter",
+          "fileName": "WsFilter.java",
+          "lineNumber": 52,
+          "className": "org.apache.tomcat.websocket.server.WsFilter",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "internalDoFilter",
+          "fileName": "ApplicationFilterChain.java",
+          "lineNumber": 239,
+          "className": "org.apache.catalina.core.ApplicationFilterChain",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "doFilter",
+          "fileName": "ApplicationFilterChain.java",
+          "lineNumber": 206,
+          "className": "org.apache.catalina.core.ApplicationFilterChain",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "invoke",
+          "fileName": "StandardWrapperValve.java",
+          "lineNumber": 219,
+          "className": "org.apache.catalina.core.StandardWrapperValve",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "invoke",
+          "fileName": "StandardContextValve.java",
+          "lineNumber": 106,
+          "className": "org.apache.catalina.core.StandardContextValve",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "invoke",
+          "fileName": "AuthenticatorBase.java",
+          "lineNumber": 502,
+          "className": "org.apache.catalina.authenticator.AuthenticatorBase",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "invoke",
+          "fileName": "StandardHostValve.java",
+          "lineNumber": 142,
+          "className": "org.apache.catalina.core.StandardHostValve",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "invoke",
+          "fileName": "ErrorReportValve.java",
+          "lineNumber": 79,
+          "className": "org.apache.catalina.valves.ErrorReportValve",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "invoke",
+          "fileName": "AbstractAccessLogValve.java",
+          "lineNumber": 617,
+          "className": "org.apache.catalina.valves.AbstractAccessLogValve",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "invoke",
+          "fileName": "StandardEngineValve.java",
+          "lineNumber": 88,
+          "className": "org.apache.catalina.core.StandardEngineValve",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "service",
+          "fileName": "CoyoteAdapter.java",
+          "lineNumber": 518,
+          "className": "org.apache.catalina.connector.CoyoteAdapter",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "process",
+          "fileName": "AbstractHttp11Processor.java",
+          "lineNumber": 1091,
+          "className": "org.apache.coyote.http11.AbstractHttp11Processor",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "process",
+          "fileName": "AbstractProtocol.java",
+          "lineNumber": 668,
+          "className": "org.apache.coyote.AbstractProtocol$AbstractConnectionHandler",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "doRun",
+          "fileName": "NioEndpoint.java",
+          "lineNumber": 1527,
+          "className": "org.apache.tomcat.util.net.NioEndpoint$SocketProcessor",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "run",
+          "fileName": "NioEndpoint.java",
+          "lineNumber": 1484,
+          "className": "org.apache.tomcat.util.net.NioEndpoint$SocketProcessor",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "runWorker",
+          "fileName": "ThreadPoolExecutor.java",
+          "lineNumber": 1142,
+          "className": "java.util.concurrent.ThreadPoolExecutor",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "run",
+          "fileName": "ThreadPoolExecutor.java",
+          "lineNumber": 617,
+          "className": "java.util.concurrent.ThreadPoolExecutor$Worker",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "run",
+          "fileName": "TaskThread.java",
+          "lineNumber": 61,
+          "className": "org.apache.tomcat.util.threads.TaskThread$WrappingRunnable",
+          "nativeMethod": false
+        },
+        {
+          "methodName": "run",
+          "fileName": "Thread.java",
+          "lineNumber": 745,
+          "className": "java.lang.Thread",
+          "nativeMethod": false
+        }
+      ],
+      "serverErrorMessage": {
+        "message": "llave duplicada viola restricción de unicidad «uk_gqa8h98hr4wqv6pnbaymq6tu7»",
+        "file": ".\\src\\backend\\access\\nbtree\\nbtinsert.c",
+        "sqlstate": "23505",
+        "position": 0,
+        "line": 397,
+        "severity": "ERROR",
+        "detail": "Ya existe la llave (codigobarra)=(376).",
+        "hint": null,
+        "routine": "_bt_check_unique",
+        "internalQuery": null,
+        "where": null,
+        "internalPosition": 0
+      },
+      "nextException": null,
+      "sqlstate": "23505",
+      "errorCode": 0,
+      "localizedMessage": "ERROR: llave duplicada viola restricción de unicidad «uk_gqa8h98hr4wqv6pnbaymq6tu7»\n  Detail: Ya existe la llave (codigobarra)=(376).",
+      "message": "ERROR: llave duplicada viola restricción de unicidad «uk_gqa8h98hr4wqv6pnbaymq6tu7»\n  Detail: Ya existe la llave (codigobarra)=(376).",
+      "suppressed": []
+    },
+    "sqlstate": "23505",
+    "errorCode": 0,
+    "localizedMessage": "could not execute statement",
+    "message": "could not execute statement",
+    "suppressed": []
+  },
+  "stackTrace": [
+    {
+      "methodName": "convertHibernateAccessException",
+      "fileName": "HibernateJpaDialect.java",
+      "lineNumber": 259,
+      "className": "org.springframework.orm.jpa.vendor.HibernateJpaDialect",
+      "nativeMethod": false
+    },
+    {
+      "methodName": "translateExceptionIfPossible",
+      "fileName": "HibernateJpaDialect.java",
+      "lineNumber": 225,
+      "className": "org.springframework.orm.jpa.vendor.HibernateJpaDialect",
+      "nativeMethod": false
+    },
+    {
+      "methodName": "translateExceptionIfPossible",
+      "fileName": "AbstractEntityManagerFactoryBean.java",
+      "lineNumber": 436,
+      "className": "org.springframework.orm.jpa.AbstractEntityManagerFactoryBean",
+      "nativeMethod": false
+    },
+    {
+      "methodName": "translateExceptionIfPossible",
+      "fileName": "ChainedPersistenceExceptionTranslator.java",
+      "lineNumber": 59,
+      "className": "org.springframework.dao.support.ChainedPersistenceExceptionTranslator",
+      "nativeMethod": false
+    },
+    {
+      "methodName": "translateIfNecessary",
+      "fileName": "DataAccessUtils.java",
+      "lineNumber": 213,
+      "className": "org.springframework.dao.support.DataAccessUtils",
+      "nativeMethod": false
+    },
+    {
+      "methodName": "invoke",
+      "fileName": "PersistenceExceptionTranslationInterceptor.java",
+      "lineNumber": 147,
+      "className": "org.springframework.dao.support.PersistenceExceptionTranslationInterceptor",
+      "nativeMethod": false
+    },
+    {
+      "methodName": "proceed",
+      "fileName": "ReflectiveMethodInvocation.java",
+      "lineNumber": 179,
+      "className": "org.springframework.aop.framework.ReflectiveMethodInvocation",
+      "nativeMethod": false
+    },
+    {
+      "methodName": "intercept",
+      "fileName": "CglibAopProxy.java",
+      "lineNumber": 655,
+      "className": "org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor",
+      "nativeMethod": false
+    },
+    {
+      "methodName": "guardar",
+      "fileName": "<generated>",
+      "lineNumber": -1,
+      "className": "py.enterprisesoft.api.dao.ProductoDAO$$EnhancerBySpringCGLIB$$25a3fd04",
+      "nativeMethod": false
+    },
+    {
+      "methodName": "registrar",
+      "fileName": "ProductoController.java",
+      "lineNumber": 84,
+      "className": "py.enterprisesoft.api.controller.ProductoController",
+      "nativeMethod": false
+    },
+    {
+      "methodName": "invoke",
+      "fileName": "<generated>",
+      "lineNumber": -1,
+      "className": "py.enterprisesoft.api.controller.ProductoController$$FastClassBySpringCGLIB$$20bc2b1c",
+      "nativeMethod": false
+    },
+    {
+      "methodName": "invoke",
+      "fileName": "MethodProxy.java",
+      "lineNumber": 204,
+      "className": "org.springframework.cglib.proxy.MethodProxy",
+      "nativeMethod": false
+    },
+    {
+      "methodName": "invokeJoinpoint",
+      "fileName": "CglibAopProxy.java",
+      "lineNumber": 720,
+      "className": "org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation",
+      "nativeMethod": false
+    },
+    {
+      "methodName": "proceed",
+      "fileName": "ReflectiveMethodInvocation.java",
+      "lineNumber": 157,
+      "className": "org.springframework.aop.framework.ReflectiveMethodInvocation",
+      "nativeMethod": false
+    },
+    {
+      "methodName": "proceedWithInvocation",
+      "fileName": "TransactionInterceptor.java",
+      "lineNumber": 99,
+      "className": "org.springframework.transaction.interceptor.TransactionInterceptor$1",
+      "nativeMethod": false
+    },
+    {
+      "methodName": "invokeWithinTransaction",
+      "fileName": "TransactionAspectSupport.java",
+      "lineNumber": 281,
+      "className": "org.springframework.transaction.interceptor.TransactionAspectSupport",
+      "nativeMethod": false
+    },
+    {
+      "methodName": "invoke",
+      "fileName": "TransactionInterceptor.java",
+      "lineNumber": 96,
+      "className": "org.springframework.transaction.interceptor.TransactionInterceptor",
+      "nativeMethod": false
+    },
+    {
+      "methodName": "proceed",
+      "fileName": "ReflectiveMethodInvocation.java",
+      "lineNumber": 179,
+      "className": "org.springframework.aop.framework.ReflectiveMethodInvocation",
+      "nativeMethod": false
+    },
+    {
+      "methodName": "intercept",
+      "fileName": "CglibAopProxy.java",
+      "lineNumber": 655,
+      "className": "org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor",
+      "nativeMethod": false
+    },
+    {
+      "methodName": "registrar",
+      "fileName": "<generated>",
+      "lineNumber": -1,
+      "className": "py.enterprisesoft.api.controller.ProductoController$$EnhancerBySpringCGLIB$$dac54aed",
+      "nativeMethod": false
+    },
+    {
+      "methodName": "invoke0",
+      "fileName": "NativeMethodAccessorImpl.java",
+      "lineNumber": -2,
+      "className": "sun.reflect.NativeMethodAccessorImpl",
+      "nativeMethod": true
+    },
+    {
+      "methodName": "invoke",
+      "fileName": "NativeMethodAccessorImpl.java",
+      "lineNumber": 62,
+      "className": "sun.reflect.NativeMethodAccessorImpl",
+      "nativeMethod": false
+    },
+    {
+      "methodName": "invoke",
+      "fileName": "DelegatingMethodAccessorImpl.java",
+      "lineNumber": 43,
+      "className": "sun.reflect.DelegatingMethodAccessorImpl",
+      "nativeMethod": false
+    },
+    {
+      "methodName": "invoke",
+      "fileName": "Method.java",
+      "lineNumber": 483,
+      "className": "java.lang.reflect.Method",
+      "nativeMethod": false
+    },
+    {
+      "methodName": "doInvoke",
+      "fileName": "InvocableHandlerMethod.java",
+      "lineNumber": 221,
+      "className": "org.springframework.web.method.support.InvocableHandlerMethod",
+      "nativeMethod": false
+    },
+    {
+      "methodName": "invokeForRequest",
+      "fileName": "InvocableHandlerMethod.java",
+      "lineNumber": 136,
+      "className": "org.springframework.web.method.support.InvocableHandlerMethod",
+      "nativeMethod": false
+    },
+    {
+      "methodName": "invokeAndHandle",
+      "fileName": "ServletInvocableHandlerMethod.java",
+      "lineNumber": 110,
+      "className": "org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod",
+      "nativeMethod": false
+    },
+    {
+      "methodName": "invokeHandlerMethod",
+      "fileName": "RequestMappingHandlerAdapter.java",
+      "lineNumber": 832,
+      "className": "org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter",
+      "nativeMethod": false
+    },
+    {
+      "methodName": "handleInternal",
+      "fileName": "RequestMappingHandlerAdapter.java",
+      "lineNumber": 743,
+      "className": "org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter",
+      "nativeMethod": false
+    },
+    {
+      "methodName": "handle",
+      "fileName": "AbstractHandlerMethodAdapter.java",
+      "lineNumber": 85,
+      "className": "org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter",
+      "nativeMethod": false
+    },
+    {
+      "methodName": "doDispatch",
+      "fileName": "DispatcherServlet.java",
+      "lineNumber": 961,
+      "className": "org.springframework.web.servlet.DispatcherServlet",
+      "nativeMethod": false
+    },
+    {
+      "methodName": "doService",
+      "fileName": "DispatcherServlet.java",
+      "lineNumber": 895,
+      "className": "org.springframework.web.servlet.DispatcherServlet",
+      "nativeMethod": false
+    },
+    {
+      "methodName": "processRequest",
+      "fileName": "FrameworkServlet.java",
+      "lineNumber": 967,
+      "className": "org.springframework.web.servlet.FrameworkServlet",
+      "nativeMethod": false
+    },
+    {
+      "methodName": "doPost",
+      "fileName": "FrameworkServlet.java",
+      "lineNumber": 869,
+      "className": "org.springframework.web.servlet.FrameworkServlet",
+      "nativeMethod": false
+    },
+    {
+      "methodName": "service",
+      "fileName": "HttpServlet.java",
+      "lineNumber": 648,
+      "className": "javax.servlet.http.HttpServlet",
+      "nativeMethod": false
+    },
+    {
+      "methodName": "service",
+      "fileName": "FrameworkServlet.java",
+      "lineNumber": 843,
+      "className": "org.springframework.web.servlet.FrameworkServlet",
+      "nativeMethod": false
+    },
+    {
+      "methodName": "service",
+      "fileName": "HttpServlet.java",
+      "lineNumber": 729,
+      "className": "javax.servlet.http.HttpServlet",
+      "nativeMethod": false
+    },
+    {
+      "methodName": "internalDoFilter",
+      "fileName": "ApplicationFilterChain.java",
+      "lineNumber": 291,
+      "className": "org.apache.catalina.core.ApplicationFilterChain",
+      "nativeMethod": false
+    },
+    {
+      "methodName": "doFilter",
+      "fileName": "ApplicationFilterChain.java",
+      "lineNumber": 206,
+      "className": "org.apache.catalina.core.ApplicationFilterChain",
+      "nativeMethod": false
+    },
+    {
+      "methodName": "doFilterInternal",
+      "fileName": "OpenEntityManagerInViewFilter.java",
+      "lineNumber": 178,
+      "className": "org.springframework.orm.jpa.support.OpenEntityManagerInViewFilter",
+      "nativeMethod": false
+    },
+    {
+      "methodName": "doFilter",
+      "fileName": "OncePerRequestFilter.java",
+      "lineNumber": 107,
+      "className": "org.springframework.web.filter.OncePerRequestFilter",
+      "nativeMethod": false
+    },
+    {
+      "methodName": "internalDoFilter",
+      "fileName": "ApplicationFilterChain.java",
+      "lineNumber": 239,
+      "className": "org.apache.catalina.core.ApplicationFilterChain",
+      "nativeMethod": false
+    },
+    {
+      "methodName": "doFilter",
+      "fileName": "ApplicationFilterChain.java",
+      "lineNumber": 206,
+      "className": "org.apache.catalina.core.ApplicationFilterChain",
+      "nativeMethod": false
+    },
+    {
+      "methodName": "doFilter",
+      "fileName": "WsFilter.java",
+      "lineNumber": 52,
+      "className": "org.apache.tomcat.websocket.server.WsFilter",
+      "nativeMethod": false
+    },
+    {
+      "methodName": "internalDoFilter",
+      "fileName": "ApplicationFilterChain.java",
+      "lineNumber": 239,
+      "className": "org.apache.catalina.core.ApplicationFilterChain",
+      "nativeMethod": false
+    },
+    {
+      "methodName": "doFilter",
+      "fileName": "ApplicationFilterChain.java",
+      "lineNumber": 206,
+      "className": "org.apache.catalina.core.ApplicationFilterChain",
+      "nativeMethod": false
+    },
+    {
+      "methodName": "invoke",
+      "fileName": "StandardWrapperValve.java",
+      "lineNumber": 219,
+      "className": "org.apache.catalina.core.StandardWrapperValve",
+      "nativeMethod": false
+    },
+    {
+      "methodName": "invoke",
+      "fileName": "StandardContextValve.java",
+      "lineNumber": 106,
+      "className": "org.apache.catalina.core.StandardContextValve",
+      "nativeMethod": false
+    },
+    {
+      "methodName": "invoke",
+      "fileName": "AuthenticatorBase.java",
+      "lineNumber": 502,
+      "className": "org.apache.catalina.authenticator.AuthenticatorBase",
+      "nativeMethod": false
+    },
+    {
+      "methodName": "invoke",
+      "fileName": "StandardHostValve.java",
+      "lineNumber": 142,
+      "className": "org.apache.catalina.core.StandardHostValve",
+      "nativeMethod": false
+    },
+    {
+      "methodName": "invoke",
+      "fileName": "ErrorReportValve.java",
+      "lineNumber": 79,
+      "className": "org.apache.catalina.valves.ErrorReportValve",
+      "nativeMethod": false
+    },
+    {
+      "methodName": "invoke",
+      "fileName": "AbstractAccessLogValve.java",
+      "lineNumber": 617,
+      "className": "org.apache.catalina.valves.AbstractAccessLogValve",
+      "nativeMethod": false
+    },
+    {
+      "methodName": "invoke",
+      "fileName": "StandardEngineValve.java",
+      "lineNumber": 88,
+      "className": "org.apache.catalina.core.StandardEngineValve",
+      "nativeMethod": false
+    },
+    {
+      "methodName": "service",
+      "fileName": "CoyoteAdapter.java",
+      "lineNumber": 518,
+      "className": "org.apache.catalina.connector.CoyoteAdapter",
+      "nativeMethod": false
+    },
+    {
+      "methodName": "process",
+      "fileName": "AbstractHttp11Processor.java",
+      "lineNumber": 1091,
+      "className": "org.apache.coyote.http11.AbstractHttp11Processor",
+      "nativeMethod": false
+    },
+    {
+      "methodName": "process",
+      "fileName": "AbstractProtocol.java",
+      "lineNumber": 668,
+      "className": "org.apache.coyote.AbstractProtocol$AbstractConnectionHandler",
+      "nativeMethod": false
+    },
+    {
+      "methodName": "doRun",
+      "fileName": "NioEndpoint.java",
+      "lineNumber": 1527,
+      "className": "org.apache.tomcat.util.net.NioEndpoint$SocketProcessor",
+      "nativeMethod": false
+    },
+    {
+      "methodName": "run",
+      "fileName": "NioEndpoint.java",
+      "lineNumber": 1484,
+      "className": "org.apache.tomcat.util.net.NioEndpoint$SocketProcessor",
+      "nativeMethod": false
+    },
+    {
+      "methodName": "runWorker",
+      "fileName": "ThreadPoolExecutor.java",
+      "lineNumber": 1142,
+      "className": "java.util.concurrent.ThreadPoolExecutor",
+      "nativeMethod": false
+    },
+    {
+      "methodName": "run",
+      "fileName": "ThreadPoolExecutor.java",
+      "lineNumber": 617,
+      "className": "java.util.concurrent.ThreadPoolExecutor$Worker",
+      "nativeMethod": false
+    },
+    {
+      "methodName": "run",
+      "fileName": "TaskThread.java",
+      "lineNumber": 61,
+      "className": "org.apache.tomcat.util.threads.TaskThread$WrappingRunnable",
+      "nativeMethod": false
+    },
+    {
+      "methodName": "run",
+      "fileName": "Thread.java",
+      "lineNumber": 745,
+      "className": "java.lang.Thread",
+      "nativeMethod": false
+    }
+  ],
+  "message": "could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement",
+  "rootCause": {
+    "cause": null,
+    "stackTrace": [
+      {
+        "methodName": "receiveErrorResponse",
+        "fileName": "QueryExecutorImpl.java",
+        "lineNumber": 2102,
+        "className": "org.postgresql.core.v3.QueryExecutorImpl",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "processResults",
+        "fileName": "QueryExecutorImpl.java",
+        "lineNumber": 1835,
+        "className": "org.postgresql.core.v3.QueryExecutorImpl",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "execute",
+        "fileName": "QueryExecutorImpl.java",
+        "lineNumber": 257,
+        "className": "org.postgresql.core.v3.QueryExecutorImpl",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "execute",
+        "fileName": "AbstractJdbc2Statement.java",
+        "lineNumber": 500,
+        "className": "org.postgresql.jdbc2.AbstractJdbc2Statement",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "executeWithFlags",
+        "fileName": "AbstractJdbc2Statement.java",
+        "lineNumber": 388,
+        "className": "org.postgresql.jdbc2.AbstractJdbc2Statement",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "executeUpdate",
+        "fileName": "AbstractJdbc2Statement.java",
+        "lineNumber": 334,
+        "className": "org.postgresql.jdbc2.AbstractJdbc2Statement",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "executeUpdate",
+        "fileName": "ResultSetReturnImpl.java",
+        "lineNumber": 187,
+        "className": "org.hibernate.engine.jdbc.internal.ResultSetReturnImpl",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "executeAndExtract",
+        "fileName": "IdentityGenerator.java",
+        "lineNumber": 96,
+        "className": "org.hibernate.id.IdentityGenerator$GetGeneratedKeysDelegate",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "performInsert",
+        "fileName": "AbstractReturningDelegate.java",
+        "lineNumber": 58,
+        "className": "org.hibernate.id.insert.AbstractReturningDelegate",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "insert",
+        "fileName": "AbstractEntityPersister.java",
+        "lineNumber": 3032,
+        "className": "org.hibernate.persister.entity.AbstractEntityPersister",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "insert",
+        "fileName": "AbstractEntityPersister.java",
+        "lineNumber": 3556,
+        "className": "org.hibernate.persister.entity.AbstractEntityPersister",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "execute",
+        "fileName": "EntityIdentityInsertAction.java",
+        "lineNumber": 97,
+        "className": "org.hibernate.action.internal.EntityIdentityInsertAction",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "execute",
+        "fileName": "ActionQueue.java",
+        "lineNumber": 480,
+        "className": "org.hibernate.engine.spi.ActionQueue",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "addResolvedEntityInsertAction",
+        "fileName": "ActionQueue.java",
+        "lineNumber": 191,
+        "className": "org.hibernate.engine.spi.ActionQueue",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "addInsertAction",
+        "fileName": "ActionQueue.java",
+        "lineNumber": 175,
+        "className": "org.hibernate.engine.spi.ActionQueue",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "addAction",
+        "fileName": "ActionQueue.java",
+        "lineNumber": 210,
+        "className": "org.hibernate.engine.spi.ActionQueue",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "addInsertAction",
+        "fileName": "AbstractSaveEventListener.java",
+        "lineNumber": 324,
+        "className": "org.hibernate.event.internal.AbstractSaveEventListener",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "performSaveOrReplicate",
+        "fileName": "AbstractSaveEventListener.java",
+        "lineNumber": 288,
+        "className": "org.hibernate.event.internal.AbstractSaveEventListener",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "performSave",
+        "fileName": "AbstractSaveEventListener.java",
+        "lineNumber": 194,
+        "className": "org.hibernate.event.internal.AbstractSaveEventListener",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "saveWithGeneratedId",
+        "fileName": "AbstractSaveEventListener.java",
+        "lineNumber": 125,
+        "className": "org.hibernate.event.internal.AbstractSaveEventListener",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "saveWithGeneratedId",
+        "fileName": "JpaPersistEventListener.java",
+        "lineNumber": 84,
+        "className": "org.hibernate.jpa.event.internal.core.JpaPersistEventListener",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "entityIsTransient",
+        "fileName": "DefaultPersistEventListener.java",
+        "lineNumber": 206,
+        "className": "org.hibernate.event.internal.DefaultPersistEventListener",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "onPersist",
+        "fileName": "DefaultPersistEventListener.java",
+        "lineNumber": 149,
+        "className": "org.hibernate.event.internal.DefaultPersistEventListener",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "onPersist",
+        "fileName": "DefaultPersistEventListener.java",
+        "lineNumber": 75,
+        "className": "org.hibernate.event.internal.DefaultPersistEventListener",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "firePersist",
+        "fileName": "SessionImpl.java",
+        "lineNumber": 807,
+        "className": "org.hibernate.internal.SessionImpl",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "persist",
+        "fileName": "SessionImpl.java",
+        "lineNumber": 780,
+        "className": "org.hibernate.internal.SessionImpl",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "persist",
+        "fileName": "SessionImpl.java",
+        "lineNumber": 785,
+        "className": "org.hibernate.internal.SessionImpl",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "persist",
+        "fileName": "AbstractEntityManagerImpl.java",
+        "lineNumber": 1181,
+        "className": "org.hibernate.jpa.spi.AbstractEntityManagerImpl",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke0",
+        "fileName": "NativeMethodAccessorImpl.java",
+        "lineNumber": -2,
+        "className": "sun.reflect.NativeMethodAccessorImpl",
+        "nativeMethod": true
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "NativeMethodAccessorImpl.java",
+        "lineNumber": 62,
+        "className": "sun.reflect.NativeMethodAccessorImpl",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "DelegatingMethodAccessorImpl.java",
+        "lineNumber": 43,
+        "className": "sun.reflect.DelegatingMethodAccessorImpl",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "Method.java",
+        "lineNumber": 483,
+        "className": "java.lang.reflect.Method",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "ExtendedEntityManagerCreator.java",
+        "lineNumber": 344,
+        "className": "org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "persist",
+        "fileName": null,
+        "lineNumber": -1,
+        "className": "com.sun.proxy.$Proxy47",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke0",
+        "fileName": "NativeMethodAccessorImpl.java",
+        "lineNumber": -2,
+        "className": "sun.reflect.NativeMethodAccessorImpl",
+        "nativeMethod": true
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "NativeMethodAccessorImpl.java",
+        "lineNumber": 62,
+        "className": "sun.reflect.NativeMethodAccessorImpl",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "DelegatingMethodAccessorImpl.java",
+        "lineNumber": 43,
+        "className": "sun.reflect.DelegatingMethodAccessorImpl",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "Method.java",
+        "lineNumber": 483,
+        "className": "java.lang.reflect.Method",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "SharedEntityManagerCreator.java",
+        "lineNumber": 294,
+        "className": "org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "persist",
+        "fileName": null,
+        "lineNumber": -1,
+        "className": "com.sun.proxy.$Proxy47",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "insertar",
+        "fileName": "DAOGenerico.java",
+        "lineNumber": 18,
+        "className": "py.enterprisesoft.api.dao.DAOGenerico",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "guardar",
+        "fileName": "DAOGenerico.java",
+        "lineNumber": 41,
+        "className": "py.enterprisesoft.api.dao.DAOGenerico",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "<generated>",
+        "lineNumber": -1,
+        "className": "py.enterprisesoft.api.dao.DAOGenerico$$FastClassBySpringCGLIB$$5ff1217c",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "MethodProxy.java",
+        "lineNumber": 204,
+        "className": "org.springframework.cglib.proxy.MethodProxy",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invokeJoinpoint",
+        "fileName": "CglibAopProxy.java",
+        "lineNumber": 720,
+        "className": "org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "proceed",
+        "fileName": "ReflectiveMethodInvocation.java",
+        "lineNumber": 157,
+        "className": "org.springframework.aop.framework.ReflectiveMethodInvocation",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "PersistenceExceptionTranslationInterceptor.java",
+        "lineNumber": 136,
+        "className": "org.springframework.dao.support.PersistenceExceptionTranslationInterceptor",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "proceed",
+        "fileName": "ReflectiveMethodInvocation.java",
+        "lineNumber": 179,
+        "className": "org.springframework.aop.framework.ReflectiveMethodInvocation",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "intercept",
+        "fileName": "CglibAopProxy.java",
+        "lineNumber": 655,
+        "className": "org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "guardar",
+        "fileName": "<generated>",
+        "lineNumber": -1,
+        "className": "py.enterprisesoft.api.dao.ProductoDAO$$EnhancerBySpringCGLIB$$25a3fd04",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "registrar",
+        "fileName": "ProductoController.java",
+        "lineNumber": 84,
+        "className": "py.enterprisesoft.api.controller.ProductoController",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "<generated>",
+        "lineNumber": -1,
+        "className": "py.enterprisesoft.api.controller.ProductoController$$FastClassBySpringCGLIB$$20bc2b1c",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "MethodProxy.java",
+        "lineNumber": 204,
+        "className": "org.springframework.cglib.proxy.MethodProxy",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invokeJoinpoint",
+        "fileName": "CglibAopProxy.java",
+        "lineNumber": 720,
+        "className": "org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "proceed",
+        "fileName": "ReflectiveMethodInvocation.java",
+        "lineNumber": 157,
+        "className": "org.springframework.aop.framework.ReflectiveMethodInvocation",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "proceedWithInvocation",
+        "fileName": "TransactionInterceptor.java",
+        "lineNumber": 99,
+        "className": "org.springframework.transaction.interceptor.TransactionInterceptor$1",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invokeWithinTransaction",
+        "fileName": "TransactionAspectSupport.java",
+        "lineNumber": 281,
+        "className": "org.springframework.transaction.interceptor.TransactionAspectSupport",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "TransactionInterceptor.java",
+        "lineNumber": 96,
+        "className": "org.springframework.transaction.interceptor.TransactionInterceptor",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "proceed",
+        "fileName": "ReflectiveMethodInvocation.java",
+        "lineNumber": 179,
+        "className": "org.springframework.aop.framework.ReflectiveMethodInvocation",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "intercept",
+        "fileName": "CglibAopProxy.java",
+        "lineNumber": 655,
+        "className": "org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "registrar",
+        "fileName": "<generated>",
+        "lineNumber": -1,
+        "className": "py.enterprisesoft.api.controller.ProductoController$$EnhancerBySpringCGLIB$$dac54aed",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke0",
+        "fileName": "NativeMethodAccessorImpl.java",
+        "lineNumber": -2,
+        "className": "sun.reflect.NativeMethodAccessorImpl",
+        "nativeMethod": true
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "NativeMethodAccessorImpl.java",
+        "lineNumber": 62,
+        "className": "sun.reflect.NativeMethodAccessorImpl",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "DelegatingMethodAccessorImpl.java",
+        "lineNumber": 43,
+        "className": "sun.reflect.DelegatingMethodAccessorImpl",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "Method.java",
+        "lineNumber": 483,
+        "className": "java.lang.reflect.Method",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "doInvoke",
+        "fileName": "InvocableHandlerMethod.java",
+        "lineNumber": 221,
+        "className": "org.springframework.web.method.support.InvocableHandlerMethod",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invokeForRequest",
+        "fileName": "InvocableHandlerMethod.java",
+        "lineNumber": 136,
+        "className": "org.springframework.web.method.support.InvocableHandlerMethod",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invokeAndHandle",
+        "fileName": "ServletInvocableHandlerMethod.java",
+        "lineNumber": 110,
+        "className": "org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invokeHandlerMethod",
+        "fileName": "RequestMappingHandlerAdapter.java",
+        "lineNumber": 832,
+        "className": "org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "handleInternal",
+        "fileName": "RequestMappingHandlerAdapter.java",
+        "lineNumber": 743,
+        "className": "org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "handle",
+        "fileName": "AbstractHandlerMethodAdapter.java",
+        "lineNumber": 85,
+        "className": "org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "doDispatch",
+        "fileName": "DispatcherServlet.java",
+        "lineNumber": 961,
+        "className": "org.springframework.web.servlet.DispatcherServlet",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "doService",
+        "fileName": "DispatcherServlet.java",
+        "lineNumber": 895,
+        "className": "org.springframework.web.servlet.DispatcherServlet",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "processRequest",
+        "fileName": "FrameworkServlet.java",
+        "lineNumber": 967,
+        "className": "org.springframework.web.servlet.FrameworkServlet",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "doPost",
+        "fileName": "FrameworkServlet.java",
+        "lineNumber": 869,
+        "className": "org.springframework.web.servlet.FrameworkServlet",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "service",
+        "fileName": "HttpServlet.java",
+        "lineNumber": 648,
+        "className": "javax.servlet.http.HttpServlet",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "service",
+        "fileName": "FrameworkServlet.java",
+        "lineNumber": 843,
+        "className": "org.springframework.web.servlet.FrameworkServlet",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "service",
+        "fileName": "HttpServlet.java",
+        "lineNumber": 729,
+        "className": "javax.servlet.http.HttpServlet",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "internalDoFilter",
+        "fileName": "ApplicationFilterChain.java",
+        "lineNumber": 291,
+        "className": "org.apache.catalina.core.ApplicationFilterChain",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "doFilter",
+        "fileName": "ApplicationFilterChain.java",
+        "lineNumber": 206,
+        "className": "org.apache.catalina.core.ApplicationFilterChain",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "doFilterInternal",
+        "fileName": "OpenEntityManagerInViewFilter.java",
+        "lineNumber": 178,
+        "className": "org.springframework.orm.jpa.support.OpenEntityManagerInViewFilter",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "doFilter",
+        "fileName": "OncePerRequestFilter.java",
+        "lineNumber": 107,
+        "className": "org.springframework.web.filter.OncePerRequestFilter",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "internalDoFilter",
+        "fileName": "ApplicationFilterChain.java",
+        "lineNumber": 239,
+        "className": "org.apache.catalina.core.ApplicationFilterChain",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "doFilter",
+        "fileName": "ApplicationFilterChain.java",
+        "lineNumber": 206,
+        "className": "org.apache.catalina.core.ApplicationFilterChain",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "doFilter",
+        "fileName": "WsFilter.java",
+        "lineNumber": 52,
+        "className": "org.apache.tomcat.websocket.server.WsFilter",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "internalDoFilter",
+        "fileName": "ApplicationFilterChain.java",
+        "lineNumber": 239,
+        "className": "org.apache.catalina.core.ApplicationFilterChain",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "doFilter",
+        "fileName": "ApplicationFilterChain.java",
+        "lineNumber": 206,
+        "className": "org.apache.catalina.core.ApplicationFilterChain",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "StandardWrapperValve.java",
+        "lineNumber": 219,
+        "className": "org.apache.catalina.core.StandardWrapperValve",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "StandardContextValve.java",
+        "lineNumber": 106,
+        "className": "org.apache.catalina.core.StandardContextValve",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "AuthenticatorBase.java",
+        "lineNumber": 502,
+        "className": "org.apache.catalina.authenticator.AuthenticatorBase",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "StandardHostValve.java",
+        "lineNumber": 142,
+        "className": "org.apache.catalina.core.StandardHostValve",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "ErrorReportValve.java",
+        "lineNumber": 79,
+        "className": "org.apache.catalina.valves.ErrorReportValve",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "AbstractAccessLogValve.java",
+        "lineNumber": 617,
+        "className": "org.apache.catalina.valves.AbstractAccessLogValve",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "StandardEngineValve.java",
+        "lineNumber": 88,
+        "className": "org.apache.catalina.core.StandardEngineValve",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "service",
+        "fileName": "CoyoteAdapter.java",
+        "lineNumber": 518,
+        "className": "org.apache.catalina.connector.CoyoteAdapter",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "process",
+        "fileName": "AbstractHttp11Processor.java",
+        "lineNumber": 1091,
+        "className": "org.apache.coyote.http11.AbstractHttp11Processor",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "process",
+        "fileName": "AbstractProtocol.java",
+        "lineNumber": 668,
+        "className": "org.apache.coyote.AbstractProtocol$AbstractConnectionHandler",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "doRun",
+        "fileName": "NioEndpoint.java",
+        "lineNumber": 1527,
+        "className": "org.apache.tomcat.util.net.NioEndpoint$SocketProcessor",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "run",
+        "fileName": "NioEndpoint.java",
+        "lineNumber": 1484,
+        "className": "org.apache.tomcat.util.net.NioEndpoint$SocketProcessor",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "runWorker",
+        "fileName": "ThreadPoolExecutor.java",
+        "lineNumber": 1142,
+        "className": "java.util.concurrent.ThreadPoolExecutor",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "run",
+        "fileName": "ThreadPoolExecutor.java",
+        "lineNumber": 617,
+        "className": "java.util.concurrent.ThreadPoolExecutor$Worker",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "run",
+        "fileName": "TaskThread.java",
+        "lineNumber": 61,
+        "className": "org.apache.tomcat.util.threads.TaskThread$WrappingRunnable",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "run",
+        "fileName": "Thread.java",
+        "lineNumber": 745,
+        "className": "java.lang.Thread",
+        "nativeMethod": false
+      }
+    ],
+    "serverErrorMessage": {
+      "message": "llave duplicada viola restricción de unicidad «uk_gqa8h98hr4wqv6pnbaymq6tu7»",
+      "file": ".\\src\\backend\\access\\nbtree\\nbtinsert.c",
+      "sqlstate": "23505",
+      "position": 0,
+      "line": 397,
+      "severity": "ERROR",
+      "detail": "Ya existe la llave (codigobarra)=(376).",
+      "hint": null,
+      "routine": "_bt_check_unique",
+      "internalQuery": null,
+      "where": null,
+      "internalPosition": 0
+    },
+    "nextException": null,
+    "sqlstate": "23505",
+    "errorCode": 0,
+    "localizedMessage": "ERROR: llave duplicada viola restricción de unicidad «uk_gqa8h98hr4wqv6pnbaymq6tu7»\n  Detail: Ya existe la llave (codigobarra)=(376).",
+    "message": "ERROR: llave duplicada viola restricción de unicidad «uk_gqa8h98hr4wqv6pnbaymq6tu7»\n  Detail: Ya existe la llave (codigobarra)=(376).",
+    "suppressed": []
+  },
+  "mostSpecificCause": {
+    "cause": null,
+    "stackTrace": [
+      {
+        "methodName": "receiveErrorResponse",
+        "fileName": "QueryExecutorImpl.java",
+        "lineNumber": 2102,
+        "className": "org.postgresql.core.v3.QueryExecutorImpl",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "processResults",
+        "fileName": "QueryExecutorImpl.java",
+        "lineNumber": 1835,
+        "className": "org.postgresql.core.v3.QueryExecutorImpl",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "execute",
+        "fileName": "QueryExecutorImpl.java",
+        "lineNumber": 257,
+        "className": "org.postgresql.core.v3.QueryExecutorImpl",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "execute",
+        "fileName": "AbstractJdbc2Statement.java",
+        "lineNumber": 500,
+        "className": "org.postgresql.jdbc2.AbstractJdbc2Statement",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "executeWithFlags",
+        "fileName": "AbstractJdbc2Statement.java",
+        "lineNumber": 388,
+        "className": "org.postgresql.jdbc2.AbstractJdbc2Statement",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "executeUpdate",
+        "fileName": "AbstractJdbc2Statement.java",
+        "lineNumber": 334,
+        "className": "org.postgresql.jdbc2.AbstractJdbc2Statement",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "executeUpdate",
+        "fileName": "ResultSetReturnImpl.java",
+        "lineNumber": 187,
+        "className": "org.hibernate.engine.jdbc.internal.ResultSetReturnImpl",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "executeAndExtract",
+        "fileName": "IdentityGenerator.java",
+        "lineNumber": 96,
+        "className": "org.hibernate.id.IdentityGenerator$GetGeneratedKeysDelegate",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "performInsert",
+        "fileName": "AbstractReturningDelegate.java",
+        "lineNumber": 58,
+        "className": "org.hibernate.id.insert.AbstractReturningDelegate",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "insert",
+        "fileName": "AbstractEntityPersister.java",
+        "lineNumber": 3032,
+        "className": "org.hibernate.persister.entity.AbstractEntityPersister",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "insert",
+        "fileName": "AbstractEntityPersister.java",
+        "lineNumber": 3556,
+        "className": "org.hibernate.persister.entity.AbstractEntityPersister",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "execute",
+        "fileName": "EntityIdentityInsertAction.java",
+        "lineNumber": 97,
+        "className": "org.hibernate.action.internal.EntityIdentityInsertAction",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "execute",
+        "fileName": "ActionQueue.java",
+        "lineNumber": 480,
+        "className": "org.hibernate.engine.spi.ActionQueue",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "addResolvedEntityInsertAction",
+        "fileName": "ActionQueue.java",
+        "lineNumber": 191,
+        "className": "org.hibernate.engine.spi.ActionQueue",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "addInsertAction",
+        "fileName": "ActionQueue.java",
+        "lineNumber": 175,
+        "className": "org.hibernate.engine.spi.ActionQueue",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "addAction",
+        "fileName": "ActionQueue.java",
+        "lineNumber": 210,
+        "className": "org.hibernate.engine.spi.ActionQueue",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "addInsertAction",
+        "fileName": "AbstractSaveEventListener.java",
+        "lineNumber": 324,
+        "className": "org.hibernate.event.internal.AbstractSaveEventListener",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "performSaveOrReplicate",
+        "fileName": "AbstractSaveEventListener.java",
+        "lineNumber": 288,
+        "className": "org.hibernate.event.internal.AbstractSaveEventListener",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "performSave",
+        "fileName": "AbstractSaveEventListener.java",
+        "lineNumber": 194,
+        "className": "org.hibernate.event.internal.AbstractSaveEventListener",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "saveWithGeneratedId",
+        "fileName": "AbstractSaveEventListener.java",
+        "lineNumber": 125,
+        "className": "org.hibernate.event.internal.AbstractSaveEventListener",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "saveWithGeneratedId",
+        "fileName": "JpaPersistEventListener.java",
+        "lineNumber": 84,
+        "className": "org.hibernate.jpa.event.internal.core.JpaPersistEventListener",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "entityIsTransient",
+        "fileName": "DefaultPersistEventListener.java",
+        "lineNumber": 206,
+        "className": "org.hibernate.event.internal.DefaultPersistEventListener",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "onPersist",
+        "fileName": "DefaultPersistEventListener.java",
+        "lineNumber": 149,
+        "className": "org.hibernate.event.internal.DefaultPersistEventListener",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "onPersist",
+        "fileName": "DefaultPersistEventListener.java",
+        "lineNumber": 75,
+        "className": "org.hibernate.event.internal.DefaultPersistEventListener",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "firePersist",
+        "fileName": "SessionImpl.java",
+        "lineNumber": 807,
+        "className": "org.hibernate.internal.SessionImpl",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "persist",
+        "fileName": "SessionImpl.java",
+        "lineNumber": 780,
+        "className": "org.hibernate.internal.SessionImpl",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "persist",
+        "fileName": "SessionImpl.java",
+        "lineNumber": 785,
+        "className": "org.hibernate.internal.SessionImpl",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "persist",
+        "fileName": "AbstractEntityManagerImpl.java",
+        "lineNumber": 1181,
+        "className": "org.hibernate.jpa.spi.AbstractEntityManagerImpl",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke0",
+        "fileName": "NativeMethodAccessorImpl.java",
+        "lineNumber": -2,
+        "className": "sun.reflect.NativeMethodAccessorImpl",
+        "nativeMethod": true
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "NativeMethodAccessorImpl.java",
+        "lineNumber": 62,
+        "className": "sun.reflect.NativeMethodAccessorImpl",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "DelegatingMethodAccessorImpl.java",
+        "lineNumber": 43,
+        "className": "sun.reflect.DelegatingMethodAccessorImpl",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "Method.java",
+        "lineNumber": 483,
+        "className": "java.lang.reflect.Method",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "ExtendedEntityManagerCreator.java",
+        "lineNumber": 344,
+        "className": "org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "persist",
+        "fileName": null,
+        "lineNumber": -1,
+        "className": "com.sun.proxy.$Proxy47",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke0",
+        "fileName": "NativeMethodAccessorImpl.java",
+        "lineNumber": -2,
+        "className": "sun.reflect.NativeMethodAccessorImpl",
+        "nativeMethod": true
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "NativeMethodAccessorImpl.java",
+        "lineNumber": 62,
+        "className": "sun.reflect.NativeMethodAccessorImpl",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "DelegatingMethodAccessorImpl.java",
+        "lineNumber": 43,
+        "className": "sun.reflect.DelegatingMethodAccessorImpl",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "Method.java",
+        "lineNumber": 483,
+        "className": "java.lang.reflect.Method",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "SharedEntityManagerCreator.java",
+        "lineNumber": 294,
+        "className": "org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "persist",
+        "fileName": null,
+        "lineNumber": -1,
+        "className": "com.sun.proxy.$Proxy47",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "insertar",
+        "fileName": "DAOGenerico.java",
+        "lineNumber": 18,
+        "className": "py.enterprisesoft.api.dao.DAOGenerico",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "guardar",
+        "fileName": "DAOGenerico.java",
+        "lineNumber": 41,
+        "className": "py.enterprisesoft.api.dao.DAOGenerico",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "<generated>",
+        "lineNumber": -1,
+        "className": "py.enterprisesoft.api.dao.DAOGenerico$$FastClassBySpringCGLIB$$5ff1217c",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "MethodProxy.java",
+        "lineNumber": 204,
+        "className": "org.springframework.cglib.proxy.MethodProxy",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invokeJoinpoint",
+        "fileName": "CglibAopProxy.java",
+        "lineNumber": 720,
+        "className": "org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "proceed",
+        "fileName": "ReflectiveMethodInvocation.java",
+        "lineNumber": 157,
+        "className": "org.springframework.aop.framework.ReflectiveMethodInvocation",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "PersistenceExceptionTranslationInterceptor.java",
+        "lineNumber": 136,
+        "className": "org.springframework.dao.support.PersistenceExceptionTranslationInterceptor",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "proceed",
+        "fileName": "ReflectiveMethodInvocation.java",
+        "lineNumber": 179,
+        "className": "org.springframework.aop.framework.ReflectiveMethodInvocation",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "intercept",
+        "fileName": "CglibAopProxy.java",
+        "lineNumber": 655,
+        "className": "org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "guardar",
+        "fileName": "<generated>",
+        "lineNumber": -1,
+        "className": "py.enterprisesoft.api.dao.ProductoDAO$$EnhancerBySpringCGLIB$$25a3fd04",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "registrar",
+        "fileName": "ProductoController.java",
+        "lineNumber": 84,
+        "className": "py.enterprisesoft.api.controller.ProductoController",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "<generated>",
+        "lineNumber": -1,
+        "className": "py.enterprisesoft.api.controller.ProductoController$$FastClassBySpringCGLIB$$20bc2b1c",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "MethodProxy.java",
+        "lineNumber": 204,
+        "className": "org.springframework.cglib.proxy.MethodProxy",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invokeJoinpoint",
+        "fileName": "CglibAopProxy.java",
+        "lineNumber": 720,
+        "className": "org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "proceed",
+        "fileName": "ReflectiveMethodInvocation.java",
+        "lineNumber": 157,
+        "className": "org.springframework.aop.framework.ReflectiveMethodInvocation",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "proceedWithInvocation",
+        "fileName": "TransactionInterceptor.java",
+        "lineNumber": 99,
+        "className": "org.springframework.transaction.interceptor.TransactionInterceptor$1",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invokeWithinTransaction",
+        "fileName": "TransactionAspectSupport.java",
+        "lineNumber": 281,
+        "className": "org.springframework.transaction.interceptor.TransactionAspectSupport",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "TransactionInterceptor.java",
+        "lineNumber": 96,
+        "className": "org.springframework.transaction.interceptor.TransactionInterceptor",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "proceed",
+        "fileName": "ReflectiveMethodInvocation.java",
+        "lineNumber": 179,
+        "className": "org.springframework.aop.framework.ReflectiveMethodInvocation",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "intercept",
+        "fileName": "CglibAopProxy.java",
+        "lineNumber": 655,
+        "className": "org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "registrar",
+        "fileName": "<generated>",
+        "lineNumber": -1,
+        "className": "py.enterprisesoft.api.controller.ProductoController$$EnhancerBySpringCGLIB$$dac54aed",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke0",
+        "fileName": "NativeMethodAccessorImpl.java",
+        "lineNumber": -2,
+        "className": "sun.reflect.NativeMethodAccessorImpl",
+        "nativeMethod": true
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "NativeMethodAccessorImpl.java",
+        "lineNumber": 62,
+        "className": "sun.reflect.NativeMethodAccessorImpl",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "DelegatingMethodAccessorImpl.java",
+        "lineNumber": 43,
+        "className": "sun.reflect.DelegatingMethodAccessorImpl",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "Method.java",
+        "lineNumber": 483,
+        "className": "java.lang.reflect.Method",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "doInvoke",
+        "fileName": "InvocableHandlerMethod.java",
+        "lineNumber": 221,
+        "className": "org.springframework.web.method.support.InvocableHandlerMethod",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invokeForRequest",
+        "fileName": "InvocableHandlerMethod.java",
+        "lineNumber": 136,
+        "className": "org.springframework.web.method.support.InvocableHandlerMethod",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invokeAndHandle",
+        "fileName": "ServletInvocableHandlerMethod.java",
+        "lineNumber": 110,
+        "className": "org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invokeHandlerMethod",
+        "fileName": "RequestMappingHandlerAdapter.java",
+        "lineNumber": 832,
+        "className": "org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "handleInternal",
+        "fileName": "RequestMappingHandlerAdapter.java",
+        "lineNumber": 743,
+        "className": "org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "handle",
+        "fileName": "AbstractHandlerMethodAdapter.java",
+        "lineNumber": 85,
+        "className": "org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "doDispatch",
+        "fileName": "DispatcherServlet.java",
+        "lineNumber": 961,
+        "className": "org.springframework.web.servlet.DispatcherServlet",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "doService",
+        "fileName": "DispatcherServlet.java",
+        "lineNumber": 895,
+        "className": "org.springframework.web.servlet.DispatcherServlet",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "processRequest",
+        "fileName": "FrameworkServlet.java",
+        "lineNumber": 967,
+        "className": "org.springframework.web.servlet.FrameworkServlet",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "doPost",
+        "fileName": "FrameworkServlet.java",
+        "lineNumber": 869,
+        "className": "org.springframework.web.servlet.FrameworkServlet",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "service",
+        "fileName": "HttpServlet.java",
+        "lineNumber": 648,
+        "className": "javax.servlet.http.HttpServlet",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "service",
+        "fileName": "FrameworkServlet.java",
+        "lineNumber": 843,
+        "className": "org.springframework.web.servlet.FrameworkServlet",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "service",
+        "fileName": "HttpServlet.java",
+        "lineNumber": 729,
+        "className": "javax.servlet.http.HttpServlet",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "internalDoFilter",
+        "fileName": "ApplicationFilterChain.java",
+        "lineNumber": 291,
+        "className": "org.apache.catalina.core.ApplicationFilterChain",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "doFilter",
+        "fileName": "ApplicationFilterChain.java",
+        "lineNumber": 206,
+        "className": "org.apache.catalina.core.ApplicationFilterChain",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "doFilterInternal",
+        "fileName": "OpenEntityManagerInViewFilter.java",
+        "lineNumber": 178,
+        "className": "org.springframework.orm.jpa.support.OpenEntityManagerInViewFilter",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "doFilter",
+        "fileName": "OncePerRequestFilter.java",
+        "lineNumber": 107,
+        "className": "org.springframework.web.filter.OncePerRequestFilter",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "internalDoFilter",
+        "fileName": "ApplicationFilterChain.java",
+        "lineNumber": 239,
+        "className": "org.apache.catalina.core.ApplicationFilterChain",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "doFilter",
+        "fileName": "ApplicationFilterChain.java",
+        "lineNumber": 206,
+        "className": "org.apache.catalina.core.ApplicationFilterChain",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "doFilter",
+        "fileName": "WsFilter.java",
+        "lineNumber": 52,
+        "className": "org.apache.tomcat.websocket.server.WsFilter",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "internalDoFilter",
+        "fileName": "ApplicationFilterChain.java",
+        "lineNumber": 239,
+        "className": "org.apache.catalina.core.ApplicationFilterChain",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "doFilter",
+        "fileName": "ApplicationFilterChain.java",
+        "lineNumber": 206,
+        "className": "org.apache.catalina.core.ApplicationFilterChain",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "StandardWrapperValve.java",
+        "lineNumber": 219,
+        "className": "org.apache.catalina.core.StandardWrapperValve",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "StandardContextValve.java",
+        "lineNumber": 106,
+        "className": "org.apache.catalina.core.StandardContextValve",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "AuthenticatorBase.java",
+        "lineNumber": 502,
+        "className": "org.apache.catalina.authenticator.AuthenticatorBase",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "StandardHostValve.java",
+        "lineNumber": 142,
+        "className": "org.apache.catalina.core.StandardHostValve",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "ErrorReportValve.java",
+        "lineNumber": 79,
+        "className": "org.apache.catalina.valves.ErrorReportValve",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "AbstractAccessLogValve.java",
+        "lineNumber": 617,
+        "className": "org.apache.catalina.valves.AbstractAccessLogValve",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "invoke",
+        "fileName": "StandardEngineValve.java",
+        "lineNumber": 88,
+        "className": "org.apache.catalina.core.StandardEngineValve",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "service",
+        "fileName": "CoyoteAdapter.java",
+        "lineNumber": 518,
+        "className": "org.apache.catalina.connector.CoyoteAdapter",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "process",
+        "fileName": "AbstractHttp11Processor.java",
+        "lineNumber": 1091,
+        "className": "org.apache.coyote.http11.AbstractHttp11Processor",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "process",
+        "fileName": "AbstractProtocol.java",
+        "lineNumber": 668,
+        "className": "org.apache.coyote.AbstractProtocol$AbstractConnectionHandler",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "doRun",
+        "fileName": "NioEndpoint.java",
+        "lineNumber": 1527,
+        "className": "org.apache.tomcat.util.net.NioEndpoint$SocketProcessor",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "run",
+        "fileName": "NioEndpoint.java",
+        "lineNumber": 1484,
+        "className": "org.apache.tomcat.util.net.NioEndpoint$SocketProcessor",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "runWorker",
+        "fileName": "ThreadPoolExecutor.java",
+        "lineNumber": 1142,
+        "className": "java.util.concurrent.ThreadPoolExecutor",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "run",
+        "fileName": "ThreadPoolExecutor.java",
+        "lineNumber": 617,
+        "className": "java.util.concurrent.ThreadPoolExecutor$Worker",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "run",
+        "fileName": "TaskThread.java",
+        "lineNumber": 61,
+        "className": "org.apache.tomcat.util.threads.TaskThread$WrappingRunnable",
+        "nativeMethod": false
+      },
+      {
+        "methodName": "run",
+        "fileName": "Thread.java",
+        "lineNumber": 745,
+        "className": "java.lang.Thread",
+        "nativeMethod": false
+      }
+    ],
+    "serverErrorMessage": {
+      "message": "llave duplicada viola restricción de unicidad «uk_gqa8h98hr4wqv6pnbaymq6tu7»",
+      "file": ".\\src\\backend\\access\\nbtree\\nbtinsert.c",
+      "sqlstate": "23505",
+      "position": 0,
+      "line": 397,
+      "severity": "ERROR",
+      "detail": "Ya existe la llave (codigobarra)=(376).",
+      "hint": null,
+      "routine": "_bt_check_unique",
+      "internalQuery": null,
+      "where": null,
+      "internalPosition": 0
+    },
+    "nextException": null,
+    "sqlstate": "23505",
+    "errorCode": 0,
+    "localizedMessage": "ERROR: llave duplicada viola restricción de unicidad «uk_gqa8h98hr4wqv6pnbaymq6tu7»\n  Detail: Ya existe la llave (codigobarra)=(376).",
+    "message": "ERROR: llave duplicada viola restricción de unicidad «uk_gqa8h98hr4wqv6pnbaymq6tu7»\n  Detail: Ya existe la llave (codigobarra)=(376).",
+    "suppressed": []
+  },
+  "localizedMessage": "could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement",
+  "suppressed": []
+}

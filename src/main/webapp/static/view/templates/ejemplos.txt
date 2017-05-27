@@ -1,0 +1,275 @@
+<i class="material-icons">date_range</i>
+<i class="material-icons">assignment</i>
+<i class="material-icons">build</i>
+<i class="material-icons">delete_forever</i>
+<i class="material-icons">done</i>
+<i class="material-icons">settings</i>
+<i class="material-icons">shopping_basket</i>
+<i class="material-icons">save</i>
+<i class="material-icons">mouse</i>
+<i class="material-icons">control_point</i>
+
+
+// $scope.message = "Waiting 2000ms for update";
+    
+//     setTimeout(function () {
+//         $scope.$apply(function () {
+//           //  $scope.message = "Timeout called!";
+//         //	$scope.$digest();
+//    		 Materialize.updateTextFields();
+//         });
+//         $scope.$watch(function(){
+        	
+//         	 Materialize.updateTextFields();
+//         });
+//     }, 2000);
+    
+    
+	
+//     $timeout(function(){
+//         $scope.$apply(function(){
+//         	 $scope.message = "Timeout called!";
+//         	 Materialize.updateTextFields();
+        	 
+        	 
+//         });
+//     });
+
+
+		//$window.location.reload();
+		
+		//$scope.$apply();
+		//$scope.$digest();
+		// Materialize.updateTextFields();
+		
+		
+		
+			//this.form.reset(); 
+	
+		
+			$('.datepicker').pickadate({
+			  onStart: function() {
+			    console.log('Hello there :)')
+			  },
+			  onRender: function() {
+			    console.log('Whoa.. rendered anew')
+			  },
+			  onOpen: function() {
+			    console.log('Opened up')
+			  },
+			  onClose: function() {
+			    console.log('Closed now')
+
+			    
+			  },
+			  onStop: function() {
+			    console.log('See ya.')
+			  },
+			  onSet: function(context) {
+			  asignar(context);
+			  
+// 			    console.log('Just set stuff:', context)
+			  }
+			})
+			
+			var asignar=function(context){
+				
+				$scope.producto.ultimaCompra=new Date(context.select);
+				
+				console.log($scope.producto.ultimaCompra);
+				
+				$scope.$digest();			
+				
+				
+			}
+			
+			// 		$scope.initDatepicker = function() {
+// 		    $('.datepicker').pickadate({ 
+// 		        selectMonths: true, 
+// 		        selectYears: 15
+// 		    });
+// 		}
+		
+		
+		
+				//$('producto.ulmimaCompra').scope().ngModel.$render();
+		
+	var $input = $('.datepicker').pickadate()
+
+// Use the picker object directly.
+var picker = $input.pickadate('picker')
+		
+	var fecha=	picker.get('select');
+		console.log("Dentro de Registrar");
+	console.log(fecha);
+			
+			
+			
+			// 	angular.module("registroProducto").directive('pickadate', function(){
+// 		return {
+// 			require: '?ngModel',
+// 			restrict: 'A',
+// 			link: function(scope, element, attrs, ngModel){
+
+// 				if(!ngModel) return; // do nothing if no ng-model
+
+// 				ngModel.$render = function(){
+// 					element.find('input').val( ngModel.$viewValue || '' );
+// 				}
+
+// 				element.pickadate({ 
+// 					language: 'it' 
+// 				});
+
+// 				element.on('dp.change', function(){
+// 					scope.$apply(read);
+// 				});
+
+// 				read();
+
+// 				function read() {
+// 					var value = element.find('input').val();
+// 					ngModel.$setViewValue(value);
+// 				}
+// 			}
+// 		}
+// 	});	
+			
+			
+			
+// $(document).on('click','.datepicker',function() {
+// 	   $(this).datepicker();
+// 	});
+	
+
+<tr style="margin-top: -20px;height: 50px">
+						
+						<th ng-model="seliminar" ng-init="seliminar=false">
+						
+						<a><i ng-hide="seliminar" class="material-icons" ng-click="seliminar=!seliminar" title="Ocultar Eliminar">keyboard_arrow_left</i></a>
+						<a><i ng-hide="!seliminar" class="material-icons" ng-click="seliminar=!seliminar" title="Mostrar Eliminar">keyboard_arrow_right</i></a>
+							
+						</th>
+						
+						<th ng-model="scodigo" ng-init="scodigo=true">
+						
+						<a><i ng-hide="scodigo" class="material-icons" ng-click="scodigo=!scodigo" title="Ocultar Codigo">keyboard_arrow_left</i></a>
+						<a><i ng-hide="!scodigo" class="material-icons" ng-click="scodigo=!scodigo" title="Mostrar Codigo">keyboard_arrow_right</i></a>
+							
+						</th>
+						
+						<th ng-model="susuario" ng-init="susuario=true">
+						
+						<a><i ng-hide="susuario" class="material-icons" ng-click="susuario=!susuario" title="Ocultar Usuario">keyboard_arrow_left</i></a>
+						<a><i ng-hide="!susuario" class="material-icons" ng-click="susuario=!susuario" title="Mostrar Usuario">keyboard_arrow_right</i></a>
+							
+						</th>
+						
+						<th ng-model="sestado" ng-init="sestado=true">
+						
+						<a><i ng-hide="sestado" class="material-icons" ng-click="sestado=!sestado" title="Ocultar Estado">keyboard_arrow_left</i></a>
+						<a><i ng-hide="!sestado" class="material-icons" ng-click="sestado=!sestado" title="Mostrar Estado">keyboard_arrow_right</i></a>
+							
+						</th>
+						
+						
+						<th ng-model="stotalExenta" ng-init="stotalExenta=true">
+						
+						<a><i ng-hide="stotalExenta" class="material-icons" ng-click="stotalExenta=!stotalExenta" title="Ocultar Total Exenta">keyboard_arrow_left</i></a>
+						<a><i ng-hide="!stotalExenta" class="material-icons" ng-click="stotalExenta=!stotalExenta" title="Mostrar Total Exenta">keyboard_arrow_right</i></a>
+							
+						</th>
+						
+						<th ng-model="stotalGravada5" ng-init="stotalGravada5=true">
+						
+						<a><i ng-hide="stotalGravada5" class="material-icons" ng-click="stotalGravada5=!stotalGravada5" title="Ocultar Total Gravada 5">keyboard_arrow_left</i></a>
+						<a><i ng-hide="!stotalGravada5" class="material-icons" ng-click="stotalGravada5=!stotalGravada5" title="Mostrar Total Gravada 5">keyboard_arrow_right</i></a>
+							
+						</th>
+						
+						<th ng-model="stotalIva5" ng-init="stotalIva5=true">
+						
+						<a><i ng-hide="stotalIva5" class="material-icons" ng-click="stotalIva5=!stotalIva5" title="Ocultar Total Iva 5">keyboard_arrow_left</i></a>
+						<a><i ng-hide="!stotalIva5" class="material-icons" ng-click="stotalIva5=!stotalIva5" title="Mostrar Total Iva 5">keyboard_arrow_right</i></a>
+							
+						</th>
+						
+						<th ng-model="sobs" ng-init="sobs=true">
+						
+						<a><i ng-hide="sobs" class="material-icons" ng-click="sobs=!sobs" title="Ocultar Observación">keyboard_arrow_left</i></a>
+						<a><i ng-hide="!sobs" class="material-icons" ng-click="sobs=!sobs" title="Mostrar Observación">keyboard_arrow_right</i></a>
+							
+						</th>
+						
+						
+						</tr>
+			
+			
+			
+			
+			
+			/***Para ventas
+			
+			
+			<tr style="margin-top: -20px;height: 50px">
+						
+						<th ng-model="seliminar" ng-init="seliminar=false">
+						
+						<a><i ng-hide="seliminar" class="material-icons" ng-click="seliminar=!seliminar" title="Ocultar Eliminar">keyboard_arrow_left</i></a>
+						<a><i ng-hide="!seliminar" class="material-icons" ng-click="seliminar=!seliminar" title="Mostrar Eliminar">keyboard_arrow_right</i></a>
+							
+						</th>
+						
+						<th ng-model="scodigo" ng-init="scodigo=true">
+						
+						<a><i ng-hide="scodigo" class="material-icons" ng-click="scodigo=!scodigo" title="Ocultar Codigo">keyboard_arrow_left</i></a>
+						<a><i ng-hide="!scodigo" class="material-icons" ng-click="scodigo=!scodigo" title="Mostrar Codigo">keyboard_arrow_right</i></a>
+							
+						</th>
+						
+						<th ng-model="susuario" ng-init="susuario=true">
+						
+						<a><i ng-hide="susuario" class="material-icons" ng-click="susuario=!susuario" title="Ocultar Usuario">keyboard_arrow_left</i></a>
+						<a><i ng-hide="!susuario" class="material-icons" ng-click="susuario=!susuario" title="Mostrar Usuario">keyboard_arrow_right</i></a>
+							
+						</th>
+						
+						<th ng-model="sestado" ng-init="sestado=true">
+						
+						<a><i ng-hide="sestado" class="material-icons" ng-click="sestado=!sestado" title="Ocultar Estado">keyboard_arrow_left</i></a>
+						<a><i ng-hide="!sestado" class="material-icons" ng-click="sestado=!sestado" title="Mostrar Estado">keyboard_arrow_right</i></a>
+							
+						</th>
+						
+						
+						<th ng-model="stotalExenta" ng-init="stotalExenta=true">
+						
+						<a><i ng-hide="stotalExenta" class="material-icons" ng-click="stotalExenta=!stotalExenta" title="Ocultar Total Exenta">keyboard_arrow_left</i></a>
+						<a><i ng-hide="!stotalExenta" class="material-icons" ng-click="stotalExenta=!stotalExenta" title="Mostrar Total Exenta">keyboard_arrow_right</i></a>
+							
+						</th>
+						
+						<th ng-model="stotalGravada5" ng-init="stotalGravada5=true">
+						
+						<a><i ng-hide="stotalGravada5" class="material-icons" ng-click="stotalGravada5=!stotalGravada5" title="Ocultar Total Gravada 5">keyboard_arrow_left</i></a>
+						<a><i ng-hide="!stotalGravada5" class="material-icons" ng-click="stotalGravada5=!stotalGravada5" title="Mostrar Total Gravada 5">keyboard_arrow_right</i></a>
+							
+						</th>
+						
+						<th ng-model="stotalIva5" ng-init="stotalIva5=true">
+						
+						<a><i ng-hide="stotalIva5" class="material-icons" ng-click="stotalIva5=!stotalIva5" title="Ocultar Total Iva 5">keyboard_arrow_left</i></a>
+						<a><i ng-hide="!stotalIva5" class="material-icons" ng-click="stotalIva5=!stotalIva5" title="Mostrar Total Iva 5">keyboard_arrow_right</i></a>
+							
+						</th>
+						
+						<th ng-model="sobs" ng-init="sobs=true">
+						
+						<a><i ng-hide="sobs" class="material-icons" ng-click="sobs=!sobs" title="Ocultar Observación">keyboard_arrow_left</i></a>
+						<a><i ng-hide="!sobs" class="material-icons" ng-click="sobs=!sobs" title="Mostrar Observación">keyboard_arrow_right</i></a>
+							
+						</th>
+						
+						
+						</tr>
+	

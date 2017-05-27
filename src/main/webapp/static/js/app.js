@@ -2,5 +2,5 @@
  * 
  */
 
-angular.module("menu",["ngRoute","ngMessages","ng-Shop","ui.router","ng-ShopVenta"]);
+angular.module("menu",["ngMessages","ui.router"]);
 

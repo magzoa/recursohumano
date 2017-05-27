@@ -4,12 +4,12 @@
   font-family: 'Material Icons';
   font-style: normal;
   font-weight: 400;
-  src: url("/enterprisesoft/static/css/materialize/iconos/MaterialIcons-Regular.eot"); /* For IE6-8 */
+  src: url("/recursohumano/static/css/materialize/iconos/MaterialIcons-Regular.eot"); /* For IE6-8 */
   src: local('Material Icons'),
        local('MaterialIcons-Regular'),
-       url(/enterprisesoft/static/css/materialize/iconos/MaterialIcons-Regular.woff2) format('woff2'),
-       url(/enterprisesoft/static/css/materialize/iconos/MaterialIcons-Regular.woff) format('woff'),
-       url(/enterprisesoft/static/css/materialize/iconos/MaterialIcons-Regular.ttf) format('truetype');
+       url(/recursohumano/static/css/materialize/iconos/MaterialIcons-Regular.woff2) format('woff2'),
+       url(/recursohumano/static/css/materialize/iconos/MaterialIcons-Regular.woff) format('woff'),
+       url(/recursohumano/static/css/materialize/iconos/MaterialIcons-Regular.ttf) format('truetype');
 }
 
 .material-icons {
