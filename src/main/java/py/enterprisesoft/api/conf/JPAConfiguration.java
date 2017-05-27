@@ -76,10 +76,7 @@ public class JPAConfiguration {
 		dataSource.setDriverClassName("org.postgresql.Driver");
 		dataSource.setUrl("jdbc:postgresql://localhost:5432/dbrrhh");
 		dataSource.setUsername("postgres");
-		dataSource.setPassword("12345");
-//		dataSource.setUrl("jdbc:postgresql://localhost:5432/enterprisesoft_db");
-//		dataSource.setUsername("postgres");
-//		dataSource.setPassword("12345");
+		dataSource.setPassword("admin");
 		return dataSource;
 	}
 
