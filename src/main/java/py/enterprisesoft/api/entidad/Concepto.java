@@ -20,10 +20,6 @@ public class Concepto {
 	private Collection<LiquidacionDetalle> liquidaciondetalle;
 	
 	
-	@OneToMany(mappedBy="codigoConcepto", cascade={CascadeType.PERSIST}, orphanRemoval=true)
-	private Collection<HaberDetalle> haberdetalle;
-	
-	
 	@Column(name="cot_des")
 	private String descripcion;
 

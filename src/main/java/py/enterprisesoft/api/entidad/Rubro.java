@@ -17,10 +17,7 @@ public class Rubro implements Serializable{
 	@Id
 	@Column(name="rub_cod")
 	private Integer codigo;
-		
-	@OneToMany(mappedBy="codigoRubro", cascade={CascadeType.PERSIST}, orphanRemoval=true)
-	private Collection<Haber> haber;
-	
+
 	
 	@Column(name="rub_des")
 	private String descripcion;
