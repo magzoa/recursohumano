@@ -9,20 +9,16 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 @Entity
-@Table(name="rhco_tipodescuento")
 public class TipoDescuento {
 	@Id
-	@Column(name="tdes_cod")
 	private Integer codigo;
 	
 		
 	@OneToMany(mappedBy="tipoDescuento", cascade={CascadeType.PERSIST}, orphanRemoval=true)
 	private Collection<Descuento> descuento;
 	
-	@Column(name="tdes_des")
 	private String descripcion;
 	
-	@Column(name="tdes_porcentaje")
 	private Float porcentaje;
 	
 	public TipoDescuento() {

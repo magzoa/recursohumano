@@ -14,13 +14,11 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="rhlq_bonificacion")
 public class Bonificacion implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
 	
 	@Id
-	@Column(name="bod_num")
 	@OneToMany(mappedBy="HaberDetalle", cascade={CascadeType.PERSIST}, orphanRemoval=true)
 	private Integer numero;
 	
@@ -38,13 +36,10 @@ public class Bonificacion implements Serializable {
 	@JoinColumn(name="bod_codper")
 	private Persona codigoPersona;
 
-	@Column(name="bod_estado")
 	private String estado;
 	
-	@Column(name="bod_fechahora")
 	private Date fecha;
 	
-	@Column(name="bod_obs")
 	private String observacion;
 	
 		

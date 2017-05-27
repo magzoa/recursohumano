@@ -1,6 +1,11 @@
 package py.enterprisesoft.api.entidad;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class TipoEntradaSalida {
+	@Id
 	private Integer codigo;
 	private String descripcion;
 	public TipoEntradaSalida() {

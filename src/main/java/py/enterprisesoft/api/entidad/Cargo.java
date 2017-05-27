@@ -9,14 +9,11 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="rhrl_cargo")
 public class Cargo {
 	
 	@Id
-	@Column(name="car_cod")
 	private Integer codigo;
 	
-	@Column(name="car_des")
 	private String descripcion;
 
 	@ManyToOne(cascade={CascadeType.PERSIST})

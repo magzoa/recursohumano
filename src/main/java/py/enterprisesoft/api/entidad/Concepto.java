@@ -10,10 +10,8 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="rhco_concepto")
 public class Concepto {
 	@Id
-	@Column(name="cot_cod")
 	private Integer codigo;
 	
 	@OneToMany(mappedBy="codigoConcepto", cascade={CascadeType.PERSIST}, orphanRemoval=true)
@@ -24,7 +22,6 @@ public class Concepto {
 	private Collection<HaberDetalle> haberdetalle;
 	
 	
-	@Column(name="cot_des")
 	private String descripcion;
 
 	public Concepto() {

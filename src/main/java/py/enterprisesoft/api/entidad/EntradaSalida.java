@@ -2,7 +2,11 @@ package py.enterprisesoft.api.entidad;
 
 import java.util.Date;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+@Entity
 public class EntradaSalida {
+	@Id
 	private Integer codigo;
 	private Persona persona;
 	private Date fechaEntrada;

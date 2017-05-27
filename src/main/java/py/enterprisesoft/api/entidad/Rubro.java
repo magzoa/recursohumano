@@ -10,19 +10,16 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 @Entity
-@Table(name="rhco_rubro")
 public class Rubro implements Serializable{
 	
 	private static final long serialVersionUID = 1L;
 	@Id
-	@Column(name="rub_cod")
 	private Integer codigo;
 		
 	@OneToMany(mappedBy="codigoRubro", cascade={CascadeType.PERSIST}, orphanRemoval=true)
 	private Collection<Haber> haber;
 	
 	
-	@Column(name="rub_des")
 	private String descripcion;
 	
 	public Rubro() {

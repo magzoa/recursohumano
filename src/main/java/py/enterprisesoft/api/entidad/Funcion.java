@@ -9,18 +9,15 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 @Entity
-@Table(name="rhrl_funcion")
 
 public class Funcion {
 	
 	@Id
-	@Column(name="fun_cod")
 	private Integer codigo;
 	
 	@OneToMany(mappedBy="codigoFuncion", cascade={CascadeType.PERSIST}, orphanRemoval=true)
 	private Collection<Cargo> cargo;
 	
-	@Column(name="fun_des")
 	private String descripcion;
 	
 	

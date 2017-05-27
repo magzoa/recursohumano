@@ -13,10 +13,8 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="rhlq_descuento")
 public class Descuento {
 	@Id
-	@Column(name="deb_num")
 	private Integer numero;
 	
 //	
@@ -28,20 +26,16 @@ public class Descuento {
 	@JoinColumn(name="deb_codtpdes")
 	private TipoDescuento tipoDescuento;
 	
-	@Column(name="deb_monto")
 	private Double monto;
 	
-	@Column(name="deb_fechahora")
 	private Date fecha;
 	
 	@ManyToOne(cascade={CascadeType.PERSIST})
 	@JoinColumn(name="deb_codper")
 	private Persona codigoPersona;
 	
-	@Column(name="deb_estado")
 	private String estado;
 	
-	@Column(name="deb_obs")
 	private String observacion;
 	
 		

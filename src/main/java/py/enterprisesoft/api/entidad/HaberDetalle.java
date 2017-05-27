@@ -17,7 +17,6 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="rhlq_haber_detalle")
 
 public class HaberDetalle implements Serializable{
 
@@ -29,7 +28,6 @@ public class HaberDetalle implements Serializable{
 
 	
 	@Id
-	@Column(name="had_nro")
 	private Integer numero;
 	
 	@ManyToOne(cascade={CascadeType.PERSIST})

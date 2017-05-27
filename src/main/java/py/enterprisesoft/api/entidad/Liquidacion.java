@@ -13,7 +13,6 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 @Entity
-@Table(name="rhlq_liquidacion")
 
 public class Liquidacion implements Serializable{
 	
@@ -22,7 +21,6 @@ public class Liquidacion implements Serializable{
 	 */
 	private static final long serialVersionUID = 1L;
 	@Id
-	@Column(name="liq_nro")
 	private Integer numero;
 	
 	@OneToMany(mappedBy="numeroLiquidacion", cascade={CascadeType.PERSIST}, orphanRemoval=true)
@@ -31,11 +29,8 @@ public class Liquidacion implements Serializable{
 	@ManyToOne(cascade={CascadeType.PERSIST})
 	@JoinColumn(name="liq_codper")
 	private Persona codigoPersona;
-	@Column(name="liq_fecha")
 	private Date fecha;
-	@Column(name="liq_monto")
 	private Double monto;
-	@Column(name="liq_obs")
 	private String observacion;
 	
 	public Liquidacion() {
