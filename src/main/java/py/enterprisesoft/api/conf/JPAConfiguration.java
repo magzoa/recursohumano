@@ -26,7 +26,7 @@ public class JPAConfiguration {
 		LocalContainerEntityManagerFactoryBean em = new LocalContainerEntityManagerFactoryBean();
 		em.setDataSource(dataSource);
 		em.setPackagesToScan(
-				new String[] { "py.enterprisesoft.api.model.general", "py.enterprisesoft.api.model.enterprise"});
+				new String[] { "py.enterprisesoft.api.model.general", "py.enterprisesoft.api.entidad"});
 		JpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
 		em.setJpaVendorAdapter(vendorAdapter);
 		em.setJpaProperties(additionalProperties());
