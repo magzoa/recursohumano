@@ -9,63 +9,40 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import py.enterprisesoft.api.model.general.General;
+
 @Entity
-public class Concepto {
-	@Id
-	private Integer codigo;
+public class Concepto extends General {
 	
-	@OneToMany(mappedBy="codigoConcepto", cascade={CascadeType.PERSIST}, orphanRemoval=true)
-	private Collection<LiquidacionDetalle> liquidaciondetalle;
+	
+	@OneToMany(mappedBy="concepto")
+	private Collection <LiquidacionDetalle> liquidaciondetalle;
 
 
 	private String descripcion;
 
 	public Concepto() {
 		super();
-		this.codigo = 0;
 		this.descripcion = "";
 	}
 
-
-
-	public Concepto(Integer codigo, String descripcion) {
-		super();
-		this.codigo = codigo;
-		this.descripcion = descripcion;
+	public Collection<LiquidacionDetalle> getLiquidaciondetalle() {
+		return liquidaciondetalle;
 	}
 
-
-
-	public Integer getCodigo() {
-		return codigo;
+	public void setLiquidaciondetalle(Collection<LiquidacionDetalle> liquidaciondetalle) {
+		this.liquidaciondetalle = liquidaciondetalle;
 	}
-
-
-
-	public void setCodigo(Integer codigo) {
-		this.codigo = codigo;
-	}
-
-
 
 	public String getDescripcion() {
 		return descripcion;
 	}
-
-
 
 	public void setDescripcion(String descripcion) {
 		this.descripcion = descripcion;
 	}
 
 
-
-	@Override
-	public String toString() {
-		return "Concepto [codigo=" + codigo + ", descripcion=" + descripcion + "]";
-	}
-
-	
 	
 	
 }

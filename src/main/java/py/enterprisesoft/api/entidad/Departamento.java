@@ -9,14 +9,14 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import py.enterprisesoft.api.model.general.General;
+
 @Entity
 
-public class Departamento {
+public class Departamento extends General {
 	
-	@Id
-	private Integer codigo;
 	
-	@OneToMany(mappedBy="codigoDepartamento", cascade={CascadeType.PERSIST}, orphanRemoval=true)
+	@OneToMany(mappedBy="departamento")
 	private Collection<Cargo> cargo;
 	
 	private String descripcion;
@@ -24,30 +24,31 @@ public class Departamento {
 	
 	public Departamento() {
 		super();
-		this.codigo = 0;
 		this.descripcion = "";	
 		}
-	public Departamento(Integer codigo, String descripcion) {
-		super();
-		this.codigo = codigo;
-		this.descripcion = descripcion;
+
+
+	public Collection<Cargo> getCargo() {
+		return cargo;
 	}
-	public Integer getCodigo() {
-		return codigo;
+
+
+	public void setCargo(Collection<Cargo> cargo) {
+		this.cargo = cargo;
 	}
-	public void setCodigo(Integer codigo) {
-		this.codigo = codigo;
-	}
+
+
 	public String getDescripcion() {
 		return descripcion;
 	}
+
+
 	public void setDescripcion(String descripcion) {
 		this.descripcion = descripcion;
 	}
-	@Override
-	public String toString() {
-		return "Departamento [codigo=" + codigo + ", descripcion=" + descripcion + "]";
-	}
+	
+	
+	
 	
 	
 }

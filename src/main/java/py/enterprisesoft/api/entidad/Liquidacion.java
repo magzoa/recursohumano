@@ -12,59 +12,49 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+
+import py.enterprisesoft.api.model.general.General;
 @Entity
 
-public class Liquidacion implements Serializable{
+public class Liquidacion extends General implements Serializable{
 	
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	@Id
-	private Integer numero;
 	
-	@OneToMany(mappedBy="numeroLiquidacion", cascade={CascadeType.PERSIST}, orphanRemoval=true)
+	
+	@OneToMany(mappedBy="liquidacion")
 	private Collection<LiquidacionDetalle> liquidaciondetalle;
 	
-	@ManyToOne(cascade={CascadeType.PERSIST})
-	@JoinColumn(name="liq_codper")
-	private Persona codigoPersona;
+	@ManyToOne()
+	private Personal personal;
 	private Date fecha;
 	private Double monto;
 	private String observacion;
 	
 	public Liquidacion() {
 		super();
-		this.numero = 0;
-		this.codigoPersona = new Persona();
+		this.personal = new Personal();
 		this.fecha = new Date ();
 		this.monto = new Double(0);
 		this.observacion = "";
 	}
 
-	public Liquidacion(Integer numero, Date fecha, Double monto,Persona codigoPersona, String observacion) {
-		super();
-		this.numero = numero;
-		this.codigoPersona = codigoPersona;
-		this.fecha = fecha;
-		this.monto = monto;
-		this.observacion = observacion;
+	public Collection<LiquidacionDetalle> getLiquidaciondetalle() {
+		return liquidaciondetalle;
 	}
 
-	public Integer getNumero() {
-		return numero;
+	public void setLiquidaciondetalle(Collection<LiquidacionDetalle> liquidaciondetalle) {
+		this.liquidaciondetalle = liquidaciondetalle;
 	}
 
-	public void setNumero(Integer numero) {
-		this.numero = numero;
+	public Personal getCodigoPersona() {
+		return personal;
 	}
 
-	public Persona getCodigoPersona() {
-		return codigoPersona;
-	}
-
-	public void setCodigoPersona(Persona codigoPersona) {
-		this.codigoPersona = codigoPersona;
+	public void setCodigoPersona(Personal codigoPersona) {
+		this.personal = codigoPersona;
 	}
 
 	public Date getFecha() {
@@ -89,14 +79,6 @@ public class Liquidacion implements Serializable{
 
 	public void setObservacion(String observacion) {
 		this.observacion = observacion;
-	}
-
-
-
-	@Override
-	public String toString() {
-		return "Liquidacion [numero=" + numero + ", codigoPersona=" + codigoPersona + ", fecha=" + fecha + ", monto="
-				+ monto + ", observacion=" + observacion + "]";
 	}
 
 	
