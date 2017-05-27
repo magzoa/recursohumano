@@ -2,8 +2,11 @@ package py.enterprisesoft.api.entidad;
 
 import java.util.Date;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+@Entity
 public class Ausencia {
-	
+	@Id
 	private Integer codigo;
 	private Persona codPersona;
 	private Date fechaInicio;
