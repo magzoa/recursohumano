@@ -15,10 +15,7 @@ public class Rubro implements Serializable{
 	private static final long serialVersionUID = 1L;
 	@Id
 	private Integer codigo;
-		
-	@OneToMany(mappedBy="codigoRubro", cascade={CascadeType.PERSIST}, orphanRemoval=true)
-	private Collection<Haber> haber;
-	
+
 	
 	private String descripcion;
 	

@@ -21,8 +21,6 @@ public class Persona  implements Serializable{
 	@OneToMany(mappedBy="codigoPersona", cascade={CascadeType.PERSIST}, orphanRemoval=true)
 	private Collection<Liquidacion> liquidacion;
 	
-	@OneToMany(mappedBy="codigoPersona", cascade={CascadeType.PERSIST}, orphanRemoval=true)
-	private Collection<Bonificacion> bonificacion;
 	
 
 //	@OneToMany(mappedBy="ausencia", cascade={CascadeType.PERSIST}, orphanRemoval=true)
@@ -31,9 +29,6 @@ public class Persona  implements Serializable{
 	@OneToMany(mappedBy="codigoPersona", cascade={CascadeType.PERSIST}, orphanRemoval=true)
 	private Collection<Contrato> contrato;
 	
-	@OneToMany(mappedBy="codigoPersona", cascade={CascadeType.PERSIST}, orphanRemoval=true)
-	private Collection<Descuento> descuento;
-//	
 //	@OneToMany(mappedBy="entradasalida", cascade={CascadeType.PERSIST}, orphanRemoval=true)
 //	private Collection<EntradaSalida> entradasalida;
 //	

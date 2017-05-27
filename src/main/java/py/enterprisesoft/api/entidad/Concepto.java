@@ -18,10 +18,14 @@ public class Concepto {
 	private Collection<LiquidacionDetalle> liquidaciondetalle;
 	
 	
+<<<<<<< HEAD
 	@OneToMany(mappedBy="codigoConcepto", cascade={CascadeType.PERSIST}, orphanRemoval=true)
 	private Collection<HaberDetalle> haberdetalle;
 	
 	
+=======
+	@Column(name="cot_des")
+>>>>>>> d38dd2c7c5ba524d3ab07f3ae8f1f3323a7466b8
 	private String descripcion;
 
 	public Concepto() {
