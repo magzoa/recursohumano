@@ -1,12 +1,12 @@
 package py.enterprisesoft.api.entidad;
 
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="rhrl_persona")
 public class Nacionalidad {
-	
+	@Id
 	private Integer codigo;
 	private String descripcion;
 	public Nacionalidad() {

@@ -9,20 +9,16 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 @Entity
-@Table(name="rhco_salario")
 public class Salario {
 	
 	@Id
-	@Column(name="sal_cod")
 	private Integer codigo;
 	
 	@OneToMany(mappedBy="codSalario", cascade={CascadeType.PERSIST}, orphanRemoval=true)
 	private Collection<Contrato> contrato;
 		
-	@Column(name="sal_des")
 	private String descripcion;
 	
-	@Column(name="sal_monto")
 	private Double monto;
 	
 	public Salario() {

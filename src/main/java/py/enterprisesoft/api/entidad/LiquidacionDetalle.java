@@ -11,7 +11,6 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="rhlq_liquidacion_detalle")
 
 public class LiquidacionDetalle implements Serializable{
 	/**
@@ -20,7 +19,6 @@ public class LiquidacionDetalle implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
 	@Id
-	@Column(name="lqd_id")
 	private Integer idLiquidacionDetalle;
 	
 	
@@ -32,7 +30,6 @@ public class LiquidacionDetalle implements Serializable{
 	@JoinColumn(name="lqd_codconcepto")
 	private Concepto codigoConcepto;
 
-	@Column(name="lqd_montoparcial")
 	private Double montoParcial;
 	
 	public LiquidacionDetalle() {

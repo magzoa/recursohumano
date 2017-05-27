@@ -12,19 +12,15 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 @Entity
-@Table(name="rhrl_persona")
 public class Persona  implements Serializable{
 	
 	private static final long serialVersionUID = 1L;
 	@Id
-	@Column(name="per_cod")
 	private Integer codigo;
 	
 	@OneToMany(mappedBy="codigoPersona", cascade={CascadeType.PERSIST}, orphanRemoval=true)
 	private Collection<Liquidacion> liquidacion;
 	
-	@OneToMany(mappedBy="codigoPersona", cascade={CascadeType.PERSIST}, orphanRemoval=true)
-	private Collection<Bonificacion> bonificacion;
 	
 
 //	@OneToMany(mappedBy="ausencia", cascade={CascadeType.PERSIST}, orphanRemoval=true)
@@ -33,38 +29,22 @@ public class Persona  implements Serializable{
 	@OneToMany(mappedBy="codigoPersona", cascade={CascadeType.PERSIST}, orphanRemoval=true)
 	private Collection<Contrato> contrato;
 	
-	@OneToMany(mappedBy="codigoPersona", cascade={CascadeType.PERSIST}, orphanRemoval=true)
-	private Collection<Descuento> descuento;
-//	
 //	@OneToMany(mappedBy="entradasalida", cascade={CascadeType.PERSIST}, orphanRemoval=true)
 //	private Collection<EntradaSalida> entradasalida;
 //	
 	
-	@Column(name="per_docu")
 	private String documento;
-	@Column(name="per_nom")
 	private String nombre;
-	@Column(name="per_ape")
 	private String apellido;
-	@Column(name="per_fecnac")
 	private Date fec_nacimiento;
-	@Column(name="per_nacion")
 	private String nacionalidad;
-	@Column(name="per_domi")
 	private String domicilio;
-	@Column(name="per_ciu")
 	private String ciudad;
-	@Column(name="per_estciv")
 	private String estadoCivil;
-	@Column(name="per_sex")
 	private String sexo;
-	@Column(name="per_tel")
 	private String telefono;
-	@Column(name="per_email")
 	private String email;
-	@Column(name="per_obs")
 	private String observacion;
-	@Column(name="per_est")
 	private String estado;	
 	//bi-directional many-to-one association to Pedido
 	
@@ -73,7 +53,6 @@ public class Persona  implements Serializable{
 	private TipoDocumento tipodocumento;
 	
 	
-	@Column(name="per_imagen")
 	private byte[] imagen;
 	public Persona() {
 		super();

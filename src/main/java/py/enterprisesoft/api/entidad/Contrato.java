@@ -11,11 +11,9 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="rhrl_contrato")
 public class Contrato {
 	
 	@Id
-	@Column(name="con_num")
 	private Integer numero;
 	private String descripcion;
 	
