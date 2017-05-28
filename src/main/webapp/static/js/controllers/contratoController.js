@@ -92,7 +92,7 @@
 		validator.form();
 		
 		if(validator.valid()){
-			contratoAPI.saveUsuario(contrato).success(function(){
+			contratoAPI.saveContrato(contrato).success(function(){
 				
 				delete	$scope.contrato;
 				
@@ -151,10 +151,10 @@
 		
 		
 		$('ul.tabs').tabs('select_tab', 'registro');
-		requesFocus('nombre');
+		requesFocus('numero');
 		
 		
-		//cargarUsuario();
+		//cargarContrato();
 		
 	};
 	
@@ -191,7 +191,7 @@ $scope.eliminarMasivo=function(contratos){
 		$scope.criterioDeBusca="";
 		
 		$('#md1').closeModal();
-		requesFocus('nombre');
+		requesFocus('numero');
 	};
 	
 	$scope.isContratoSeleccionado=function(contratos){
@@ -227,7 +227,7 @@ $scope.eliminarMasivo=function(contratos){
 		$scope.contrato={estado:'activo'};
 		
 		//$scope.criterioDeBusca="";
-		requesFocus('nombre');
+		requesFocus('numero');
 		
 		cancelarError();
 		cancelarOk();
@@ -270,7 +270,7 @@ $scope.eliminarMasivo=function(contratos){
 	
 	
 	
-		cargarUsuarios();
+		cargarContratos();
 	});
 	
 	
