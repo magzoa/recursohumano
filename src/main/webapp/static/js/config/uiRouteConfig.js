@@ -34,6 +34,21 @@ angular.module("menu").config(['$stateProvider','$urlRouterProvider','$locationP
 			}
 			//agregar otro si necesario
 		}
+    })    
+    
+    $stateProvider.state('salarios', {
+        templateUrl: 'static/view/salario/form.html',
+        url: '/salarios',
+        controller: 'salarioController',
+		resolve:{
+			salarios:function(salarioAPI){
+				
+				return salarioAPI.getSalarios();
+			},usuario: function () {
+				return {};
+			}
+			//agregar otro si necesario
+		}
     })
     
     $stateProvider.state('usuarios', {

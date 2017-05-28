@@ -1,31 +1,21 @@
 
 
 //Funcion cuando pierde el foco
-$("#pass1").blur(function(){
+$("#descripcion").blur(function(){
 	var validator = $("#registroform").validate();
 	validator.form();	
 });
 
 //Funcion cuando pierde el foco
-$("#pass").blur(function(){
+$("#monto").blur(function(){
 	var validator = $("#registroform").validate();
 	validator.form();	
 });
 
-
-
-
-// $("#pass").change(function(){
-  
-// });
-
-
-
 $(document).ready(function(){
-	// Elk formulier met class validate, validatie uitvoeren
 	
 	// Extension materialize.css
-	jQuery(function ($) {
+jQuery(function ($) {
 $.validator.setDefaults({
     errorClass: 'invalid',
     validClass: "valid",
@@ -35,10 +25,7 @@ $.validator.setDefaults({
             .attr('data-error', error.text());
         console.log(error.text()); 
     }
-//		,
-//    submitHandler: function (form) {
-//        console.log('form ok');
-//    }
+
 });
 
 $("#registroform").validate({
@@ -47,23 +34,11 @@ $("#registroform").validate({
     validClass: "valid",
 	rules: {
         
-        pass1: {
-	        required: true,
-	        minlength: 5
+        descripcion: {
+	        required: true
 	    },
-	    pass: {
-	        required: true,
-	        minlength: 5,
-	        equalTo: "#pass1"
-	    },
-	    email:{   
-	    	 required: true,
-	    	 email: true
-	    },
-	    nombre:{
-	    	required:true,
-	    	minlength:2
-	    	
+	    monto:{   
+	    	 required: true
 	    }
 	    
     }
@@ -72,23 +47,11 @@ validClass: "valid",
 
 //	    $(placement).append(error)
 messages: {
-	    pass1: {
-        required: "Por favor ingrese la contraseña.",
-        minlength: "La contraseña deve contener al menos 5 caracteres."
+    descripcion:{
+    	required: "La descripción es obligatoria"
     },
-    pass: {
-        required: "Favor confirme la constraseña.",
-        minlength: "La contraseña deve contener al menos 5 caracteres.",
-        equalTo: "Las contraseñas no coinciden."
-    },
-    email:{
-    	required: "Correo es obligatorio",
-    	email:"Formato invalido"
-    },
-    nombre:{
-    	required:"Nombre es obligatorio",
-    	minlength:"El nombre deve contener al menos 2 caracteres"
-    	
+    monto:{
+    	required:"El monto es obligatorio"
     }
     
 }
