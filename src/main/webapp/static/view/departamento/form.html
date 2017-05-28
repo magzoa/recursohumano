@@ -37,7 +37,7 @@
 	<div class="col s6">
 		<ul class="tabs">
 			<li class="tab col s1"><a class="active blue-text darken-2"
-				href="#departamento"> <i class="material-icons prefix">playlist_add</i>
+				href="#registro"> <i class="material-icons prefix">playlist_add</i>
 					Registro de Departamento
 			</a></li>
 			<li class="tab col s1"><a class="blue-text darken-2"
@@ -53,7 +53,7 @@
 
 
 
-	<div id="departamento" class="col s12">
+	<div id="registro" class="col s12">
 		<div class="row">
 
 			<ul>
@@ -75,7 +75,7 @@
 
 			<!--  name="registrationForm"  novalidate="novalidate" name="registrationForm"-->
 
-			<form class="col s8" id="departamentoform">
+			<form class="col s8" id="registroform">
 
 
 				<div class="card-panel">
@@ -87,7 +87,12 @@
 							<input id="descripcion" type="text"
 								ng-model="departamento.descripcion" name="descripcion"> <label
 								for="descripcion" data-success="ok">Descripción</label>
-						
+						</div>
+						<div class="input-field col s4">
+							<input id="cargo" type="number" class="validate"
+								ng-model="departamento.cargo" name="cargo"> <label
+								for="cargo" data-success="ok">Cargo</label>
+						</div>
 
 						<!-- 						Fin de elementos de departamento -->
 
@@ -179,6 +184,7 @@
 						<tr>
 							<th>Eliminar</th>
 							<th><a href="" ng-click="ordenarPor('descripcion')">Descripción</a></th>
+							<th><a href="" ng-click="ordenarPor('cargo')">Cargo</a></th>
 							<th>Editar</th>
 						</tr>
 					</thead>
@@ -194,7 +200,7 @@
 
 
 							<td>{{departamento.descripcion}}</td>
-							
+							<td>{{departamento.cargo}}</td>
 							<td ng-click="editarDepartamento(departamento)"><i
 								class="material-icons">create</i></td>
 						</tr>

@@ -41,8 +41,8 @@ public class JPAConfiguration {
 	Properties additionalProperties() {
 		Properties properties = new Properties();//update none
 		properties.setProperty("hibernate.hbm2ddl.auto", "update");
-		 properties.setProperty("hibernate.dialect","org.hibernate.dialect.MySQL5Dialect");
-		//properties.setProperty("hibernate.dialect", "org.hibernate.dialect.PostgreSQLDialect");
+		// properties.setProperty("hibernate.dialect","org.hibernate.dialect.MySQL5Dialect");
+		properties.setProperty("hibernate.dialect", "org.hibernate.dialect.PostgreSQLDialect");
 
 		properties.setProperty("hibernate.show_sql", "true");
 		return properties;
