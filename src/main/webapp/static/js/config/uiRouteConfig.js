@@ -57,6 +57,20 @@ angular.module("menu").config(['$stateProvider','$urlRouterProvider','$locationP
 		}
     })
     
+     $stateProvider.state('personals', {
+        templateUrl: 'static/view/personal/form.html',
+        url: '/personals',
+        controller: 'personalController',
+		resolve:{
+			personals:function(personalAPI){
+				
+				return personalAPI.getPersonals();
+			},personal: function () {
+				return {};
+			}
+			//agregar otro si necesario
+		}
+    })
 	
 	$stateProvider.state('depositos', {
         templateUrl: 'static/view/deposito/form.html',
