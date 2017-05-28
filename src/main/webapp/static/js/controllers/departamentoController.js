@@ -88,11 +88,11 @@
 //			console.log("Ingrese en comparación es igual")
 //		}
 		
-		var validator = $("#registroform").validate();
+		var validator = $("#departamentoform").validate();
 		validator.form();
 		
 		if(validator.valid()){
-			departamentoAPI.saveContrato(departamento).success(function(){
+			departamentoAPI.saveDepartamento(departamento).success(function(){
 				
 				delete	$scope.departamento;
 				
@@ -104,7 +104,7 @@
 				cancelarError();
 				
 				
-				cargarContratos();
+				cargarDepartamentos();
 					
 				}).error(function(error, status){
 				
@@ -119,9 +119,9 @@
 		
 	};	
 	
-	var cargarContratos=function(){
+	var cargarDepartamentos=function(){
 		
-		departamentoAPI.getContratos().success(function(departamentos){
+		departamentoAPI.getDepartamentos().success(function(departamentos){
 			
 			
 			$scope.departamentos=departamentos;
@@ -133,12 +133,12 @@
 			
 		});
 		
-		$scope.departamento={estado:'activo'};
-		requesFocus('nombre');
+		//$scope.departamento={estado:'activo'};
+		requesFocus('descripcion');
 	};
 	
 	
-	$scope.editarContrato=function(departamento){
+	$scope.editarDepartamento=function(departamento){
 		
 		
 		$scope.departamento=departamento;
@@ -150,11 +150,11 @@
 		});
 		
 		
-		$('ul.tabs').tabs('select_tab', 'registro');
-		requesFocus('nombre');
+		$('ul.tabs').tabs('select_tab', 'departamento');
+		requesFocus('descripcion');
 		
 		
-		//cargarContrato();
+		//cargarDepartamento();
 		
 	};
 	
@@ -191,10 +191,10 @@ $scope.eliminarMasivo=function(departamentos){
 		$scope.criterioDeBusca="";
 		
 		$('#md1').closeModal();
-		requesFocus('nombre');
+		requesFocus('descripcion');
 	};
 	
-	$scope.isContratoSeleccionado=function(departamentos){
+	$scope.isDepartamentoSeleccionado=function(departamentos){
 		return departamentos.some(function(departamento){
 			return departamento.seleccionado;
 		});
@@ -224,10 +224,10 @@ $scope.eliminarMasivo=function(departamentos){
 			Materialize.updateTextFields();
 		});
 		
-		$scope.departamento={estado:'activo'};
+		//$scope.departamento={estado:'activo'};
 		
 		//$scope.criterioDeBusca="";
-		requesFocus('nombre');
+		requesFocus('descripcion');
 		
 		cancelarError();
 		cancelarOk();
@@ -270,7 +270,7 @@ $scope.eliminarMasivo=function(departamentos){
 	
 	
 	
-		cargarContratos();
+		cargarDepartamentos();
 	});
 	
 	

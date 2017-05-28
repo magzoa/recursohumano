@@ -37,7 +37,7 @@
 	<div class="col s6">
 		<ul class="tabs">
 			<li class="tab col s1"><a class="active blue-text darken-2"
-				href="#registro"> <i class="material-icons prefix">playlist_add</i>
+				href="#departamento"> <i class="material-icons prefix">playlist_add</i>
 					Registro de Departamento
 			</a></li>
 			<li class="tab col s1"><a class="blue-text darken-2"
@@ -53,7 +53,7 @@
 
 
 
-	<div id="registro" class="col s12">
+	<div id="departamento" class="col s12">
 		<div class="row">
 
 			<ul>
@@ -75,7 +75,7 @@
 
 			<!--  name="registrationForm"  novalidate="novalidate" name="registrationForm"-->
 
-			<form class="col s8" id="registroform">
+			<form class="col s8" id="departamentoform">
 
 
 				<div class="card-panel">
@@ -87,7 +87,6 @@
 							<input id="descripcion" type="text"
 								ng-model="departamento.descripcion" name="descripcion"> <label
 								for="descripcion" data-success="ok">Descripción</label>
-						</div>
 						
 
 						<!-- 						Fin de elementos de departamento -->
@@ -180,7 +179,6 @@
 						<tr>
 							<th>Eliminar</th>
 							<th><a href="" ng-click="ordenarPor('descripcion')">Descripción</a></th>
-							
 							<th>Editar</th>
 						</tr>
 					</thead>
