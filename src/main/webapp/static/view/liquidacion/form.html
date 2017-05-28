@@ -1,0 +1,237 @@
+
+<head>
+<meta charset="UTF-8">
+<title>Registro de Liquidacion</title>
+
+<link href="static/css/abm.css" rel="stylesheet">
+</head>
+
+<!-- <button class="btn" ng-click="confirm(true)"></button> -->
+
+
+
+
+
+
+<div class="row">
+
+	<div class="col s2"></div>
+	<div class="col s10">
+		<ul class="tabs">
+			<li class="tab col s1">
+			<a class="active blue-text darken-2" href="#registro_liquidacion">
+			<i class="material-icons prefix">playlist_add</i>
+			Registro de Liquidacion
+			</a>
+		
+			</li>
+			<li class="tab col s1">
+			<a class="blue-text darken-2" href="#listado_liquidacion1">
+			<i class="material-icons prefix">library_books</i>
+			Listado de Liquidacions
+			</a>
+			
+			</li>
+		
+		</ul>
+	</div>
+	<div class="col s2"></div>
+
+
+	
+	
+	
+		<div id="registro_liquidacion" class="col s12">
+		<div class="row">
+
+			<div class="col s1"></div>
+
+<!--  name="registrationForm"  novalidate="novalidate" name="registrationForm"-->
+
+			<form class="col s10" id="registroformliquidacion" >
+
+
+				<div class="card-panel">
+					<div class="row">
+						
+						
+						        <div class="input-field col s4">
+          <input  id="fecha_liquidacion" type="date"  ng-model="liquidacion.fecha" name="fecha_liquidacion">
+         <label  for="fecha_liquidacion" data-success="ok">Fecha</label>
+        </div>
+        					
+						<div class="col s4">
+							<p>
+								<input class="with-gap" value="1" name="estado"
+									ng-model="liquidacion.estado" type="radio" id="estado1" /> <label
+									for="estado1">Estado Activo</label>
+							</p>
+							<p>
+								<input class="with-gap" value="0" name="estado"
+									ng-model="liquidacion.estado" type="radio" id="estado2" /> <label
+									for="estado2">Estado Inactivo</label>
+							</p>
+						</div>
+
+
+						
+						
+						
+						
+					</div>
+
+
+				
+				</div>
+				<!-- Fin Card Panel -->
+				<button class="btn waves-effect waves-light" type="submit"
+					name="action" ng-click="registrar(liquidacion)">
+					Registrar <i class="material-icons left">save</i>
+
+				</button>
+				<button class="btn waves-effect orange darken-4" type="button"
+					name="action" ng-click="cancelar()">
+					Cancelar <i class="material-icons left">cancel</i>
+				</button>
+
+
+
+
+
+
+				
+			
+				<div id="emensaje_sistema" ng-class="{'error':error}">
+				
+				<div ng-class="{'etitulo':error}" id="etitulo_liquidacion">
+				
+				</div>
+				<div ng-class="{'emsj':error}" id="emsj_liquidacion">
+				</div>
+			
+				
+				
+				</div>
+				
+				
+				<div id="mensaje_sistema" ng-class="{'ok':ok}" >
+				
+				<div ng-class="{'titulo':ok}" id="titulo_msj_liquidacion">
+				
+				
+				
+				</div>
+				<div ng-class="{'msj':ok}" id="msj_liquidacion">
+				</div>
+			
+				
+				
+				</div>
+				
+				
+				
+				
+
+
+			</form>
+				
+			
+			
+			
+							
+			
+
+			<div class="col s1"></div>
+		</div>
+		<!-- Fin Row abm -->
+
+
+
+	</div>
+	<!--     fin test pestaña1 -->
+	
+	
+	
+	<div id="listado_liquidacion1" class="col s12">
+
+		<div class="row">
+
+				<div class="input-field col s4">
+					<input id="search" type="search" required
+						ng-model="criterioDeBuscaLiquidacion"> <label for="search"><i
+						class="material-icons">search</i></label> <i class="material-icons"
+						ng-click="criterioDeBusca=''">close</i>
+				</div>
+<!-- 			mymodalliquidacioneliminar -->
+			<div class="col s4" style="margin-top: 24px;">
+			<button ng-disabled="!isLiquidacionSeleccionado(liquidacions)"
+					class="btn waves-effect red " ng-click="cargarModalLiquidacion('#mdLiquidacionEliminar1',liquidacions)" >
+					Eliminar <i class="material-icons left">delete</i>
+				</button>
+			</div>
+			
+			<div class="col s12">
+
+       
+				<table class="bordered responsive-table"
+					ng-show="liquidacions.length > 0">
+					<thead>
+						<tr>
+							<th>Eliminar</th>
+							<th><a href="" ng-click="ordenarPorLiquidacion('id')">Codigo</a></th>
+							<th><a href="" ng-click="ordenarPorLiquidacion('fecha')">Descripcion</a></th>
+							<th><a href="" ng-click="ordenarPorLiquidacion('estado')">Estado</a></th>
+							<th>Editar</th>
+							<th>Seleccionar</th>
+						</tr>
+					</thead>
+
+					<tbody>
+
+						<tr ng-class="{'seleccionado negrita':liquidacion.seleccionado}"
+							ng-repeat="liquidacion in liquidacions | filter:criterioDeBuscaLiquidacion | orderBy:criterioDeOrdenacionLiquidacion:direccionDeOrdenacionLiquidacion">
+							<td><p>
+									<input type="checkbox" id="liquidacion+{{liquidacion.id}}"
+										ng-model="liquidacion.seleccionado" /><label
+										for="liquidacion+{{liquidacion.id}}"></label>
+								</p></td>
+								
+								
+							<td>{{liquidacion.id}}</td>
+							<td>{{liquidacion.fecha}}</td>
+							<td ng-if="liquidacion.estado ===0">Inactivo</td>
+							<td ng-if="liquidacion.estado ===1">Activo</td>
+							<td ng-click="editarLiquidacion(liquidacion)"><i
+								class="material-icons">create</i></td>
+							<td ng-click="seleccionarLiquidacion(liquidacion)"><i
+								class="material-icons">arrow_downward</i></td>
+						</tr>
+
+
+					</tbody>
+				</table>
+
+
+			</div>
+
+		</div>
+
+
+	</div>
+	<!--     fin pestaña 2 -->
+	
+	
+	
+	
+	
+	
+	
+
+</div>
+<!--   fin row tab -->
+
+
+<script type="text/javascript" src="static/js/jquery.validate.min.js"></script>
+
+<script type="text/javascript" src="static/view/liquidacion/jvalidator.js"></script>
+

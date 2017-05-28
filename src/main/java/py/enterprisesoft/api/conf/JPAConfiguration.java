@@ -55,29 +55,29 @@ public class JPAConfiguration {
 		return transactionManager;
 	}
 
-	 @Bean
-	 @Profile("dev")
-	 public DataSource dataSource(){
-	 DriverManagerDataSource dataSource =
-	 new DriverManagerDataSource();
-	 dataSource.setDriverClassName("com.mysql.jdbc.Driver");
-	 dataSource.setUrl(
-	 "jdbc:mysql://localhost:3306/dbrrhh");
-	 dataSource.setUsername("root");
-	 dataSource.setPassword("");
-	 System.out.println("Entre en modo de desarrollo dev");
-	 return dataSource;
-	 }
+//	 @Bean
+//	 @Profile("dev")
+//	 public DataSource dataSource(){
+//	 DriverManagerDataSource dataSource =
+//	 new DriverManagerDataSource();
+//	 dataSource.setDriverClassName("com.mysql.jdbc.Driver");
+//	 dataSource.setUrl(
+//	 "jdbc:mysql://localhost:3306/dbrrhh");
+//	 dataSource.setUsername("root");
+//	 dataSource.setPassword("");
+//	 System.out.println("Entre en modo de desarrollo dev");
+//	 return dataSource;
+//	 }
 
-/*	@Bean
+@Bean
 	@Profile("dev")
 	public DataSource dataSource() {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 		dataSource.setDriverClassName("org.postgresql.Driver");
 		dataSource.setUrl("jdbc:postgresql://localhost:5432/dbrrhh");
 		dataSource.setUsername("postgres");
-		dataSource.setPassword("admin");
+		dataSource.setPassword("12345");
 		return dataSource;
 	}
-*/
+
 }

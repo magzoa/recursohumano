@@ -44,7 +44,7 @@ angular.module("menu").config(['$stateProvider','$urlRouterProvider','$locationP
 			salarios:function(salarioAPI){
 				
 				return salarioAPI.getSalarios();
-			},usuario: function () {
+			},salario: function () {
 				return {};
 			}
 			//agregar otro si necesario
@@ -60,6 +60,21 @@ angular.module("menu").config(['$stateProvider','$urlRouterProvider','$locationP
 				
 				return usuarioAPI.getUsuarios();
 			},usuario: function () {
+				return {};
+			}
+			//agregar otro si necesario
+		}
+    })
+    
+     $stateProvider.state('contratos', {
+        templateUrl: 'static/view/contrato/form.html',
+        url: '/contratos',
+        controller: 'contratoController',
+		resolve:{
+			contratos:function(contratoAPI){
+				
+				return contratoAPI.getContratos();
+			},contrato: function () {
 				return {};
 			}
 			//agregar otro si necesario
