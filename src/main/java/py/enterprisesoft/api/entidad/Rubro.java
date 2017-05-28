@@ -16,8 +16,6 @@ public class Rubro extends General implements Serializable{
 	
 	private static final long serialVersionUID = 1L;
 
-
-	
 	private String descripcion;
 	
 	public Rubro() {
