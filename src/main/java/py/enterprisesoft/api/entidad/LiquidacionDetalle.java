@@ -13,7 +13,7 @@ public class LiquidacionDetalle extends General{
 	
 	@ManyToOne()
 	private Liquidacion liquidacion;
-	
+	//Pago de Salarios,Aguinaldo, Vacaciones
 	@ManyToOne()
 	private Concepto concepto;
 
