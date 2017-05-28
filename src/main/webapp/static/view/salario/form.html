@@ -1,0 +1,364 @@
+
+<head>
+<meta charset="UTF-8">
+<title>Registro de Usuario</title>
+
+<link href="static/css/abm.css" rel="stylesheet">
+</head>
+
+<!-- <button class="btn" ng-click="confirm(true)"></button> -->
+
+
+
+<div id="md1" class="modal">
+	<div class="modal-content">
+		<h4>Por Favor confirme la eliminación</h4>
+		<p>Estas seguro de eliminar la selección?</p>
+	</div>
+	<div class="modal-footer">
+		<button href="#" class="btn-flat waves-effect waves-red"
+			onclick="$('#md1').closeModal(); return false;">
+			Cancelar <i class="material-icons left">cancel</i>
+		</button>
+		<button class="btn-flat waves-effect waves-green"
+			ng-click="eliminarMasivo(usuarios);">
+			Aceptar <i class="material-icons left">delete_forever</i>
+		</button>
+	</div>
+
+</div>
+<!-- Fin Modal -->
+
+
+<div class="row">
+
+	<div class="col s3"></div>
+	
+	<div class="col s6">
+		<ul class="tabs">
+			<li class="tab col s1">
+			<a class="active blue-text darken-2" href="#registro">
+			<i class="material-icons prefix">playlist_add</i>
+			Registro de Usuario
+			</a>
+		
+			</li>
+			<li class="tab col s1">
+			<a class="blue-text darken-2" href="#listado1">
+			<i class="material-icons prefix">library_books</i>
+			Listado de Usuarios
+			</a>
+			
+			</li>
+		
+		</ul>
+	</div>
+	<div class="col s3"></div>
+
+
+	
+	
+	
+		<div id="registro" class="col s12">
+		<div class="row">
+			
+			<ul>
+			
+			<li>
+			<a class="blue-text darken-2" href="/enterprisesoft/usuario/reporte_usuario/?format=pdf" target="_blank">
+			<i class="material-icons">picture_as_pdf</i>
+			Listado en Pdf
+			</a>
+			</li>
+			<li>
+			<a class="blue-text darken-2" href="/enterprisesoft/usuario/reporte_usuario/?format=xlsx" target="_blank">
+			<i class="material-icons left">view_list</i>
+			Listado en Excel
+			</a>
+			</li>
+			
+			</ul>
+			
+			<div class="col s2"></div>
+
+<!--  name="registrationForm"  novalidate="novalidate" name="registrationForm"-->
+
+			<form class="col s8" id="registroform" >
+
+
+				<div class="card-panel">
+					<div class="row">
+						
+<!-- 						Elementos de persona -->
+						
+						        <div class="input-field col s4">
+          <input  id="nombre" type="text"  ng-model="usuario.nombre" name="nombre">
+         <label  for="nombre" data-success="ok">Nombre</label>
+        </div>
+        <div class="input-field col s4">
+          <input id="apellido" value="" type="text" class="validate" ng-model="usuario.apellido" name="apellido">
+         <label for="apellido">Apellido</label>
+        </div>
+       
+           <div class="input-field col s4">
+          <input id="direccion" type="text" class="validate" ng-model="usuario.direccion" name="direccion">
+         <label for="direccion">Direccion</label>
+        </div>
+
+		<div class="input-field col s4">
+          <input id="ci" type="text" class="validate" ng-model="usuario.ci" name="ci">
+         <label for="ci">Cédula</label>
+        </div>
+		  
+        <div class="input-field col s4">
+          <input id="telefono" type="tel" class="validate" ng-model="usuario.telefono" name="telefono">
+         <label class="active" for="telefono">Telefono</label>
+        </div>
+        
+        <div class="input-field col s4">
+          <input id="celular" type="tel" class="validate" ng-model="usuario.celular" name="celular">
+         <label class="active" for="celular">Celular</label>
+        </div>
+        
+        <div class="input-field col s4">
+          <input id="email" type="email" class="validate" ng-model="usuario.email" name="email">
+         <label  for="email"  data-success="ok">Correo</label>
+        </div>
+						
+<!-- 						Fin de elementos de persona -->
+						
+						<div class="input-field col s4">
+							<input id="obs" type="text" class="validate"
+								ng-model="usuario.obs" name="obs"/> 
+								<label for="obs">Observación</label>
+						</div>
+						
+						
+						<div class="input-field col s4">
+							<input id="pass1" type="password" class="validate"
+								ng-model="usuario.pass1" name="pass1"   /> 
+								<label for="pass1" data-success="ok">Seña</label>
+						
+						</div>
+						
+<!-- ng-show="registrationForm.usuario.pass1.$dirty" -->
+<!-- 						<div  class="card-panel" ng-messages="registrationForm.usuario.pass1.$error" > -->
+						
+<!-- 						<div ng-message="required"> -->
+<!-- 						Por favor, preencha o campo pass1! -->
+<!-- 						</div> -->
+						
+<!-- 						</div> -->
+						
+<!-- 						directive pass comparison stackoverflow -->
+							
+						<div class="input-field col s4">
+							<input id="pass" type="password" class="validate"
+								ng-model="usuario.pass" name="pass"  required="required" />
+								 <label for="pass" data-success="ok">Confirmar Seña</label>
+						
+<!-- 						compare-to="usuario.pass1" -->
+<!-- 						data-error="Las señas no coicidenn"   compare-to="usuario.pass1"-->
+						<div  ng-messages="registrationForm.pass.$error" ng-messages-include="static/view/usuario/messages.html">
+						
+						{{ errorMessage.text }}
+						</div>
+						</div>
+						{{ errorMessage.text }}
+						
+							
+							
+							
+						<div class="col s4">
+							<p>
+								<input class="with-gap" value="activo" name="estado"
+									ng-model="usuario.estado" type="radio" id="estado1" /> <label
+									for="estado1">Estado Activo</label>
+							</p>
+							<p>
+								<input class="with-gap" value="inactivo" name="estado"
+									ng-model="usuario.estado" type="radio" id="estado2" /> <label
+									for="estado2">Estado Inactivo</label>
+							</p>
+						</div>
+
+
+						
+						
+						
+						
+					</div>
+
+
+				
+				</div>
+				<!-- Fin Card Panel -->
+				<button class="btn waves-effect waves-light" type="submit"
+					name="action" ng-click="registrar(usuario)">
+					Registrar <i class="material-icons left">save</i>
+
+				</button>
+				<button class="btn waves-effect orange darken-4" type="button"
+					name="action" ng-click="cancelar()">
+					Cancelar <i class="material-icons left">cancel</i>
+				</button>
+
+
+
+
+
+
+				
+			
+				<div id="emensaje_sistema" ng-class="{'error':error}">
+				
+				<div ng-class="{'etitulo':error}" id="etitulo">
+				
+				</div>
+				<div ng-class="{'emsj':error}" id="emsj">
+				</div>
+			
+				
+				
+				</div>
+				
+				
+				<div id="mensaje_sistema" ng-class="{'ok':ok}" >
+				
+				<div ng-class="{'titulo':ok}" id="titulo">
+				
+				
+				
+				</div>
+				<div ng-class="{'msj':ok}" id="msj">
+				</div>
+			
+				
+				
+				</div>
+				
+				
+				
+				
+
+
+			</form>
+				
+			
+			
+			
+							
+			
+
+			<div class="col s2"></div>
+		</div>
+		<!-- Fin Row abm -->
+
+
+
+<!-- <div class="card-panel" ng-show="registrationForm.pass1.$error"> -->
+		
+<!-- 				Escriba la contrasena -->
+<!-- 	</div> -->
+
+	</div>
+	<!--     fin test pestaña1 -->
+	
+	
+	
+	<div id="listado1" class="col s12">
+
+		<div class="row">
+
+				<div class="input-field col s4">
+					<input id="search" type="search" required
+						ng-model="criterioDeBusca"> <label for="search"><i
+						class="material-icons">search</i></label> <i class="material-icons"
+						ng-click="criterioDeBusca=''">close</i>
+				</div>
+			
+			<div class="col s4" style="margin-top: 24px;">
+			<button ng-disabled="!isUsuarioSeleccionado(usuarios)"
+					class="btn waves-effect red mymodal" href="#md1">
+					Eliminar <i class="material-icons left">delete</i>
+				</button>
+			</div>
+			
+			<div class="col s12">
+
+       
+				<table class="bordered responsive-table"
+					ng-show="usuarios.length > 0">
+					<thead>
+						<tr>
+							<th>Eliminar</th>
+							<th><a href="" ng-click="ordenarPor('id')">Codigo</a></th>
+							<th><a href="" ng-click="ordenarPor('nombre')">Nombre</a></th>
+							<th><a href="" ng-click="ordenarPor('apellido')">Apellido</a></th>
+							<th><a href="" ng-click="ordenarPor('direccion')">Dirección</a></th>
+							<th><a href="" ng-click="ordenarPor('ci')">CI</a></th>
+							<th><a href="" ng-click="ordenarPor('telefono')">Telefono</a></th>
+							<th><a href="" ng-click="ordenarPor('celular')">Celular</a></th>
+							<th><a href="" ng-click="ordenarPor('email')">Email</a></th>
+							<th><a href="" ng-click="ordenarPor('estado')">Estado</a></th>
+							<th>Password</th>
+							<th>Observación</th>
+							<th>Editar</th>
+						</tr>
+					</thead>
+
+					<tbody>
+
+						<tr ng-class="{'seleccionado negrita':usuario.seleccionado}"
+							ng-repeat="usuario in usuarios | filter:criterioDeBusca | orderBy:criterioDeOrdenacion:direccionDeOrdenacion">
+							<td><p>
+									<input type="checkbox" id="{{usuario.id}}"
+										ng-model="usuario.seleccionado" /><label
+										for="{{usuario.id}}"></label>
+								</p></td>
+								
+								
+							<td>{{usuario.id}}</td>
+							<td>{{usuario.nombre}}</td>
+							<td>{{usuario.apellido}}</td>
+							<td>{{usuario.direccion}}</td>
+							<td>{{usuario.ci}}</td>
+							<td>{{usuario.telefono}}</td>
+							<td>{{usuario.celular}}</td>
+							<td>{{usuario.email}}</td>
+							<td>{{usuario.estado}}</td>
+							<td>{{usuario.pass}}</td>
+							<td>{{usuario.obs}}</td>
+							<td ng-click="editarUsuario(usuario)"><i
+								class="material-icons">create</i></td>
+						</tr>
+
+
+
+					</tbody>
+				</table>
+
+
+			</div>
+
+		</div>
+
+
+	</div>
+	<!--     fin pestaña 2 -->
+	
+	
+	
+	
+	
+	
+	
+
+</div>
+<!--   fin row tab -->
+
+
+<script type="text/javascript" src="static/js/jquery.validate.min.js"></script>
+
+<script type="text/javascript" src="static/view/usuario/jvalidator.js"></script>
+
