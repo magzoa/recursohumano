@@ -96,6 +96,20 @@ angular.module("menu").config(['$stateProvider','$urlRouterProvider','$locationP
 		}
     })
     
+     $stateProvider.state('cargos', {
+        templateUrl: 'static/view/cargo/form.html',
+        url: '/cargos',
+        controller: 'cargoController',
+		resolve:{
+			cargos:function(conceptoAPI){
+				return conceptoAPI.getCargos();
+			},cargo: function () {
+				return {};
+			}
+			//agregar otro si necesario
+		}
+    })
+    
      $stateProvider.state('personals', {
         templateUrl: 'static/view/personal/form.html',
         url: '/personals',
