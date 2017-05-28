@@ -45,6 +45,8 @@
 		
 		
 			//this.form.reset(); 
+			
+			console.log(BUEN DIAAAAAAAAAAAAAAAAAAAAAAA);
 	
 		
 			$('.datepicker').pickadate({
