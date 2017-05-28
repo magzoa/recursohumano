@@ -1,0 +1,27 @@
+<div>
+
+
+<meta charset="UTF-8">
+
+
+<div id="mdGrupoEliminar1" class="modal">
+
+<!-- {{$id}} -->
+	<div class="modal-content">
+		<h4>Pantalla de Confirmación</h4>
+		<p>Estas seguro de eliminar la selección?</p>
+	</div>
+	<div class="modal-footer">
+		<button href="#" class="btn-flat waves-effect waves-red"
+			onclick="$('#mdGrupoEliminar1').closeModal(); return false;">
+			Cancelar <i class="material-icons left">cancel</i>
+		</button>
+<!-- 		ng-click="eliminarMasivoGrupo(grupos);"  onclick="$('#mdGrupoEliminar1').closeModal(); return false;" -->
+		<button class="btn-flat waves-effect waves-green"
+			ng-click="eliminarMasivoGrupo(grupos);">
+			Aceptar <i class="material-icons left">delete_forever</i>
+		</button>
+	</div>
+
+</div>
+</div>

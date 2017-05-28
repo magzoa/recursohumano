@@ -2,7 +2,7 @@
  * 
  */
 
-	angular.module("menu").controller("usuarioController",function($scope,$http,usuarioAPI){
+	angular.module("menu").controller("salarioController",function($scope,$http,salarioAPI){
 		
 		
 		
@@ -46,12 +46,12 @@
 		
 //		 $scope.message="asdfsdf";
 		
-		$scope.usuarios=[];
+		$scope.salarios=[];
 		$scope.eliminados=[];
 		$scope.error=false;
 		$scope.ok=false;
 		
-		$scope.app="Registro de Usuario";
+		$scope.app="Registro de Salario";
 		
 		 $('ul.tabs').tabs();
 		 
@@ -82,9 +82,9 @@
 		  );
 		
 		
-	$scope.registrar=function(usuario){
+	$scope.registrar=function(salario){
 	
-//		if((usuario.pass1)===(usuario.pass)){
+//		if((salario.pass1)===(salario.pass)){
 //			console.log("Ingrese en comparación es igual")
 //		}
 		
@@ -92,9 +92,9 @@
 		validator.form();
 		
 		if(validator.valid()){
-			usuarioAPI.saveUsuario(usuario).success(function(){
+			salarioAPI.saveSalario(salario).success(function(){
 				
-				delete	$scope.usuario;
+				delete	$scope.salario;
 				
 				var titulo="<i class='material-icons left'>done</i> Registrado correctamente";
 				$("#titulo").html(titulo);
@@ -104,7 +104,7 @@
 				cancelarError();
 				
 				
-				cargarUsuarios();
+				cargarSalarios();
 					
 				}).error(function(error, status){
 				
@@ -119,12 +119,12 @@
 		
 	};	
 	
-	var cargarUsuarios=function(){
+	var cargarSalarios=function(){
 		
-		usuarioAPI.getUsuarios().success(function(usuarios){
+		salarioAPI.getSalarios().success(function(salarios){
 			
 			
-			$scope.usuarios=usuarios;
+			$scope.salarios=salarios;
 			
 			
 		}).error(function(error, status){
@@ -133,15 +133,15 @@
 			
 		});
 		
-		$scope.usuario={estado:'activo'};
-		requesFocus('nombre');
+		//$scope.salario={estado:'activo'};
+		requesFocus('descripcion');
 	};
 	
 	
-	$scope.editarUsuario=function(usuario){
+	$scope.editarSalario=function(salario){
 		
 		
-		$scope.usuario=usuario;
+		$scope.salario=salario;
 		
 		$scope.$watch(function(){
 			
@@ -151,35 +151,35 @@
 		
 		
 		$('ul.tabs').tabs('select_tab', 'registro');
-		requesFocus('nombre');
+		requesFocus('descripcion');
 		
 		
-		//cargarUsuario();
+		//cargarSalario();
 		
 	};
 	
 	
-$scope.eliminarMasivo=function(usuarios){
+$scope.eliminarMasivo=function(salarios){
 		
-		$scope.usuarios=usuarios.filter(function(usuario){
-			if(!usuario.seleccionado)return usuario;
+		$scope.salarios=salarios.filter(function(salario){
+			if(!salario.seleccionado)return salario;
  		});
 		
 		
-		var eliminados=usuarios.filter(function(usuario){
+		var eliminados=salarios.filter(function(salario){
 			
-			if(usuario.seleccionado){
+			if(salario.seleccionado){
 				
-				delete usuario.seleccionado;
+				delete salario.seleccionado;
 
-				return usuario
+				return salario
 			}
 				
 		});
 		
 //  		$scope.message=eliminados;
  		
-		usuarioAPI.eliminarMasivo(eliminados).success(function(usuarios){
+		salarioAPI.eliminarMasivo(eliminados).success(function(salarios){
 		
 			console.log("Eliminados Correctamente");
 			
@@ -191,12 +191,12 @@ $scope.eliminarMasivo=function(usuarios){
 		$scope.criterioDeBusca="";
 		
 		$('#md1').closeModal();
-		requesFocus('nombre');
+		requesFocus('descripcion');
 	};
 	
-	$scope.isUsuarioSeleccionado=function(usuarios){
-		return usuarios.some(function(usuario){
-			return usuario.seleccionado;
+	$scope.isSalarioSeleccionado=function(salarios){
+		return salarios.some(function(salario){
+			return salario.seleccionado;
 		});
 		
 	};
@@ -218,16 +218,16 @@ $scope.eliminarMasivo=function(usuarios){
 	}
 		
 	var cancelar=function(){
-		$scope.usuario=undefined;
+		$scope.salario=undefined;
 		
 		$scope.$watch(function(){	
 			Materialize.updateTextFields();
 		});
 		
-		$scope.usuario={estado:'activo'};
+		//$scope.salario={estado:'activo'};
 		
 		//$scope.criterioDeBusca="";
-		requesFocus('nombre');
+		requesFocus('descripcion');
 		
 		cancelarError();
 		cancelarOk();
@@ -270,7 +270,7 @@ $scope.eliminarMasivo=function(usuarios){
 	
 	
 	
-		cargarUsuarios();
+		cargarSalarios();
 	});
 	
 	

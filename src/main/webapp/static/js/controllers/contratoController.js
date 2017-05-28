@@ -92,7 +92,7 @@
 		validator.form();
 		
 		if(validator.valid()){
-			contratoAPI.saveContrato(contrato).success(function(){
+			contratoAPI.saveUsuario(contrato).success(function(){
 				
 				delete	$scope.contrato;
 				
@@ -134,7 +134,7 @@
 		});
 		
 		$scope.contrato={estado:'activo'};
-		requesFocus('nombre');
+		requesFocus('numero');
 	};
 	
 	
@@ -154,7 +154,7 @@
 		requesFocus('nombre');
 		
 		
-		//cargarContrato();
+		//cargarUsuario();
 		
 	};
 	
@@ -270,7 +270,7 @@ $scope.eliminarMasivo=function(contratos){
 	
 	
 	
-		cargarContratos();
+		cargarUsuarios();
 	});
 	
 	
