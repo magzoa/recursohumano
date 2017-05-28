@@ -1,0 +1,325 @@
+
+<head>
+<meta charset="UTF-8">
+<title>Registro de Contrato</title>
+
+<link href="static/css/abm.css" rel="stylesheet">
+</head>
+
+<!-- <button class="btn" ng-click="confirm(true)"></button> -->
+
+
+
+<div id="md1" class="modal">
+	<div class="modal-content">
+		<h4>Por Favor confirme la eliminación</h4>
+		<p>Estas seguro de eliminar la selección?</p>
+	</div>
+	<div class="modal-footer">
+		<button href="#" class="btn-flat waves-effect waves-red"
+			onclick="$('#md1').closeModal(); return false;">
+			Cancelar <i class="material-icons left">cancel</i>
+		</button>
+		<button class="btn-flat waves-effect waves-green"
+			ng-click="eliminarMasivo(contratos);">
+			Aceptar <i class="material-icons left">delete_forever</i>
+		</button>
+	</div>
+
+</div>
+<!-- Fin Modal -->
+
+
+<div class="row">
+
+	<div class="col s3"></div>
+	
+	<div class="col s6">
+		<ul class="tabs">
+			<li class="tab col s1">
+			<a class="active blue-text darken-2" href="#registro">
+			<i class="material-icons prefix">playlist_add</i>
+			Registro de Contrato
+			</a>
+		
+			</li>
+			<li class="tab col s1">
+			<a class="blue-text darken-2" href="#listado1">
+			<i class="material-icons prefix">library_books</i>
+			Listado de Contratos
+			</a>
+			
+			</li>
+		
+		</ul>
+	</div>
+	<div class="col s3"></div>
+
+
+	
+	
+	
+		<div id="registro" class="col s12">
+		<div class="row">
+			
+			<ul>
+			
+			<li>
+			<a class="blue-text darken-2" href="/enterprisesoft/contrato/reporte_contrato/?format=pdf" target="_blank">
+			<i class="material-icons">picture_as_pdf</i>
+			Listado en Pdf
+			</a>
+			</li>
+			<li>
+			<a class="blue-text darken-2" href="/enterprisesoft/contrato/reporte_contrato/?format=xlsx" target="_blank">
+			<i class="material-icons left">view_list</i>
+			Listado en Excel
+			</a>
+			</li>
+			
+			</ul>
+			
+			<div class="col s2"></div>
+
+<!--  name="registrationForm"  novalidate="novalidate" name="registrationForm"-->
+
+			<form class="col s8" id="registroform" >
+
+
+				<div class="card-panel">
+					<div class="row">
+						
+<!-- 						Elementos de persona -->
+						
+						        <div class="input-field col s4">
+          <input  id="numero" type="text"  ng-model="contrato.numero" name="numero">
+         <label  for="numero" data-success="ok">Numero</label>
+        </div>
+        <div class="input-field col s4">
+          <input id="descripcion" value="" type="text" class="validate" ng-model="contrato.descripcion" name="descripcion">
+         <label for="descripcion">Descripcion</label>
+        </div>
+       
+           
+<!-- 						Fin de elementos de contrato -->
+						
+						<div class="input-field col s4">
+							<input id="obs" type="text" class="validate"
+								ng-model="contrato.obs" name="obs"/> 
+								<label for="obs">Observación</label>
+						</div>
+						
+						
+						<div class="input-field col s4">
+							<input id="pass1" type="password" class="validate"
+								ng-model="contrato.pass1" name="pass1"   /> 
+								<label for="pass1" data-success="ok">Seña</label>
+						
+						</div>
+						
+<!-- ng-show="registrationForm.contrato.pass1.$dirty" -->
+<!-- 						<div  class="card-panel" ng-messages="registrationForm.contrato.pass1.$error" > -->
+						
+<!-- 						<div ng-message="required"> -->
+<!-- 						Por favor, preencha o campo pass1! -->
+<!-- 						</div> -->
+						
+<!-- 						</div> -->
+						
+<!-- 						directive pass comparison stackoverflow -->
+							
+						<div class="input-field col s4">
+							<input id="pass" type="password" class="validate"
+								ng-model="contrato.pass" name="pass"  required="required" />
+								 <label for="pass" data-success="ok">Confirmar Seña</label>
+						
+<!-- 						compare-to="contrato.pass1" -->
+<!-- 						data-error="Las señas no coicidenn"   compare-to="contrato.pass1"-->
+						<div  ng-messages="registrationForm.pass.$error" ng-messages-include="static/view/contrato/messages.html">
+						
+						{{ errorMessage.text }}
+						</div>
+						</div>
+						{{ errorMessage.text }}
+						
+							
+							
+							
+						<div class="col s4">
+							<p>
+								<input class="with-gap" value="activo" name="estado"
+									ng-model="contrato.estado" type="radio" id="estado1" /> <label
+									for="estado1">Estado Activo</label>
+							</p>
+							<p>
+								<input class="with-gap" value="inactivo" name="estado"
+									ng-model="contrato.estado" type="radio" id="estado2" /> <label
+									for="estado2">Estado Inactivo</label>
+							</p>
+						</div>
+
+
+						
+						
+						
+						
+					</div>
+
+
+				
+				</div>
+				<!-- Fin Card Panel -->
+				<button class="btn waves-effect waves-light" type="submit"
+					name="action" ng-click="registrar(contrato)">
+					Registrar <i class="material-icons left">save</i>
+
+				</button>
+				<button class="btn waves-effect orange darken-4" type="button"
+					name="action" ng-click="cancelar()">
+					Cancelar <i class="material-icons left">cancel</i>
+				</button>
+
+
+
+
+
+
+				
+			
+				<div id="emensaje_sistema" ng-class="{'error':error}">
+				
+				<div ng-class="{'etitulo':error}" id="etitulo">
+				
+				</div>
+				<div ng-class="{'emsj':error}" id="emsj">
+				</div>
+			
+				
+				
+				</div>
+				
+				
+				<div id="mensaje_sistema" ng-class="{'ok':ok}" >
+				
+				<div ng-class="{'titulo':ok}" id="titulo">
+				
+				
+				
+				</div>
+				<div ng-class="{'msj':ok}" id="msj">
+				</div>
+			
+				
+				
+				</div>
+				
+				
+				
+				
+
+
+			</form>
+				
+			
+			
+			
+							
+			
+
+			<div class="col s2"></div>
+		</div>
+		<!-- Fin Row abm -->
+
+
+
+<!-- <div class="card-panel" ng-show="registrationForm.pass1.$error"> -->
+		
+<!-- 				Escriba la contrasena -->
+<!-- 	</div> -->
+
+	</div>
+	<!--     fin test pestaña1 -->
+	
+	
+	
+	<div id="listado1" class="col s12">
+
+		<div class="row">
+
+				<div class="input-field col s4">
+					<input id="search" type="search" required
+						ng-model="criterioDeBusca"> <label for="search"><i
+						class="material-icons">search</i></label> <i class="material-icons"
+						ng-click="criterioDeBusca=''">close</i>
+				</div>
+			
+			<div class="col s4" style="margin-top: 24px;">
+			<button ng-disabled="!isContratoSeleccionado(contratos)"
+					class="btn waves-effect red mymodal" href="#md1">
+					Eliminar <i class="material-icons left">delete</i>
+				</button>
+			</div>
+			
+			<div class="col s12">
+
+       
+				<table class="bordered responsive-table"
+					ng-show="contratos.length > 0">
+					<thead>
+						<tr>
+							<th>Eliminar</th>
+							<th><a href="" ng-click="ordenarPor('numero')">Estado</a></th>
+							<th><a href="" ng-click="ordenarPor('descripcion')">Descripcion</a></th>
+							<th>Password</th>
+							<th>Observación</th>
+							<th>Editar</th>
+						</tr>
+					</thead>
+
+					<tbody>
+
+						<tr ng-class="{'seleccionado negrita':contrato.seleccionado}"
+							ng-repeat="contrato in contratos | filter:criterioDeBusca | orderBy:criterioDeOrdenacion:direccionDeOrdenacion">
+							<td><p>
+									<input type="checkbox" id="{{contrato.id}}"
+										ng-model="contrato.seleccionado" /><label
+										for="{{contrato.id}}"></label>
+								</p></td>
+								
+								
+							
+							<td>{{contrato.numero}}</td>
+							<td>{{contrato.descripcion}}</td>
+							<td ng-click="editarContrato(contrato)"><i
+								class="material-icons">create</i></td>
+						</tr>
+
+
+
+					</tbody>
+				</table>
+
+
+			</div>
+
+		</div>
+
+
+	</div>
+	<!--     fin pestaña 2 -->
+	
+	
+	
+	
+	
+	
+	
+
+</div>
+<!--   fin row tab -->
+
+
+<script type="text/javascript" src="static/js/jquery.validate.min.js"></script>
+
+<script type="text/javascript" src="static/view/contrato/jvalidator.js"></script>
+
