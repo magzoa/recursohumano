@@ -23,7 +23,6 @@ public class Liquidacion extends General implements Serializable{
 	 */
 	private static final long serialVersionUID = 1L;
 	
-	
 	@OneToMany(mappedBy="liquidacion")
 	private Collection<LiquidacionDetalle> liquidaciondetalle;
 	

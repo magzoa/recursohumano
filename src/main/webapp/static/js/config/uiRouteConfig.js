@@ -21,11 +21,6 @@ angular.module("menu").config(['$stateProvider','$urlRouterProvider','$locationP
     })
 	
 	
-	
-	
-	
-	
-	
     $stateProvider.state('proveedores', {
         templateUrl: 'static/view/proveedor/form.html',
         url: '/proveedores',
@@ -56,7 +51,6 @@ angular.module("menu").config(['$stateProvider','$urlRouterProvider','$locationP
 		}
     })
     
-    
     $stateProvider.state('usuarios', {
         templateUrl: 'static/view/usuario/form.html',
         url: '/usuarios',
@@ -66,6 +60,21 @@ angular.module("menu").config(['$stateProvider','$urlRouterProvider','$locationP
 				
 				return usuarioAPI.getUsuarios();
 			},usuario: function () {
+				return {};
+			}
+			//agregar otro si necesario
+		}
+    })
+    
+    
+      $stateProvider.state('conceptos', {
+        templateUrl: 'static/view/concepto/form.html',
+        url: '/conceptos',
+        controller: 'conceptoController',
+		resolve:{
+			conceptos:function(conceptoAPI){
+				return conceptoAPI.getConceptos();
+			},concepto: function () {
 				return {};
 			}
 			//agregar otro si necesario
