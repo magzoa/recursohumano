@@ -2,8 +2,42 @@
  * 
  */
 
-	angular.module("menu").controller("salarioController",function($scope,$http,salarioAPI){
+	angular.module("menu").controller("usuarioController",function($scope,$http,usuarioAPI){
+		
+		
+		
+		
+		
+//		$("#pass").keyup(function() {
+//
+//			$('#pass1').focus();
+//			
+//			$("#pass").focus();
+//			  
+//			});
+		
+		
+		//$("#pass1").keyup(function() {
+
+//			$('#pass').focus();
+//			
+//			$("#pass1").focus();
 			
+			
+			  
+			//});
+		
+		
+		
+		
+
+//		$scope.$watch(function(){
+//			
+//			
+//		});
+		
+		
+		
 		
 
 		 var model = this;
@@ -12,12 +46,12 @@
 		
 //		 $scope.message="asdfsdf";
 		
-		$scope.salarios=[];
+		$scope.usuarios=[];
 		$scope.eliminados=[];
 		$scope.error=false;
 		$scope.ok=false;
 		
-		$scope.app="Registro de Salario";
+		$scope.app="Registro de Usuario";
 		
 		 $('ul.tabs').tabs();
 		 
@@ -48,9 +82,9 @@
 		  );
 		
 		
-	$scope.registrar=function(salario){
+	$scope.registrar=function(usuario){
 	
-//		if((salario.pass1)===(salario.pass)){
+//		if((usuario.pass1)===(usuario.pass)){
 //			console.log("Ingrese en comparación es igual")
 //		}
 		
@@ -58,9 +92,9 @@
 		validator.form();
 		
 		if(validator.valid()){
-			salarioAPI.saveSalario(salario).success(function(){
+			usuarioAPI.saveUsuario(usuario).success(function(){
 				
-				delete	$scope.salario;
+				delete	$scope.usuario;
 				
 				var titulo="<i class='material-icons left'>done</i> Registrado correctamente";
 				$("#titulo").html(titulo);
@@ -70,7 +104,7 @@
 				cancelarError();
 				
 				
-				cargarSalarios();
+				cargarUsuarios();
 					
 				}).error(function(error, status){
 				
@@ -85,12 +119,12 @@
 		
 	};	
 	
-	var cargarSalarios=function(){
+	var cargarUsuarios=function(){
 		
-		salarioAPI.getSalarios().success(function(salarios){
+		usuarioAPI.getUsuarios().success(function(usuarios){
 			
 			
-			$scope.salarios=salarios;
+			$scope.usuarios=usuarios;
 			
 			
 		}).error(function(error, status){
@@ -99,15 +133,15 @@
 			
 		});
 		
-		$scope.salario={estado:'activo'};
+		$scope.usuario={estado:'activo'};
 		requesFocus('nombre');
 	};
 	
 	
-	$scope.editarSalario=function(salario){
+	$scope.editarUsuario=function(usuario){
 		
 		
-		$scope.salario=salario;
+		$scope.usuario=usuario;
 		
 		$scope.$watch(function(){
 			
@@ -120,32 +154,32 @@
 		requesFocus('nombre');
 		
 		
-		//cargarSalario();
+		//cargarUsuario();
 		
 	};
 	
 	
-$scope.eliminarMasivo=function(salarios){
+$scope.eliminarMasivo=function(usuarios){
 		
-		$scope.salarios=salarios.filter(function(salario){
-			if(!salario.seleccionado)return salario;
+		$scope.usuarios=usuarios.filter(function(usuario){
+			if(!usuario.seleccionado)return usuario;
  		});
 		
 		
-		var eliminados=salarios.filter(function(salario){
+		var eliminados=usuarios.filter(function(usuario){
 			
-			if(salario.seleccionado){
+			if(usuario.seleccionado){
 				
-				delete salario.seleccionado;
+				delete usuario.seleccionado;
 
-				return salario
+				return usuario
 			}
 				
 		});
 		
 //  		$scope.message=eliminados;
  		
-		salarioAPI.eliminarMasivo(eliminados).success(function(salarios){
+		usuarioAPI.eliminarMasivo(eliminados).success(function(usuarios){
 		
 			console.log("Eliminados Correctamente");
 			
@@ -160,9 +194,9 @@ $scope.eliminarMasivo=function(salarios){
 		requesFocus('nombre');
 	};
 	
-	$scope.isSalarioSeleccionado=function(salarios){
-		return salarios.some(function(salario){
-			return salario.seleccionado;
+	$scope.isUsuarioSeleccionado=function(usuarios){
+		return usuarios.some(function(usuario){
+			return usuario.seleccionado;
 		});
 		
 	};
@@ -184,13 +218,13 @@ $scope.eliminarMasivo=function(salarios){
 	}
 		
 	var cancelar=function(){
-		$scope.salario=undefined;
+		$scope.usuario=undefined;
 		
 		$scope.$watch(function(){	
 			Materialize.updateTextFields();
 		});
 		
-		$scope.salario={estado:'activo'};
+		$scope.usuario={estado:'activo'};
 		
 		//$scope.criterioDeBusca="";
 		requesFocus('nombre');
@@ -236,7 +270,7 @@ $scope.eliminarMasivo=function(salarios){
 	
 	
 	
-		cargarSalarios();
+		cargarUsuarios();
 	});
 	
 	

@@ -21,15 +21,30 @@ angular.module("menu").config(['$stateProvider','$urlRouterProvider','$locationP
     })
 	
 	
-    $stateProvider.state('proveedores', {
-        templateUrl: 'static/view/proveedor/form.html',
-        url: '/proveedores',
-        controller: 'proveedorController',
+    	$stateProvider.state('departamentos', {
+        templateUrl: 'static/view/cliente/form.html',
+        url: '/departamentos',
+        controller: 'departamentoController',
 		resolve:{
-			proveedores:function(proveedorAPI){
+			clientes:function(clienteAPI){
 				
-				return proveedorAPI.getProveedores();
-			},proveedor: function () {
+				return clienteAPI.getClientes();
+			}
+		//agregar otro si necesario
+	}
+    })
+	 
+    
+    
+    $stateProvider.state('salarios', {
+        templateUrl: 'static/view/salario/form.html',
+        url: '/salarios',
+        controller: 'salarioController',
+		resolve:{
+			salarios:function(salarioAPI){
+				
+				return salarioAPI.getSalarios();
+			},usuario: function () {
 				return {};
 			}
 			//agregar otro si necesario
@@ -97,73 +112,12 @@ angular.module("menu").config(['$stateProvider','$urlRouterProvider','$locationP
     })
 	
 	
-    
-	$stateProvider.state('precios', {
-        templateUrl: 'static/view/producto_precio/form.html',
-        url: '/precios',
-        controller: 'productoPrecioController',
-        resolve:{
-			precios:function(precioAPI){
-				
-				return precioAPI.getPrecios();
-			},producto: function () {
-				return {};
-			}
-			//agregar otro si necesario
-		}
-    })
 
-	
-    
-    $stateProvider.state('detalleProducto', {
-        templateUrl: 'static/view/producto_precio/form.html',
-        url: '/detalleProducto/{id}',
-        controller: 'productoPrecioController',
-        	resolve: {
-			productos:function(productoAPI){	
-				return productoAPI.getProductos();
-			},
-			producto:function(productoAPI,$stateParams){
-				return productoAPI.getProducto($stateParams.id);
-			}
-		}
-    })
-    
-    
-	
-     /*$stateProvider.state('detalleProductoCantidad', {
-        templateUrl: 'static/view/producto_cantidad/form_cantidad.html',
-        url: '/detalleProductoCantidad/{id}',
-        controller: 'productoCantidadController',
-        resolve: {
-		productos:function(productoAPI){	
-				return productoAPI.getProductos();
-			},
-			producto:function(productoAPI,$stateParams){
-				return productoAPI.getProducto($stateParams.id);
-			}
-		}
-    })*/
-	
     
     
     //Falta estudiar mas paso de parametros para aplicar
     
-	 $stateProvider.state('verProducto', {
-        templateUrl: 'static/view/producto/form.html',
-        url: '/verProducto/{id}',
-        component: 'producto',
-        controller: 'productoController',
-        resolve: {
-			
-			productos:function(productoAPI){	
-				return productoAPI.getProductos();
-			},
-			producto:function(productoAPI,$stateParams){
-				return productoAPI.getProducto($stateParams.id);
-			}
-		}
-    })
+
 	
     //$state.params.obj
 //	
@@ -174,51 +128,7 @@ angular.module("menu").config(['$stateProvider','$urlRouterProvider','$locationP
 //			},
     
     
-    
-    
-    
-	$stateProvider.state('cantidads', {
-        templateUrl: 'static/view/producto_cantidad/form_cantidad.html',
-        url: '/cantidads',
-        controller: 'productoCantidadController',
-        resolve:{
-			cantidades:function(cantidadAPI){
-				
-				return cantidadAPI.getCantidads();
-			},producto: function () {
-				return {};
-			}
-			//agregar otro si necesario
-		}
-    })
-	
-$stateProvider.state('detalleProductoCantidad', {
-    	params: {producto:null},
-        templateUrl: 'static/view/producto_cantidad/listado.html',
-        url: '/detalleProductoCantidad/',
-        controller: 'listadoCantidadController',
-        resolve:{
-			cantidads:function(cantidadAPI,$stateParams){
-				
-			var pro=JSON.parse($stateParams.producto)
-				
-				retorno=cantidadAPI.getCantidadesPorIdProducto(pro.id);
-				
-				
-				
-				return retorno;
-			},producto: function () {
-				return {};
-			}
-			//agregar otro si necesario
-		}
-    })
-	
 
-	
-	
-	
-	
 	
 	
 //	$routeProvider.when("/error", {
