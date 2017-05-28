@@ -30,10 +30,11 @@ public class Contrato extends General {
 	public Contrato() {
 		this.numero = 0;
 		this.descripcion = "";
-		this.salario = new Salario();
-		this.personal = new Personal();
-		this.cargo = new Cargo();
-		this.fechaIngreso = new Date();	}
+//		this.salario = new Salario();
+//		this.personal = new Personal();
+//		this.cargo = new Cargo();
+//		this.fechaIngreso = new Date();	
+		}
 
 	public Contrato(Integer numero, String descripcion, Salario codSalario, Personal codPersona, Cargo codCargo,
 			Date fechaIngreso) {

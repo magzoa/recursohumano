@@ -120,8 +120,8 @@
 			
 		});
 		
-		$scope.concepto={estado:'1'};
-		requesFocus('descripcion_concepto');
+		//$scope.concepto={estado:'1'};
+		requesFocus('descripcion');
 	};
 	
 	
@@ -137,8 +137,8 @@
 		});
 		
 		
-		$('ul.tabs').tabs('select_tab', 'registro_concepto');
-		requesFocus('descripcion_concepto');
+		$('ul.tabs').tabs('select_tab', 'concepto');
+		requesFocus('descripcion');
 		
 		
 		//cargarConcepto();
@@ -178,7 +178,7 @@ $scope.eliminarMasivoConcepto=function(conceptos){
 		$scope.criterioDeBuscaConcepto="";
 		
 		$('#mdConceptoEliminar1').closeModal();
-		requesFocus('descripcion_concepto');
+		requesFocus('descripcion');
 	};
 	
 	$scope.isConceptoSeleccionado=function(conceptos){
@@ -211,10 +211,10 @@ $scope.eliminarMasivoConcepto=function(conceptos){
 			Materialize.updateTextFields();
 		});
 		
-		$scope.concepto={estado:'1'};
+		//$scope.concepto={estado:'1'};
 		
 		//$scope.criterioDeBusca="";
-		requesFocus('descripcion_concepto');
+		requesFocus('descripcion');
 		
 		cancelarError();
 		cancelarOk();

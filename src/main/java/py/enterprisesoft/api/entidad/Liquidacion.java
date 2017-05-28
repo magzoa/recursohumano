@@ -34,9 +34,9 @@ public class Liquidacion extends General implements Serializable{
 	
 	public Liquidacion() {
 		super();
-		this.personal = new Personal();
-		this.fecha = new Date ();
-		this.monto = new Double(0);
+//		this.personal = new Personal();
+//		this.fecha = new Date ();
+//		this.monto = new Double(0);
 		this.observacion = "";
 	}
 

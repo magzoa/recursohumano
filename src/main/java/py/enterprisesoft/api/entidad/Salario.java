@@ -24,7 +24,7 @@ public class Salario extends General {
 	public Salario() {
 		super();
 		this.descripcion = "";	
-		this.monto = new Double(0);	
+//		this.monto = new Double(0);	
 		}
 
 	public Collection<Contrato> getContrato() {
