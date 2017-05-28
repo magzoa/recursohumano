@@ -2,27 +2,27 @@
  * 
  */
 
-	angular.module("menu").controller("conceptoController",function($scope,$http,conceptoAPI,$state,$stateParams,$rootScope){
+	angular.module("menu").controller("liquidacionController",function($scope,$http,liquidacionAPI,$state,$stateParams,$rootScope){
 
-		var foo = $stateParams.concepto;
+		var foo = $stateParams.liquidacion;
 		console.log(foo)
 		
-		var msjErrorConcepto="#emsj_concepto";
-		var tituloErrorConcepto="#etitulo_concepto";
-		var msjConcepto="#msj_concepto";
-		var tituloMsjConcepto="#titulo_msj_concepto";
+		var msjErrorLiquidacion="#emsj_liquidacion";
+		var tituloErrorLiquidacion="#etitulo_liquidacion";
+		var msjLiquidacion="#msj_liquidacion";
+		var tituloMsjLiquidacion="#titulo_msj_liquidacion";
 		
-		$scope.conceptos=[];
+		$scope.liquidacions=[];
 		$scope.eliminados=[];
 		$scope.error=false;
 		$scope.ok=false;
 		
-		$scope.app="Registro de Concepto";
+		$scope.app="Registro de Liquidacion";
 		
 		 $('ul.tabs').tabs();
 		 
 	
-		$('.mymodalconceptoeliminar').leanModal({
+		$('.mymodalliquidacioneliminar').leanModal({
 		      dismissible: false, // Modal can be dismissed by clicking outside of the modal
 		      opacity: .5, // Opacity of modal background
 		      in_duration: 300, // Transition in duration
@@ -30,7 +30,7 @@
 		      starting_top: '4%', // Starting top style attribute
 		      ending_top: '10%', // Ending top style attribute
 		      ready: function(modal, trigger) {
-		    	  console.log("eliminar Concepto");
+		    	  console.log("eliminar Liquidacion");
 //		          if($(".lean-overlay").length > 1) {
 //		              $(".lean-overlay:not(:first)").each(function() {
 //		                  $(this).remove();
@@ -47,20 +47,20 @@
 		    }
 		  );
 		
-		$scope.cargarModalConcepto=function(ventana,conceptos){
+		$scope.cargarModalLiquidacion=function(ventana,liquidacions){
 		//	$('#materialize-lean-overlay-1').remove();
 			
 //			$('.lean-overlay').each(function (i, obj) { if (i > 1) { $('.lean-overlay').slice(i).remove(); } });
 //			  $('.lean-overlay').remove();
 			
 			
-			$scope.$parent.conceptos=conceptos;
-//			$rootScope.conceptos=conceptos;
+			$scope.$parent.liquidacions=liquidacions;
+//			$rootScope.liquidacions=liquidacions;
 			
-			//$('#mdconcepto1').closeModal();
-			//mdconcepto1
-			//$('#mdconcepto1').css("background-color", "gray");
-			  setTimeout(function () {        //'#mdconcepto1'
+			//$('#mdliquidacion1').closeModal();
+			//mdliquidacion1
+			//$('#mdliquidacion1').css("background-color", "gray");
+			  setTimeout(function () {        //'#mdliquidacion1'
 				  $(ventana).openModal();
 
 				 console.log("Ingrese en abrir");
@@ -69,25 +69,25 @@
 		}
 		
 		
-	$scope.registrar=function(concepto){
+	$scope.registrar=function(liquidacion){
 	
-		var validator = $("#registroformconcepto").validate();
+		var validator = $("#registroformliquidacion").validate();
 		validator.form();
 		
 		if(validator.valid()){
-			conceptoAPI.saveConcepto(concepto).success(function(){
+			liquidacionAPI.saveLiquidacion(liquidacion).success(function(){
 				
-				delete	$scope.concepto;
+				delete	$scope.liquidacion;
 				
 				var titulo="<i class='material-icons left'>done</i> Registrado correctamente";
-				$(tituloMsjConcepto).html(titulo);
+				$(tituloMsjLiquidacion).html(titulo);
 				
 				$scope.ok=true;
 
 				cancelarError();
 				
 				
-				cargarConceptos();
+				cargarLiquidacions();
 					
 				}).error(function(error, status){
 				
@@ -102,16 +102,16 @@
 		
 	};	
 	
-	$rootScope.cargarConceptos=function(){
-		cargarConceptos();
+	$rootScope.cargarLiquidacions=function(){
+		cargarLiquidacions();
 	}
 	
-	var cargarConceptos=function(){
+	var cargarLiquidacions=function(){
 		
-		conceptoAPI.getConceptos().success(function(conceptos){
+		liquidacionAPI.getLiquidacions().success(function(liquidacions){
 			
 			
-			$scope.conceptos=conceptos;
+			$scope.liquidacions=liquidacions;
 			
 			
 		}).error(function(error, status){
@@ -120,15 +120,15 @@
 			
 		});
 		
-		//$scope.concepto={estado:'1'};
-		requesFocus('descripcion');
+		$scope.liquidacion={estado:'1'};
+		requesFocus('monto_liquidacion');
 	};
 	
 	
-	$scope.editarConcepto=function(concepto){
+	$scope.editarLiquidacion=function(liquidacion){
 		
 		
-		$scope.concepto=concepto;
+		$scope.liquidacion=liquidacion;
 		
 		$scope.$watch(function(){
 			
@@ -137,36 +137,36 @@
 		});
 		
 		
-		$('ul.tabs').tabs('select_tab', 'concepto');
-		requesFocus('descripcion');
+		$('ul.tabs').tabs('select_tab', 'registro_liquidacion');
+		requesFocus('monto_liquidacion');
 		
 		
-		//cargarConcepto();
+		//cargarLiquidacion();
 		
 	};
 	
 	
-$scope.eliminarMasivoConcepto=function(conceptos){
+$scope.eliminarMasivoLiquidacion=function(liquidacions){
 		
-		$scope.conceptos=conceptos.filter(function(concepto){
-			if(!concepto.seleccionado)return concepto;
+		$scope.liquidacions=liquidacions.filter(function(liquidacion){
+			if(!liquidacion.seleccionado)return liquidacion;
  		});
 		
 		
-		var eliminados=conceptos.filter(function(concepto){
+		var eliminados=liquidacions.filter(function(liquidacion){
 			
-			if(concepto.seleccionado){
+			if(liquidacion.seleccionado){
 				
-				delete concepto.seleccionado;
+				delete liquidacion.seleccionado;
 
-				return concepto
+				return liquidacion
 			}
 				
 		});
 		
 //  		$scope.message=eliminados;
  		
-		conceptoAPI.eliminarMasivoConcepto(eliminados).success(function(conceptos){
+		liquidacionAPI.eliminarMasivoLiquidacion(eliminados).success(function(liquidacions){
 		
 			console.log("Eliminados Correctamente");
 			
@@ -175,15 +175,15 @@ $scope.eliminarMasivoConcepto=function(conceptos){
 			gestionarError(error,status);
 		});
 		
-		$scope.criterioDeBuscaConcepto="";
+		$scope.criterioDeBuscaLiquidacion="";
 		
-		$('#mdConceptoEliminar1').closeModal();
-		requesFocus('descripcion');
+		$('#mdLiquidacionEliminar1').closeModal();
+		requesFocus('monto_liquidacion');
 	};
 	
-	$scope.isConceptoSeleccionado=function(conceptos){
-		return conceptos.some(function(concepto){
-			return concepto.seleccionado;
+	$scope.isLiquidacionSeleccionado=function(liquidacions){
+		return liquidacions.some(function(liquidacion){
+			return liquidacion.seleccionado;
 		});
 		
 	};
@@ -194,27 +194,27 @@ $scope.eliminarMasivoConcepto=function(conceptos){
 			
 	};
 	var cancelarError=function cancelarE(){
-		$(msjErrorConcepto).html("");
-		$(tituloErrorConcepto).html("");
+		$(msjErrorLiquidacion).html("");
+		$(tituloErrorLiquidacion).html("");
 		$scope.error=false;
 	}
 	var cancelarOk=function cancelarOk(){
-		$(msjConcepto).html("");
-		$(tituloMsjConcepto).html("");
+		$(msjLiquidacion).html("");
+		$(tituloMsjLiquidacion).html("");
 		$scope.ok=false;
 	}
 		
 	var cancelar=function(){
-		$scope.concepto=undefined;
+		$scope.liquidacion=undefined;
 		
 		$scope.$watch(function(){	
 			Materialize.updateTextFields();
 		});
 		
-		//$scope.concepto={estado:'1'};
+		$scope.liquidacion={estado:'1'};
 		
 		//$scope.criterioDeBusca="";
-		requesFocus('descripcion');
+		requesFocus('monto_liquidacion');
 		
 		cancelarError();
 		cancelarOk();
@@ -246,9 +246,9 @@ $scope.eliminarMasivoConcepto=function(conceptos){
 			
 		}
 	
-		$(msjErrorConcepto).html(msj);
+		$(msjErrorLiquidacion).html(msj);
 		var etitulo="<i class='material-icons left'>error</i>"+"ERROR: "+error.code+", "+error.message+" </br> "+" <HR> ";
-		$(tituloErrorConcepto).html(etitulo);
+		$(tituloErrorLiquidacion).html(etitulo);
 		
 		$scope.error=true;
 		
@@ -256,25 +256,25 @@ $scope.eliminarMasivoConcepto=function(conceptos){
 	}
 	
 	
-	$scope.seleccionarConcepto=function(conceptoparam){
+	$scope.seleccionarLiquidacion=function(liquidacionparam){
 		
-		//var producto={concepto:conceptoparam};
+		//var producto={liquidacion:liquidacionparam};
 		
 		//$state.go('productos',{producto:JSON.stringify(producto)});
-		$scope.$parent.producto.concepto=conceptoparam;
-		$('#mdconcepto1').closeModal();
+		$scope.$parent.producto.liquidacion=liquidacionparam;
+		$('#mdliquidacion1').closeModal();
 		
 	}
 	
-	$scope.ordenarPorConcepto = function (campo) {
-		$scope.criterioDeOrdenacionConcepto = campo;
-		$scope.direccionDeOrdenacionConcepto = !$scope.direccionDeOrdenacionConcepto;
+	$scope.ordenarPorLiquidacion = function (campo) {
+		$scope.criterioDeOrdenacionLiquidacion = campo;
+		$scope.direccionDeOrdenacionLiquidacion = !$scope.direccionDeOrdenacionLiquidacion;
 	};
 	
 	
-	$('ul.tabs').tabs('select_tab', 'listado_concepto1');
+	$('ul.tabs').tabs('select_tab', 'listado_liquidacion1');
 	
-		cargarConceptos();
+		cargarLiquidacions();
 	});
 	
 	

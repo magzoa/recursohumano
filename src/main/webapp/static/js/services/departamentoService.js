@@ -10,7 +10,7 @@ angular.module("menu").factory("departamentoAPI",function($http,config){
 	console.log($http);
 	
 
-var _getDepartamento=function(){
+var _getDepartamentos=function(){
 	
 	return $http.get(config.baseUrl+"/departamento");
 };	
@@ -21,17 +21,17 @@ var _saveDepartamento=function(departamento){
 	
 };
 
-var _eliminarMasivo=function(departamento){
+var _eliminarMasivo=function(departamentos){
 	
 	
-return	$http.post(config.baseUrl+"/departamento/eliminar_masivo",departamento);
+return	$http.post(config.baseUrl+"/departamento/eliminar_masivo",departamentos);
 	
 };
 
 
 return {
 	
-	getDepartamento:_getDepartamento,
+	getDepartamentos:_getDepartamentos,
 	saveDepartamento:_saveDepartamento,
 	eliminarMasivo:_eliminarMasivo
 	

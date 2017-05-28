@@ -21,9 +21,9 @@ public class LiquidacionDetalle extends General{
 	
 	public LiquidacionDetalle() {
 		super();
-		this.concepto = new Concepto();
-		this.liquidacion = new Liquidacion();
-		this.montoParcial = new Double(0);
+//		this.concepto = new Concepto();
+//		this.liquidacion = new Liquidacion();
+//		this.montoParcial = new Double(0);
 	}
 
 	

@@ -3,36 +3,36 @@
  */
 
 
-angular.module("menu").factory("usuarioAPI",function($http,config){
+angular.module("menu").factory("conceptoAPI",function($http,config){
 	
 	
 	console.log(config);
 	console.log($http);
 	
 
-var _getUsuarios=function(){
+var _getConceptos=function(){
 	
-	return $http.get(config.baseUrl+"/usuario");
+	return $http.get(config.baseUrl+"/concepto");
 };	
 
-var _saveUsuario=function(usuario){
+var _saveConcepto=function(concepto){
 	
-	return $http.post(config.baseUrl+"/usuario",usuario);
+	return $http.post(config.baseUrl+"/concepto",concepto);
 	
 };
 
-var _eliminarMasivo=function(usuarios){
+var _eliminarMasivo=function(conceptos){
 	
 	
-return	$http.post(config.baseUrl+"/usuario/eliminar_masivo",usuarios);
+return	$http.post(config.baseUrl+"/concepto/eliminar_masivo",conceptos);
 	
 };
 
 
 return {
 	
-	getUsuarios:_getUsuarios,
-	saveUsuario:_saveUsuario,
+	getConceptos:_getConceptos,
+	saveConcepto:_saveConcepto,
 	eliminarMasivo:_eliminarMasivo
 	
 };
