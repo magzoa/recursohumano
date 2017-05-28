@@ -59,20 +59,18 @@
           <input  id="fecha_liquidacion" type="date"  ng-model="liquidacion.fecha" name="fecha_liquidacion">
          <label  for="fecha_liquidacion" data-success="ok">Fecha</label>
         </div>
+        
+          <div class="input-field col s4">
+          <input  id="monto_liquidacion" type="number"  ng-model="liquidacion.monto" name="monto_liquidacion">
+         <label  for="monto_liquidacion" data-success="ok">Monto</label>
+        </div>
+        
+          <div class="input-field col s4">
+          <input  id="observacion_liquidacion" type="text"  ng-model="liquidacion.observacion" name="observacion_liquidacion">
+         <label  for="observacion_liquidacion" data-success="ok">Observación</label>
+        </div>
         					
-						<div class="col s4">
-							<p>
-								<input class="with-gap" value="1" name="estado"
-									ng-model="liquidacion.estado" type="radio" id="estado1" /> <label
-									for="estado1">Estado Activo</label>
-							</p>
-							<p>
-								<input class="with-gap" value="0" name="estado"
-									ng-model="liquidacion.estado" type="radio" id="estado2" /> <label
-									for="estado2">Estado Inactivo</label>
-							</p>
-						</div>
-
+						
 
 						
 						
@@ -179,8 +177,9 @@
 						<tr>
 							<th>Eliminar</th>
 							<th><a href="" ng-click="ordenarPorLiquidacion('id')">Codigo</a></th>
-							<th><a href="" ng-click="ordenarPorLiquidacion('fecha')">Descripcion</a></th>
-							<th><a href="" ng-click="ordenarPorLiquidacion('estado')">Estado</a></th>
+							<th><a href="" ng-click="ordenarPorLiquidacion('fecha')">Fecha</a></th>
+							<th><a href="" ng-click="ordenarPorLiquidacion('monto')">Monto</a></th>
+							<th><a href="" ng-click="ordenarPorLiquidacion('observacion')">Observación</a></th>
 							<th>Editar</th>
 							<th>Seleccionar</th>
 						</tr>
@@ -199,8 +198,8 @@
 								
 							<td>{{liquidacion.id}}</td>
 							<td>{{liquidacion.fecha}}</td>
-							<td ng-if="liquidacion.estado ===0">Inactivo</td>
-							<td ng-if="liquidacion.estado ===1">Activo</td>
+							<td>{{liquidacion.monto}}</td>
+							<td>{{liquidacion.observacion}}</td>
 							<td ng-click="editarLiquidacion(liquidacion)"><i
 								class="material-icons">create</i></td>
 							<td ng-click="seleccionarLiquidacion(liquidacion)"><i

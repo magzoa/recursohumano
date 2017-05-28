@@ -111,15 +111,16 @@ angular.module("menu").config(['$stateProvider','$urlRouterProvider','$locationP
 		}
     })
 	
-	$stateProvider.state('depositos', {
-        templateUrl: 'static/view/deposito/form.html',
-        url: '/depositos',
-        controller: 'depositoController',
+    
+	$stateProvider.state('liquidacions', {
+        templateUrl: 'static/view/liquidacion/form.html',
+        url: '/liquidacions',
+        controller: 'liquidacionController',
 		resolve:{
-			depositos:function(depositoAPI){
+			liquidacions:function(liquidacionAPI){
 				
-				return depositoAPI.getDepositos();
-			},deposito: function () {
+				return liquidacionAPI.getLiquidacions();
+			},liquidacion: function () {
 				return {};
 			}
 			//agregar otro si necesario
