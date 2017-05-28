@@ -137,7 +137,7 @@
 		});
 		
 		
-		$('ul.tabs').tabs('select_tab', 'concepto');
+		$('ul.tabs').tabs('select_tab', 'registro');
 		requesFocus('descripcion');
 		
 		
@@ -156,9 +156,9 @@ $scope.eliminarMasivoConcepto=function(conceptos){
 		var eliminados=conceptos.filter(function(concepto){
 			
 			if(concepto.seleccionado){
-				
+				console.log("antes de delete");
 				delete concepto.seleccionado;
-
+				console.log("después de delete");
 				return concepto
 			}
 				
