@@ -22,13 +22,13 @@ angular.module("menu").config(['$stateProvider','$urlRouterProvider','$locationP
 	
 	
     	$stateProvider.state('departamentos', {
-        templateUrl: 'static/view/cliente/form.html',
+        templateUrl: 'static/view/departamento/form.html',
         url: '/departamentos',
         controller: 'departamentoController',
 		resolve:{
-			clientes:function(clienteAPI){
+			departamentos:function(departamentoAPI){
 				
-				return clienteAPI.getClientes();
+				return departamentoAPI.getDepartamentos();
 			}
 		//agregar otro si necesario
 	}
