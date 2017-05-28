@@ -54,6 +54,18 @@
 				<div class="card-panel">
 					<div class="row">
 						
+						 <div class="input-field col s4">
+          <input  id="personal_liquidacion" type="number"  ng-model="liquidacion.personal.codigoPersona" name="personal_liquidacion">
+         <label  for="personal_liquidacion" data-success="ok">Id Personal</label>
+        </div>
+        
+        <div class="input-field col s4">
+          <input  id="nombre_liquidacion" type="text"  ng-model="liquidacion.personal.nombre" name="nombre_liquidacion">
+         <label  for="nombre_liquidacion" data-success="ok">Nombre Personal</label>
+        </div>
+						
+						
+						
 						
 						        <div class="input-field col s4">
           <input  id="fecha_liquidacion" type="date"  ng-model="liquidacion.fecha" name="fecha_liquidacion">
@@ -179,6 +191,7 @@
 							<th><a href="" ng-click="ordenarPorLiquidacion('id')">Codigo</a></th>
 							<th><a href="" ng-click="ordenarPorLiquidacion('fecha')">Fecha</a></th>
 							<th><a href="" ng-click="ordenarPorLiquidacion('monto')">Monto</a></th>
+							<th><a href="" ng-click="ordenarPorLiquidacion('personal.nombre')">Nombre Personal</a></th>
 							<th><a href="" ng-click="ordenarPorLiquidacion('observacion')">Observación</a></th>
 							<th>Editar</th>
 							<th>Seleccionar</th>
@@ -199,6 +212,7 @@
 							<td>{{liquidacion.id}}</td>
 							<td>{{liquidacion.fecha}}</td>
 							<td>{{liquidacion.monto}}</td>
+							<td>{{liquidacion.personal.nombre}}</td>
 							<td>{{liquidacion.observacion}}</td>
 							<td ng-click="editarLiquidacion(liquidacion)"><i
 								class="material-icons">create</i></td>

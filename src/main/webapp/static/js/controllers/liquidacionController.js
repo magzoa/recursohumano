@@ -128,6 +128,8 @@
 	$scope.editarLiquidacion=function(liquidacion){
 		
 		
+		liquidacion.fecha=new Date(liquidacion.fecha);
+		
 		$scope.liquidacion=liquidacion;
 		
 		$scope.$watch(function(){
